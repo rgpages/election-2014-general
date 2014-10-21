@@ -1,0 +1,26 @@
+#container {
+	
+	width: 1600px;
+	min-width: 320px;
+	margin: 30px auto 250px;
+	
+	@media all and (max-width: 1599px) { // A `max-width` of `1599px` plays nice with `1600px` min-width media query from PURE.
+		& { width: 1280px; }
+	}
+	
+	@media all and (max-width: 1279px) { // IBID.
+		& { width: 960px; }
+	}
+	
+	@media all and (max-width: 959px) { // IBID.
+		& { width: 640px; }
+	}
+	
+	@media all and (max-width: 639px) { // IBID.
+		& {
+			width: 320px;
+			margin-top: 50px;
+		}
+	}
+	
+}

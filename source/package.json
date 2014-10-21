@@ -1,0 +1,46 @@
+{
+  "title": "2014 General Election",
+  "name": "rg",
+  "description": "General election coverage for Lane County, Oregon; developed and curated by The Register-Guard.",
+  "version": "0.1.1",
+  "homepage": "https://github.com/registerguard/election-2014-general",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/registerguard/election-2014-general.git"
+  },
+  "author": {
+    "name": "Micky Hulse",
+    "url": "http://mky.io"
+  },
+  "//": "The following FQDN is the endpoint for your assets (no trailing slash):",
+  "production": "http://pages.registerguard.com/election-2014-general",
+  "licenses": [
+    {
+      "type": "Copyright © The Register-Guard 2014. All rights reserved.",
+      "url": "http://registerguard.com"
+    }
+  ],
+  "devDependencies": {
+    "grunt": "~0",
+    "grunt-cli": "~0",
+    "grunt-bower-task": "~0",
+    "grunt-contrib-clean": "~0",
+    "grunt-contrib-concat": "~0",
+    "grunt-contrib-copy": "~0",
+    "grunt-contrib-jshint": "~0",
+    "grunt-contrib-sass": "~0",
+    "grunt-contrib-uglify": "~0",
+    "grunt-contrib-watch": "~0",
+    "grunt-env": "~0",
+    "grunt-preprocess": "~4",
+    "grunt-pure-grids": "~1",
+    "grunt-shell": "~0"
+  },
+  "scripts": {
+    "grunt": "grunt",
+    "dev": "grunt",
+    "prod": "grunt prod",
+    "watch": "grunt watch",
+    "plugins": "grunt plugins"
+  }
+}

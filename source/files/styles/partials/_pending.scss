@@ -1,0 +1,80 @@
+// Put "pending" CSS here.
+// ...
+
+footer[role="contentinfo"] {
+	
+	margin: 10px 0 0;
+	text-align: center;
+	
+	.js & { display: none; }
+	
+	p {
+		font: 11px/24px Arial, sans-serif;
+		text-transform: uppercase;
+		letter-spacing: .1em;
+		color: $gray9;
+		margin: 0;
+		padding: 0;
+	}
+	
+	span { display: block; }
+	span span { display: none; }
+	
+	a {
+		color: $gray6;
+		text-decoration: none;
+	}
+	a:visited { color: $gray6; }
+	.no-touch a:visited:hover,
+	a:focus,
+	.no-touch a:focus:hover,
+	.no-touch a:hover,
+	a:active {
+		color: $raven;
+		text-decoration: underline;
+	}
+	
+	@media all and (min-width: 640px) {
+		span,
+		span span { display: inline; }
+	}
+	
+}
+
+.pure-g {
+	
+	[class*="pure-u"] {
+		font-family: $sans; // http://purecss.io/grids/#using-grids-with-custom-fonts
+		padding: 10px 0;
+	}
+	
+	:first-child { padding-top: 0; }
+	:last-child { padding-bottom: 0; }
+	
+	@media all and (min-width: 960px) {
+		
+		[class*="pure-u"] { padding: 0 20px; }
+		
+		:first-child { padding-left: 0; }
+		:last-child { padding-right: 0; }
+		
+	}
+	
+}
+
+aside[role="complementary"] {
+	
+	margin: 0 10px 10px;
+	
+	h5 {
+		color: $gray3;
+		letter-spacing: .05em;
+		font-weight: normal;
+		margin: 0 0 5px;
+	}
+	
+	p { margin: 0; }
+	
+	#control { margin-bottom: 20px; }
+	
+}
