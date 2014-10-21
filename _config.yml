@@ -1,0 +1,31 @@
+title: "2014 General Election"
+description: "General election coverage for Lane County, Oregon; developed and curated by The Register-Guard."
+baseurl: "/election-2014-general"
+keywords: ["general election", "lane county", "oregon", "2014", "news", "election"]
+paginate: 20
+
+excerpt_separator: ""
+exclude:
+  - "bower_components"
+  - "bower.json"
+  - "Gemfile"
+  - "LICENSE"
+  - "node_modules"
+  - "npm-debug.log"
+  - "package.json"
+  - "README.md"
+gems:
+  - jekyll-mentions
+  - jemoji
+  - jekyll-redirect-from
+  - jekyll-sitemap
+paginate_path: "/:num/"
+permalink: "/:title/"
+relative_permalinks: "false"
+safe: "true"
+sass:
+  sass_dir: "assets/styles/_includes"
+  style: "compressed"
+  precision: 14
+  sourcemap: "none"
+timezone: "America/Los_Angeles"

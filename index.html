@@ -1,0 +1,55 @@
+---
+---
+
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+	
+	{% include head.html %}
+	
+	{% if page.head_extra %}{{ page.head_extra }}{% endif %}
+	
+	<style></style>
+	
+	{% include head_analytics.html %}
+	
+</head>
+<body itemscope itemtype="http://schema.org/WebPage">
+	
+	{% include flag.html %}
+	
+	{% include navigation.html %}
+	
+	<main role="main">
+		
+		<section>
+			
+			<div class="box">{{ content }}</div>
+			
+		</section>
+		
+	</main>
+	
+	{% include scripts.html %}
+	
+	{% if page.footer_extra %}{{ page.footer_extra }}{% endif %}
+	
+	<script>
+		
+		$(function() {
+			
+			// Just testing to make sure jQuery works:
+			$('.box')
+				.hide()
+				.fadeIn();
+			
+		});
+		
+	</script>
+	
+	{% include footer_analytics.html %}
+	
+</body>
+</html>
+
+<!-- Site last updated: {% assign m = site.time | date: "%B" %}{% case m %}{% when 'April' or 'May' or 'June' or 'July' %}{{ m }}{% when 'September' %}Sept.{% else %}{{ site.time | date: "%b" }}.{% endcase %} {{ site.time | date: "%-d" }}, {{ site.time | date: "%Y" }}. -->
