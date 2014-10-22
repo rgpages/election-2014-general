@@ -12,3 +12,52 @@
  */
 
 
+.swatches {
+  color: #000;
+  max-width: 650px;
+  margin: 20px auto;
+}
+.swatches .swatches-swatch {
+  font-size: 14px;
+  line-height: 18px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin: 5px 0;
+  padding: 5px;
+}
+.swatches .quaternary {
+  background: #07e7f7;
+}
+.swatches .primary {
+  background: red;
+}
+.swatches .secondary {
+  background: #aee239;
+}
+.swatches .tertiary {
+  background: #ff0;
+}
+
+.marker {
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: normal;
+  letter-spacing: .03em;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 0;
+}
+.marker a {
+  padding: 15px 20px;
+  background: #333;
+  display: inline-block;
+  border: 0;
+  box-shadow: none;
+}
+.marker a, .marker a:visited {
+  color: #ddd;
+}
+.no-touch .marker a:visited:hover, .marker a:focus, .no-touch .marker a:focus:hover, .no-touch .marker a:hover, .marker a:active {
+  color: #fff;
+  background: #000;
+  box-shadow: none;
+}

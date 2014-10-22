@@ -1,5 +1,66 @@
 // Helpers:
 @import "partials/variables";
 
-// Put development-only CSS in this file.
-// ...
+// `:xxx` = pseudo-class & `::xxx` = pseudo-element.
+//
+// @see http://reference.sitepoint.com/css/pseudoclasses
+// @see http://reference.sitepoint.com/css/pseudoelements
+
+.swatches {
+	
+	color: $raven;
+	max-width: 650px;
+	margin: 20px auto;
+	//mix-blend-mode: multiply;
+	
+	.swatches-swatch {
+		font-size: 14px;
+		line-height: 18px;
+		border: 1px solid rgba($raven, .1);
+		margin: 5px 0;
+		padding: 5px;
+	}
+	
+	.quaternary { background: $quaternary; }
+	.primary { background: $primary; }
+	.secondary { background: $secondary; }
+	.tertiary { background: $tertiary; }
+	
+}
+
+.marker {
+	
+	font-size: 18px;
+	line-height: 20px;
+	font-weight: normal;
+	letter-spacing: .03em;
+	margin: {
+		top: 40px;
+		bottom: 40px;
+	}
+	padding: 0;
+	//mix-blend-mode: multiply;
+	
+	a {
+		
+		padding: 15px 20px;
+		background: $gray3;
+		display: inline-block;
+		border: 0;
+		box-shadow: none;
+		
+		&,
+		&:visited { color: $grayd; }
+		.no-touch &:visited:hover,
+		&:focus,
+		.no-touch &:focus:hover,
+		.no-touch &:hover,
+		&:active {
+			color: $milk;
+			background: $raven;
+			box-shadow: none;
+		}
+		
+	}
+	
+}

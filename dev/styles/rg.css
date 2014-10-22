@@ -1528,20 +1528,20 @@ body {
 }
 
 a, a:visited {
-  color: #0083ca;
+  color: red;
   text-decoration: none;
 }
 .no-touch a:visited:hover, a:focus, .no-touch a:focus:hover, .no-touch a:hover, a:active {
-  color: #64c9ff;
+  color: #ff9999;
 }
 
 ::-moz-selection {
-  background: rgba(0, 131, 202, 0.55);
+  background: rgba(255, 0, 0, 0.55);
   text-shadow: none;
 }
 
 ::selection {
-  background: rgba(0, 131, 202, 0.55);
+  background: rgba(255, 0, 0, 0.55);
   text-shadow: none;
 }
 
@@ -1705,9 +1705,6 @@ footer[role="contentinfo"] {
   margin: 10px 0 0;
   text-align: center;
 }
-.js footer[role="contentinfo"] {
-  display: none;
-}
 footer[role="contentinfo"] p {
   font: 11px/24px Arial, sans-serif;
   text-transform: uppercase;
@@ -1780,4 +1777,379 @@ aside[role="complementary"] p {
 }
 aside[role="complementary"] #control {
   margin-bottom: 20px;
+}
+
+.table {
+  font-size: 14px;
+  line-height: 16px;
+  empty-cells: hide;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  width: 100%;
+}
+.table caption {
+  font-weight: bold;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: #999;
+  border-bottom: 1px solid #999;
+  padding-bottom: 5px;
+  margin: 0;
+}
+.table thead {
+  vertical-align: bottom;
+}
+.table tbody,
+.table tfoot {
+  vertical-align: top;
+}
+.table th,
+.table td {
+  padding: 20px 10px;
+}
+.table th:first-child,
+.table td:first-child {
+  padding-left: 0;
+}
+.table th:last-child,
+.table td:last-child {
+  padding-right: 0;
+}
+.table.table-border-x {
+  /*
+  & th:empty,
+  & td:empty { border-bottom: 0; }
+  */
+}
+.table.table-border-x thead th,
+.table.table-border-x tbody th,
+.table.table-border-x tbody td {
+  border-bottom: 1px solid #999;
+}
+.table.table-border-x tfoot th,
+.table.table-border-x tfoot td {
+  border-top: 1px solid #999;
+}
+.table.table-border-x tbody tr:last-child th,
+.table.table-border-x tbody tr:last-child td {
+  border-bottom: 0;
+}
+.table.table-border-y th,
+.table.table-border-y td {
+  border-right: 1px solid #999;
+  border-left: 1px solid #999;
+}
+.table.table-border-y th:first-child,
+.table.table-border-y td:first-child {
+  border-left: 0;
+}
+.table.table-border-y th:last-child,
+.table.table-border-y td:last-child {
+  border-right: 0;
+}
+
+/**
+ * Simple button class.
+ *
+ * I wasn't able to normalize line-height of `<input type="buton">` in Firefox.
+ * Conclusion: Don't use `<input>` for buttons.
+ *
+ * @see https://github.com/yui/pure
+ */
+.button, .form button,
+.form input[type="button"],
+.form input[type="reset"],
+.form input[type="submit"] {
+  font-weight: normal;
+  text-align: center;
+  line-height: normal;
+  vertical-align: baseline;
+  display: block;
+  zoom: 1;
+  cursor: pointer;
+  letter-spacing: .08em;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-size: 18px;
+  line-height: 20px;
+  color: #749e17;
+  width: 100%;
+  background-color: #aee239;
+  border: none transparent;
+  box-shadow: none;
+  border-radius: 3px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px 5px;
+  -webkit-tap-highlight-color: transparent;
+}
+.button::-moz-focus-inner, .form button::-moz-focus-inner,
+.form input[type="button"]::-moz-focus-inner,
+.form input[type="reset"]::-moz-focus-inner,
+.form input[type="submit"]::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+.button, .form button,
+.form input[type="button"],
+.form input[type="reset"],
+.form input[type="submit"], .button:visited, .form button:visited,
+.form input[type="button"]:visited,
+.form input[type="reset"]:visited,
+.form input[type="submit"]:visited, .no-touch .button:visited:hover, .no-touch .form button:visited:hover, .form .no-touch button:visited:hover,
+.no-touch .form input[type="button"]:visited:hover,
+.form .no-touch input[type="button"]:visited:hover,
+.no-touch .form input[type="reset"]:visited:hover,
+.form .no-touch input[type="reset"]:visited:hover,
+.no-touch .form input[type="submit"]:visited:hover,
+.form .no-touch input[type="submit"]:visited:hover, .button:focus, .form button:focus,
+.form input[type="button"]:focus,
+.form input[type="reset"]:focus,
+.form input[type="submit"]:focus, .no-touch .button:focus:hover, .no-touch .form button:focus:hover, .form .no-touch button:focus:hover,
+.no-touch .form input[type="button"]:focus:hover,
+.form .no-touch input[type="button"]:focus:hover,
+.no-touch .form input[type="reset"]:focus:hover,
+.form .no-touch input[type="reset"]:focus:hover,
+.no-touch .form input[type="submit"]:focus:hover,
+.form .no-touch input[type="submit"]:focus:hover, .no-touch .button:hover, .no-touch .form button:hover, .form .no-touch button:hover,
+.no-touch .form input[type="button"]:hover,
+.form .no-touch input[type="button"]:hover,
+.no-touch .form input[type="reset"]:hover,
+.form .no-touch input[type="reset"]:hover,
+.no-touch .form input[type="submit"]:hover,
+.form .no-touch input[type="submit"]:hover, .button:active, .form button:active,
+.form input[type="button"]:active,
+.form input[type="reset"]:active,
+.form input[type="submit"]:active {
+  text-decoration: none;
+  color: #435b0d;
+  box-shadow: none;
+}
+.no-touch .button:hover, .no-touch .form button:hover, .form .no-touch button:hover,
+.no-touch .form input[type="button"]:hover,
+.form .no-touch input[type="button"]:hover,
+.no-touch .form input[type="reset"]:hover,
+.form .no-touch input[type="reset"]:hover,
+.no-touch .form input[type="submit"]:hover,
+.form .no-touch input[type="submit"]:hover, .button:focus, .form button:focus,
+.form input[type="button"]:focus,
+.form input[type="reset"]:focus,
+.form input[type="submit"]:focus {
+  background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.1));
+}
+.button:focus, .form button:focus,
+.form input[type="button"]:focus,
+.form input[type="reset"]:focus,
+.form input[type="submit"]:focus {
+  outline: 0;
+}
+.button:active, .form button:active,
+.form input[type="button"]:active,
+.form input[type="reset"]:active,
+.form input[type="submit"]:active {
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.15) inset, 0 0 10px rgba(0, 0, 0, 0.25) inset;
+}
+.button[disabled], .form button[disabled],
+.form input[disabled][type="button"],
+.form input[disabled][type="reset"],
+.form input[disabled][type="submit"], .button.button-disabled, .form button.button-disabled,
+.form input.button-disabled[type="button"],
+.form input.button-disabled[type="reset"],
+.form input.button-disabled[type="submit"], .button.button-disabled:visited, .form button.button-disabled:visited,
+.form input.button-disabled[type="button"]:visited,
+.form input.button-disabled[type="reset"]:visited,
+.form input.button-disabled[type="submit"]:visited, .no-touch .button.button-disabled:visited:hover, .no-touch .form button.button-disabled:visited:hover, .form .no-touch button.button-disabled:visited:hover,
+.no-touch .form input.button-disabled[type="button"]:visited:hover,
+.form .no-touch input.button-disabled[type="button"]:visited:hover,
+.no-touch .form input.button-disabled[type="reset"]:visited:hover,
+.form .no-touch input.button-disabled[type="reset"]:visited:hover,
+.no-touch .form input.button-disabled[type="submit"]:visited:hover,
+.form .no-touch input.button-disabled[type="submit"]:visited:hover, .button.button-disabled:focus, .form button.button-disabled:focus,
+.form input.button-disabled[type="button"]:focus,
+.form input.button-disabled[type="reset"]:focus,
+.form input.button-disabled[type="submit"]:focus, .no-touch .button.button-disabled:focus:hover, .no-touch .form button.button-disabled:focus:hover, .form .no-touch button.button-disabled:focus:hover,
+.no-touch .form input.button-disabled[type="button"]:focus:hover,
+.form .no-touch input.button-disabled[type="button"]:focus:hover,
+.no-touch .form input.button-disabled[type="reset"]:focus:hover,
+.form .no-touch input.button-disabled[type="reset"]:focus:hover,
+.no-touch .form input.button-disabled[type="submit"]:focus:hover,
+.form .no-touch input.button-disabled[type="submit"]:focus:hover, .no-touch .button.button-disabled:hover, .no-touch .form button.button-disabled:hover, .form .no-touch button.button-disabled:hover,
+.no-touch .form input.button-disabled[type="button"]:hover,
+.form .no-touch input.button-disabled[type="button"]:hover,
+.no-touch .form input.button-disabled[type="reset"]:hover,
+.form .no-touch input.button-disabled[type="reset"]:hover,
+.no-touch .form input.button-disabled[type="submit"]:hover,
+.form .no-touch input.button-disabled[type="submit"]:hover, .button.button-disabled:active, .form button.button-disabled:active,
+.form input.button-disabled[type="button"]:active,
+.form input.button-disabled[type="reset"]:active,
+.form input.button-disabled[type="submit"]:active {
+  border: none;
+  background-image: none;
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  filter: alpha(opacity=40);
+  -khtml-opacity: .40;
+  -moz-opacity: .40;
+  opacity: .40;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+.button.button-hidden, .form button.button-hidden,
+.form input.button-hidden[type="button"],
+.form input.button-hidden[type="reset"],
+.form input.button-hidden[type="submit"] {
+  display: none;
+}
+
+.form {
+  font-family: arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0;
+}
+.form fieldset {
+  border: 0;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  padding: 1px 0 0;
+}
+.form fieldset legend {
+  margin: 0;
+  padding-bottom: 20px;
+}
+.form fieldset legend:empty {
+  display: none;
+}
+.form label {
+  color: #666;
+  letter-spacing: .05em;
+  vertical-align: middle;
+  padding: 5px;
+}
+.form input[type="text"], .form input[type="password"], .form textarea {
+  vertical-align: baseline;
+  padding: 5px 10px;
+  color: #333;
+  letter-spacing: .05em;
+  text-align: left;
+  border: 1px solid #ccc;
+  background: #fbfbfb;
+  width: 100%;
+  display: block;
+  box-shadow: inset 0 1px 3px #ccc;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0;
+  -webkit-transition: .3s linear border;
+  transition: .3s linear border;
+  -webkit-background-clip: padding;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+}
+.form input[type="text"]::-webkit-input-placeholder, .form input[type="password"]::-webkit-input-placeholder, .form textarea::-webkit-input-placeholder {
+  text-align: left;
+  color: #999;
+}
+.form input[type="text"]:-moz-placeholder, .form input[type="password"]:-moz-placeholder, .form textarea:-moz-placeholder {
+  text-align: left;
+  color: #999;
+}
+.form input[type="text"]::-moz-placeholder, .form input[type="password"]::-moz-placeholder, .form textarea::-moz-placeholder {
+  text-align: left;
+  color: #999;
+}
+.form input[type="text"]:-ms-input-placeholder, .form input[type="password"]:-ms-input-placeholder, .form textarea:-ms-input-placeholder {
+  text-align: left;
+  color: #999;
+}
+.form input[type="text"]:focus, .form input[type="password"]:focus, .form textarea:focus, .form input[type="text"]:active, .form input[type="password"]:active, .form textarea:active {
+  outline: 0;
+}
+.form input[type="text"]:focus, .form input[type="password"]:focus, .form textarea:focus {
+  border-color: red;
+}
+.form input[disabled][type="text"], .form input[disabled][type="password"], .form textarea[disabled] {
+  cursor: not-allowed;
+  background: #eee;
+  color: #ccc;
+}
+.form input[readonly][type="text"], .form input[readonly][type="password"], .form textarea[readonly] {
+  background: #eee;
+  color: #777;
+  border-color: #ccc;
+}
+.form textarea {
+  min-height: 200px;
+  resize: vertical;
+  overflow: auto;
+  margin: 0;
+  padding: 5px 10px;
+  vertical-align: top;
+}
+.form input[type="checkbox"],
+.form input[type="radio"] {
+  padding: 0;
+  vertical-align: middle;
+  bottom: 2px;
+  position: relative;
+}
+.form select {
+  font-size: 16px;
+  vertical-align: baseline;
+  width: 100%;
+}
+
+.callout {
+  color: #333;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.callout.callout-box {
+  background-color: #ddd;
+  padding: 10px 20px;
+  border-radius: 6px;
+}
+.callout.callout-box.callout-info {
+  background-color: #bde5f8;
+}
+.callout.callout-box.callout-success {
+  background-color: #dff2bf;
+}
+.callout.callout-box.callout-warning {
+  background-color: #feefb3;
+}
+.callout.callout-box.callout-error {
+  background-color: #ffbaba;
+}
+.callout.callout-info {
+  color: #0d5476;
+}
+.callout.callout-info a, .callout.callout-info a:visited, .no-touch .callout.callout-info a:visited:hover, .callout.callout-info a:focus, .no-touch .callout.callout-info a:focus:hover, .no-touch .callout.callout-info a:hover, .callout.callout-info a:active {
+  color: #0d5476;
+}
+.callout.callout-success {
+  color: #4a6a15;
+}
+.callout.callout-success a, .callout.callout-success a:visited, .no-touch .callout.callout-success a:visited:hover, .callout.callout-success a:focus, .no-touch .callout.callout-success a:focus:hover, .no-touch .callout.callout-success a:hover, .callout.callout-success a:active {
+  color: #4a6a15;
+}
+.callout.callout-warning {
+  color: #7d6502;
+}
+.callout.callout-warning a, .callout.callout-warning a:visited, .no-touch .callout.callout-warning a:visited:hover, .callout.callout-warning a:focus, .no-touch .callout.callout-warning a:focus:hover, .no-touch .callout.callout-warning a:hover, .callout.callout-warning a:active {
+  color: #7d6502;
+}
+.callout.callout-error {
+  color: #870000;
+}
+.callout.callout-error a, .callout.callout-error a:visited, .no-touch .callout.callout-error a:visited:hover, .callout.callout-error a:focus, .no-touch .callout.callout-error a:focus:hover, .no-touch .callout.callout-error a:hover, .callout.callout-error a:active {
+  color: #870000;
 }
