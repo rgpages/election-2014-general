@@ -8,7 +8,7 @@
  * @copyright Copyright (c) 2014 Micky Hulse.
  * @license Released under the Copyright © The Register-Guard 2014. All rights reserved..
  * @version 0.1.1
- * @date 2014/10/21
+ * @date 2014/10/22
  */
 
 
@@ -17,24 +17,24 @@
   max-width: 650px;
   margin: 20px auto;
 }
-.swatches .swatches-swatch {
+.swatches .swatch {
   font-size: 14px;
   line-height: 18px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   margin: 5px 0;
   padding: 5px;
 }
-.swatches .quaternary {
-  background: #07e7f7;
+.swatches .swatch-1 {
+  background: #00a0b0;
 }
-.swatches .primary {
-  background: red;
-}
-.swatches .secondary {
+.swatches .swatch-2 {
   background: #aee239;
 }
-.swatches .tertiary {
+.swatches .swatch-3 {
   background: #ff0;
+}
+.swatches .swatch-4 {
+  background: #07e7f7;
 }
 
 .marker {

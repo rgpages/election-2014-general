@@ -31,9 +31,9 @@
 	
 	font-size: 18px;
 	line-height: 20px;
-	color: darken($secondary, 20%);
+	color: darken($color2, 20%);
 	width: 100%;
-	background-color: $secondary;
+	background-color: $color2;
 	border: none rgba($raven, 0);
 	box-shadow: none;
 	border-radius: 3px;
@@ -52,7 +52,7 @@
 	.no-touch &:hover,
 	&:active {
 		text-decoration: none;
-		color: darken($secondary, 35%);
+		color: darken($color2, 35%);
 		box-shadow: none;
 	}
 	
