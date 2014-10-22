@@ -1,3 +1,12 @@
+section,
+article,
+aside {
+	
+	> :first-child { margin-top: 0 !important; }
+	> :last-child { margin-bottom: 0 !important; }
+	
+}
+
 #container {
 	
 	width: 1600px;
@@ -21,6 +30,27 @@
 			width: 320px;
 			margin-top: 50px;
 		}
+	}
+	
+}
+
+.pure-g {
+	
+	[class*="pure-u"] {
+		font-family: $sans; // http://purecss.io/grids/#using-grids-with-custom-fonts
+		padding: 10px 0;
+	}
+	
+	:first-child { padding-top: 0; }
+	:last-child { padding-bottom: 0; }
+	
+	@media all and (min-width: 960px) {
+		
+		[class*="pure-u"] { padding: 0 20px; }
+		
+		:first-child { padding-left: 0; }
+		:last-child { padding-right: 0; }
+		
 	}
 	
 }

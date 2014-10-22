@@ -9,11 +9,21 @@
         "partials/grids-responsive";
 
 // Core:
-@import "partials/utilities",
+@import "partials/utility",
         "partials/base",
+        "partials/headings",
+        "partials/list",
+        "partials/table",
+        "partials/form",
+        "partials/code",
+        "partials/media",
+        "partials/button",
         "partials/layout",
-        "partials/type",
-        "partials/media";
+        "partials/body",
+        "partials/callout";
+
+// External:
+@import "partials/harmonia";
 
 // To be sorted:
 @import "partials/pending";

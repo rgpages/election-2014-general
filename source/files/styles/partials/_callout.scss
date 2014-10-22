@@ -1,0 +1,94 @@
+.callout {
+	
+	color: $gray3;
+	margin: {
+		top: 25px;
+		bottom: 25px;
+	}
+	
+	&.callout-box {
+		
+		background-color: $grayd;
+		padding: 10px 20px;
+		border-radius: 6px;
+		
+		&.callout-info { background-color: $ice; }
+		&.callout-success { background-color: $frog; }
+		&.callout-warning { background-color: $duck; }
+		&.callout-error { background-color: $chili; }
+		
+	}
+	
+	&.callout-info {
+		
+		color: darken($ice, 60%);
+		
+		a {
+			
+			&,
+			&:visited,
+			.no-touch &:visited:hover,
+			&:focus,
+			.no-touch &:focus:hover,
+			.no-touch &:hover,
+			&:active { color: darken($ice, 60%); }
+			
+		}
+		
+	}
+	
+	&.callout-success {
+		
+		color: darken($frog, 60%);
+		
+		a {
+			
+			&,
+			&:visited,
+			.no-touch &:visited:hover,
+			&:focus,
+			.no-touch &:focus:hover,
+			.no-touch &:hover,
+			&:active { color: darken($frog, 60%); }
+			
+		}
+		
+	}
+	
+	&.callout-warning {
+		
+		color: darken($duck, 60%);
+		
+		a {
+			
+			&,
+			&:visited,
+			.no-touch &:visited:hover,
+			&:focus,
+			.no-touch &:focus:hover,
+			.no-touch &:hover,
+			&:active { color: darken($duck, 60%); }
+			
+		}
+		
+	}
+	
+	&.callout-error {
+		
+		color: darken($chili, 60%);
+		
+		a {
+			
+			&,
+			&:visited,
+			.no-touch &:visited:hover,
+			&:focus,
+			.no-touch &:focus:hover,
+			.no-touch &:hover,
+			&:active { color: darken($chili, 60%); }
+			
+		}
+		
+	}
+	
+}

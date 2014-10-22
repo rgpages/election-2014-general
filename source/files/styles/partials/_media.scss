@@ -1,9 +1,79 @@
 figure {
 	
-	margin: 25px 0;
-	padding: 0;
+	margin: 0 {
+		top: 25px;
+		bottom: 25px;
+	}
 	
-	figcaption { margin-top: 10px; }
+	img {
+		margin: 0 auto;
+		display: block;
+		vertical-align: top;
+	}
+	
+}
+
+figcaption {
+	
+	font-size: 12px;
+	line-height: 16px;
+	text-transform: uppercase;
+	letter-spacing: .05em;
+	word-spacing: .15em;
+	
+	p {
+		
+		font-size: inherit;
+		line-height: inherit;
+		margin: 5px 0;
+		
+		&:first-of-type { margin-top: 0 !important; }
+		&:last-of-type { margin-bottom: 0 !important; }
+		
+	}
+	
+	a {
+		
+		//font-weight: bold;
+		
+		// &,
+		// &:visited { text-decoration: none; }
+		// .no-touch &:visited:hover,
+		// &:focus,
+		// .no-touch &:focus:hover,
+		// .no-touch &:hover,
+		// &:active {
+		// 	color: $raven;
+		// 	text-decoration: underline;
+		// }
+		
+	}
+	
+	> div {
+		
+		background: $grayd;
+		margin-top: 13px;
+		padding: 15px 20px;
+		display: inline-block;
+		border-radius: 6px;
+		
+		// Caption triangle:
+		position: relative;
+		&::after {
+			content: "";
+			border-width: 0 10px 10px;
+			border-style: solid;
+			border-color: $grayd transparent;
+			// http://www.yuiblog.com/blog/2010/11/22/css-quick-tip-css-arrows-and-shapes-without-markup/
+			width: 0;
+			margin-left: -10px;
+			position: absolute;
+			top: -9px;
+			left: 50%;
+			-webkit-transform: rotate(360deg);
+		}
+		
+	}
 	
 }
 
@@ -43,7 +113,10 @@ video {
 
 audio {
 	width: 100%;
-	margin: 20px 0;
+	margin: {
+		top: 20px;
+		bottom: 20px;
+	}
 }
 
 .mm {
@@ -52,7 +125,6 @@ audio {
 	padding-bottom: 56.25%; // 16:9 = (9 / 16 = .5625) x 100
 	position: relative;
 	overflow: hidden;
-	margin: 10px 0;
 	
 	iframe,
 	object,
@@ -74,3 +146,6 @@ audio {
 	&.tv { padding-bottom: 75%; } // 4:3 = (3 / 4 = .75) x 100
 	
 }
+
+iframe[id^='twitter-widget-'],
+.twitter-timeline { width: 100%; }
