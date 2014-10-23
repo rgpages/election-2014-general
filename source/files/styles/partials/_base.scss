@@ -28,13 +28,22 @@ html {
 }
 
 body {
+	
 	font-size: 14px;
 	line-height: 20px;
 	font-family: $font1;
 	color: $raven;
 	background: $milk;
 	min-height: 100%;
+	padding: 20px;
 	text-rendering: optimizeLegibility;
+	
+	@media all and (min-width: 640px) { // IBID.
+		
+		& { padding: 50px; }
+		
+	}
+	
 }
 
 p {
@@ -48,17 +57,17 @@ p {
 
 a {
 	
-	box-shadow: inset 0 -4px 0 $color1;
+	// box-shadow: inset 0 -4px 0 $color1;
 	
-	-webkit-transition: box-shadow 100ms linear;
-	   -moz-transition: box-shadow 100ms linear;
-	    -ms-transition: box-shadow 100ms linear;
-	     -o-transition: box-shadow 100ms linear;
-	        transition: box-shadow 100ms linear;
+	// -webkit-transition: box-shadow 100ms linear;
+	//    -moz-transition: box-shadow 100ms linear;
+	//     -ms-transition: box-shadow 100ms linear;
+	//      -o-transition: box-shadow 100ms linear;
+	//         transition: box-shadow 100ms linear;
 	
 	&,
 	&:visited {
-		color: $raven;
+		color: $color1;
 		text-decoration: none;
 	}
 	.no-touch &:visited:hover,
@@ -66,8 +75,8 @@ a {
 	.no-touch &:focus:hover,
 	.no-touch &:hover,
 	&:active {
-		color: $color1;
-		box-shadow: none;
+		color: saturate(lighten($color1, 20%), 20%);
+		//box-shadow: none;
 	}
 	
 }
@@ -119,8 +128,8 @@ blockquote {
 	letter-spacing: .05em;
 	word-spacing: .15em;
 	margin: {
-		top: 25px;
-		bottom: 25px;
+		top: 50px;
+		bottom: 50px;
 	}
 	padding: 0;
 	position: relative;
@@ -149,6 +158,25 @@ blockquote {
 	
 	> :first-child { margin-top: 0 !important; }
 	> :last-child { margin-bottom: 0 !important; }
+	
+	&::before,
+	&::after {
+		font-size: 60px;
+		font-family: FontAwesome;
+		color: rgba($raven, .1);
+		line-height: 1;
+		position: absolute;
+	}
+	
+	&::before {
+		top: -25px; // Half `blockquote` vertical margin.
+		left: -40px; // Same as the `blockquote` horizontal margin.
+		content: "\f10d";
+	}
+	
+	// &::after {
+	// 	content: "\f10e";
+	// }
 	
 }
 

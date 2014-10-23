@@ -1,13 +1,6 @@
-ul, ol, dl { padding: 0; }
+ul, ol, dl { margin: 25px 0; }
 
-ul, ol { list-style: none; }
-
-dl, ol, ul {
-	margin: {
-		top: 25px;
-		bottom: 25px;
-	}
-}
+ul, ol { padding: 0 0 0 40px; }
 
 dl {
 	
@@ -23,6 +16,7 @@ dl {
 	dd {
 		line-height: 18px;
 		margin: 0 0 10px;
+		padding: 0 0 0 10px;
 	}
 	
 	> :first-child { margin-top: 0 !important; }
@@ -30,43 +24,105 @@ dl {
 	
 }
 
-// http://www.456bereastreet.com/archive/201105/styling_ordered_list_numbers/
-// http://css-tricks.com/numbering-in-style/
-ol,
-ul {
+%arrow {
+	font-family: FontAwesome;
+	line-height: 0;
+	position: relative;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: inherit;
+	//display: inline-block;
+}
+
+.pager {
 	
-	counter-reset: li;
+	color: $gray8;
+	width: auto;
+	margin: 20px auto;
+	padding: 0;
+	display: inline-block;
 	
-	li {
+	> {
 		
-		line-height: 18px;
-		
-		&::before {
-			font-weight: bold;
-			margin: {
-				top: 10px;
-				bottom: 4px;
+		li {
+			
+			font-size: 12px;
+			line-height: 1;
+			margin: 0;
+			padding: 0;
+			display: inline-block;
+			
+			a,
+			span {
+				text-transform: uppercase;
+				letter-spacing: .05em;
+				white-space: nowrap;
+				background: $graye;
+				width: 100%;
+				height: 100%;
+				padding: 1em 1.5em;
+				display: block;
 			}
-			display: block;
-			content: counter(li, lower-roman);
-			counter-increment: li;
+			
+			.pager-current {
+				color: $raven;
+				font-weight: bold;
+				background: $grayc;
+			}
+			
+			&:first-child {
+				
+				a,
+				span { border-radius: 3px 0 0 3px; }
+				
+				a::before {
+					@extend %arrow;
+					content: "\f177\00a0";
+				}
+				
+			}
+			
+			&:last-child {
+				
+				a,
+				span { border-radius: 0 3px 3px 0; }
+				
+				a::after {
+					@extend %arrow;
+					content: "\00a0\f178";
+				}
+				
+			}
+			
 		}
-		
-		&:first-child::before { margin-top: 0; }
 		
 	}
 	
-}
-
-ul {
-	
-	li {
+	a {
 		
-		&::before {
-			content: counter(li, square);
-			margin-bottom: 2px;
+		&,
+		&:visited { color: $gray3; }
+		.no-touch &:visited:hover,
+		&:focus,
+		.no-touch &:focus:hover,
+		.no-touch &:hover {
+			color: $graye;
+			text-decoration: none;
+			background: $gray3;
 		}
 		
+		&:focus,
+		&:active { outline: 0; }
+		
+		-webkit-transition: background 200ms linear, color 750ms linear;
+				transition: background 200ms linear, color 750ms linear;
+		
+	}
+	
+	// https://github.com/mhulse/picard/issues/133#issuecomment-31626386
+	.fa {
+		line-height: 0;
+		position: relative;
 	}
 	
 }

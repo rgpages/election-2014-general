@@ -265,6 +265,7 @@ module.exports = function(grunt) {
 						'./files/scripts/<%= pkg.name %>.js',
 						'./files/scripts/<%= pkg.name %>.mod.*.js',
 						'./files/scripts/<%= pkg.name %>.init.js',
+						'./files/scripts/pending.js', // Bypass jshint, for quick and dirty JS tests.
 					],
 					
 				},
@@ -286,7 +287,7 @@ module.exports = function(grunt) {
 			
 			responsive: {
 				
-				dest : './files/styles/partials/_grids-responsive.scss',
+				dest : './files/styles/partials/_grid-r.scss',
 				
 				options : {
 					
@@ -461,8 +462,8 @@ module.exports = function(grunt) {
 						expand : true,
 						cwd : './files/',
 						src : [
-							'images/**/*',
-							'pages/**/*',
+							'images/**/*.{gif,png}',
+							'media/**/*',
 							'scripts/**/*',
 						],
 						dest : '../dev/',
@@ -482,7 +483,8 @@ module.exports = function(grunt) {
 						expand : true,
 						cwd : './files/',
 						src : [
-							'images/**/*',
+							'images/**/*.{gif,png}',
+							'media/**/*',
 						],
 						dest : '../prod/<%= pkg.version %>/<%= now %>/<%= ver %>/',
 						

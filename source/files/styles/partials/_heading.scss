@@ -15,6 +15,21 @@ h1, h2, h3, h4, h5, h6 {
 		margin-top: -20px;
 	}
 	
+	a {
+		
+		&,
+		&:visited { color: $color2; }
+		.no-touch &:visited:hover,
+		&:focus,
+		.no-touch &:focus:hover,
+		.no-touch &:hover,
+		&:active {
+			color: saturate(lighten($color2, 20%), 20%);
+			text-decoration: none;
+		}
+		
+	}
+	
 }
 
 .sh1, .sh2, .sh3, .sh4, .sh5, .sh6 { font-weight: normal; }

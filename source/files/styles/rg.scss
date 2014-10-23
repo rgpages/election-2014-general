@@ -1,17 +1,17 @@
 // Helpers:
-@import "partials/variables";
+@import "partials/variable";
 
 // Normalization:
 @import "partials/normalize";
 
 // Grids:
-@import "partials/grids",
-        "partials/grids-responsive";
+@import "partials/grid",
+        "partials/grid-r";
 
 // Core:
 @import "partials/utility",
         "partials/base",
-        "partials/headings",
+        "partials/heading",
         "partials/list",
         "partials/table",
         "partials/form",
@@ -19,11 +19,10 @@
         "partials/media",
         "partials/button",
         "partials/layout",
+        "partials/navigation",
+        "partials/flag",
         "partials/body",
-        "partials/callout";
-
-// External:
-@import "partials/harmonia";
+        "partials/box";
 
 // To be sorted:
 @import "partials/pending";

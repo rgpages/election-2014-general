@@ -41,8 +41,6 @@ footer[role="contentinfo"] {
 
 aside[role="complementary"] {
 	
-	margin: 0 10px 10px;
-	
 	h5 {
 		color: $gray3;
 		letter-spacing: .05em;
@@ -52,6 +50,6 @@ aside[role="complementary"] {
 	
 	p { margin: 0; }
 	
-	#control { margin-bottom: 20px; }
-	
 }
+
+.js #disqus { display: none; }
