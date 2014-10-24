@@ -8,7 +8,7 @@
  * @copyright Copyright (c) 2014 Micky Hulse.
  * @license Released under the Copyright © The Register-Guard 2014. All rights reserved..
  * @version 0.1.1
- * @date 2014/10/22
+ * @date 2014/10/24
  */
 
 
@@ -60,4 +60,27 @@
   color: #fff;
   background: #000;
   box-shadow: none;
+}
+
+.fake {
+  height: 500px;
+  background: #eee;
+  border: 1px solid #ddd;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+.fake p {
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  color: #666;
+  letter-spacing: .05em;
+  font-size: 18px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }

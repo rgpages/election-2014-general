@@ -53,3 +53,54 @@ aside[role="complementary"] {
 }
 
 .js #disqus { display: none; }
+
+// http://callmenick.com/2014/09/08/advanced-parallax-scrolling-effect/
+body { padding-top: 0 !important; }
+
+section.module.parallax {
+	background-color: $raven;
+	background-position: 0 0;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top center;
+	position: relative;
+	padding: 350px;
+}
+section.module.parallax-1 { background-image: url(https://dl.dropboxusercontent.com/u/1277106/20141021-Oregon_Primary_Election_Sen.3.jpg); }
+section.module h3 {
+	
+	font-size: 28px;
+	line-height: 55px; // Eyeballed this. Would prefer `30px` if Firefox `mix-blend-mode` bug gets fixed (see below).
+	font-weight: normal;
+	letter-spacing: .05em;
+	color: $raven;
+	margin: 0;
+	cursor: pointer;
+	cursor: hand;
+	position: absolute;
+	left: 50px;
+	bottom: 50px;
+	
+	> a {
+		
+		// https://github.com/mhulse/data/issues/18
+		padding: 10px;
+		background: rgba($raven, .75);
+		-webkit-box-decoration-break: clone;
+		   -moz-box-decoration-break: clone;
+		    -ms-box-decoration-break: clone;
+		     -o-box-decoration-break: clone;
+		        box-decoration-break: clone;
+		
+		> span { position: relative; } // This fixes overlap if no `mix-blend-mode`.
+		
+	}
+	
+	// Removes annoying Webkit outline:
+	&:active,
+	&:focus { outline: 0; }
+	
+}

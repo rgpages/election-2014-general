@@ -7,9 +7,21 @@ aside {
 	
 }
 
-#container {
+.container {
+	//border: 1px solid red;
 	max-width: 1600px;
-	margin: 50px auto;
+	margin: 20px auto;
+	padding: 0 20px;
+	
+	@media all and (min-width: 640px) { // IBID.
+		
+		& {
+			margin: 50px auto;
+			padding: 0 50px;
+		}
+		
+	}
+	
 }
 
 .pure-g {
@@ -39,8 +51,11 @@ aside {
 #header {
 	
 	text-align: center;
-	margin-bottom: 50px;
+	xmargin-top: 50px;
 	position: relative;
+	border-bottom: 5px solid $grayd;
+	padding: 50px 0;
+	background: $graye;
 	
 	*zoom: 1;
 	&::before,
@@ -55,7 +70,7 @@ aside {
 		& {
 			
 			text-align: left;
-			margin-bottom: 100px;
+			xmargin-bottom: 100px;
 		
 			h1 {
 				position: absolute;

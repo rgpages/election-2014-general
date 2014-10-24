@@ -8,7 +8,7 @@
  * @copyright Copyright (c) 2014 Micky Hulse.
  * @license Released under the Copyright © The Register-Guard 2014. All rights reserved..
  * @version 0.1.1
- * @date 2014/10/22
+ * @date 2014/10/24
  */
 
 
@@ -1589,13 +1589,7 @@ body {
   color: #000;
   background: #fff;
   min-height: 100%;
-  padding: 20px;
   text-rendering: optimizeLegibility;
-}
-@media all and (min-width: 640px) {
-  body {
-    padding: 50px;
-  }
 }
 
 p.excerpt {
@@ -2799,9 +2793,16 @@ aside > :last-child {
   margin-bottom: 0 !important;
 }
 
-#container {
+.container {
   max-width: 1600px;
-  margin: 50px auto;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+@media all and (min-width: 640px) {
+  .container {
+    margin: 50px auto;
+    padding: 0 50px;
+  }
 }
 
 .pure-g [class*="pure-u"] {
@@ -2830,8 +2831,11 @@ aside > :last-child {
 
 #header {
   text-align: center;
-  margin-bottom: 50px;
+  xmargin-top: 50px;
   position: relative;
+  border-bottom: 5px solid #ddd;
+  padding: 50px 0;
+  background: #eee;
   *zoom: 1;
 }
 #header::before, #header::after {
@@ -2844,7 +2848,7 @@ aside > :last-child {
 @media all and (min-width: 960px) {
   #header {
     text-align: left;
-    margin-bottom: 100px;
+    xmargin-bottom: 100px;
   }
   #header h1 {
     position: absolute;
@@ -3198,4 +3202,54 @@ aside[role="complementary"] p {
 
 .js #disqus {
   display: none;
+}
+
+body {
+  padding-top: 0 !important;
+}
+
+section.module.parallax {
+  background-color: #000;
+  background-position: 0 0;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  position: relative;
+  padding: 350px;
+}
+
+section.module.parallax-1 {
+  background-image: url(https://dl.dropboxusercontent.com/u/1277106/20141021-Oregon_Primary_Election_Sen.3.jpg);
+}
+
+section.module h3 {
+  font-size: 28px;
+  line-height: 55px;
+  font-weight: normal;
+  letter-spacing: .05em;
+  color: #000;
+  margin: 0;
+  cursor: pointer;
+  cursor: hand;
+  position: absolute;
+  left: 50px;
+  bottom: 50px;
+}
+section.module h3 > a {
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.75);
+  -webkit-box-decoration-break: clone;
+  -moz-box-decoration-break: clone;
+  -ms-box-decoration-break: clone;
+  -o-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+section.module h3 > a > span {
+  position: relative;
+}
+section.module h3:active, section.module h3:focus {
+  outline: 0;
 }
