@@ -6,6 +6,7 @@
     "harmonia": "https://github.com/mhulse/jquery-harmonia.git#v1",
     "imagesloaded": "~3",
     "jquery": "~2",
+    "letteringjs": "~0",
     "moment.twitter": "~0",
     "normalize-css": "~3",
     "pure": "~0"
@@ -21,6 +22,9 @@
     },
     "jquery": {
       "": "dist/jquery.js"
+    },
+    "letteringjs": {
+      "": "jquery.lettering.js"
     }
   }
 }

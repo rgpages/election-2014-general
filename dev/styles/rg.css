@@ -2893,9 +2893,6 @@ nav[role="navigation"] .harmonia {
   visibility: hidden;
 }
 @media all and (min-width: 960px) {
-  nav[role="navigation"] {
-    margin-left: 20%;
-  }
   nav[role="navigation"] .harmonia-select {
     display: none;
     visibility: hidden;
@@ -2907,7 +2904,7 @@ nav[role="navigation"] .harmonia {
 }
 @media all and (min-width: 1280px) {
   nav[role="navigation"] {
-    margin-left: 50%;
+    xmargin-left: 50%;
   }
 }
 
@@ -3190,14 +3187,64 @@ footer[role="contentinfo"] a:active {
   }
 }
 
-aside[role="complementary"] h5 {
-  color: #333;
-  letter-spacing: .05em;
-  font-weight: normal;
-  margin: 0 0 5px;
+aside[role="complementary"] {
+  background: #000;
+  color: #fff;
+  padding: 25px 0;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "kern";
+  -webkit-font-feature-settings: "kern";
+  -moz-font-feature-settings: "kern";
+  -moz-font-feature-settings: "kern=1";
 }
-aside[role="complementary"] p {
-  margin: 0;
+aside[role="complementary"] h1 {
+  letter-spacing: normal;
+  font-size: 150px;
+  line-height: 130px;
+  font-family: "MillerHeadline Bold";
+  font-weight: bold;
+  font-style: normal;
+  margin-top: 0;
+}
+aside[role="complementary"] h1 .char1 {
+  margin-left: 0;
+}
+aside[role="complementary"] h1 .char2 {
+  margin-left: 8px;
+}
+aside[role="complementary"] h1 .char3 {
+  margin-left: -2px;
+}
+aside[role="complementary"] h1 .char4 {
+  margin-left: 1px;
+}
+aside[role="complementary"] h1 .char5 {
+  margin-left: 4px;
+}
+aside[role="complementary"] h1 .char6 {
+  margin-left: 9px;
+}
+aside[role="complementary"] h1 .char7 {
+  margin-left: -4px;
+}
+aside[role="complementary"] h1 .char8 {
+  margin-left: -5px;
+}
+aside[role="complementary"] h1 .char11 {
+  margin-left: 2px;
+}
+aside[role="complementary"] h1 .char12 {
+  margin-left: -8px;
+}
+aside[role="complementary"] h1 .char13 {
+  margin-left: -3px;
+}
+aside[role="complementary"] h2 {
+  font-family: "MillerHeadline Light";
+  font-size: 40px;
+  line-height: 45px;
+  margin-bottom: 0;
+  color: #ccc;
 }
 
 .js #disqus {
@@ -3235,7 +3282,7 @@ section.module h3 {
   cursor: pointer;
   cursor: hand;
   position: absolute;
-  left: 50px;
+  right: 50px;
   bottom: 50px;
 }
 section.module h3 > a {

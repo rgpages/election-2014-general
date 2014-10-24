@@ -41,14 +41,46 @@ footer[role="contentinfo"] {
 
 aside[role="complementary"] {
 	
-	h5 {
-		color: $gray3;
-		letter-spacing: .05em;
-		font-weight: normal;
-		margin: 0 0 5px;
+	background: #000;
+	color: #fff;
+	padding: 25px 0;
+	
+	text-rendering: optimizeLegibility;
+	font-feature-settings: "kern";
+	-webkit-font-feature-settings: "kern";
+	-moz-font-feature-settings: "kern";
+	-moz-font-feature-settings: "kern=1";
+	
+	h1 {
+		letter-spacing: normal;
+		font-size: 150px;
+		line-height: 130px;
+		font-family: "MillerHeadline Bold";
+		font-weight: bold;
+		font-style: normal;
+		margin-top: 0;
+		
+		.char1 { margin-left: 0; }
+		.char2 { margin-left: 8px; }
+		.char3 { margin-left: -2px; }
+		.char4 { margin-left: 1px; }
+		.char5 { margin-left: 4px; }
+		.char6 { margin-left: 9px; }
+		.char7 { margin-left: -4px; }
+		.char8 { margin-left: -5px; }
+		.char11 { margin-left: 2px; }
+		.char12 { margin-left: -8px; }
+		.char13 { margin-left: -3px; }
+		
 	}
 	
-	p { margin: 0; }
+	h2 {
+		font-family: "MillerHeadline Light";
+		font-size: 40px;
+		line-height: 45px;
+		margin-bottom: 0;
+		color: #ccc;
+	}
 	
 }
 
@@ -81,7 +113,7 @@ section.module h3 {
 	cursor: pointer;
 	cursor: hand;
 	position: absolute;
-	left: 50px;
+	right: 50px;
 	bottom: 50px;
 	
 	> a {

@@ -42,7 +42,7 @@ nav[role="navigation"] {
 		
 		& {
 			
-			margin-left: 20%;
+			//margin-left: 20%;
 			
 			.harmonia-select {
 				display: none;
@@ -64,7 +64,7 @@ nav[role="navigation"] {
 	
 	@media all and (min-width: 1280px) {
 		
-		& { margin-left: 50%; }
+		& { xmargin-left: 50%; }
 		
 	}
 	
