@@ -9,6 +9,7 @@
     "letteringjs": "~0",
     "moment.twitter": "~0",
     "normalize-css": "~3",
+    "pollster": "https://github.com/mhulse/jquery-pollster.git#v1",
     "pure": "~0"
   },
   "exportsOverride": {
