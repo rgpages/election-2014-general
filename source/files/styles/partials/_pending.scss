@@ -52,8 +52,9 @@ aside[role="complementary"] {
 	-moz-font-feature-settings: "kern=1";
 	
 	h1 {
+		
 		letter-spacing: normal;
-		font-size: 150px;
+		font-size: 120px;
 		line-height: 130px;
 		font-family: "MillerHeadline Bold";
 		font-weight: bold;
@@ -68,6 +69,8 @@ aside[role="complementary"] {
 		.char6 { margin-left: 9px; }
 		.char7 { margin-left: -4px; }
 		.char8 { margin-left: -5px; }
+		.char9 { margin-left: 0; }
+		.char10 { margin-left: 0; }
 		.char11 { margin-left: 2px; }
 		.char12 { margin-left: -8px; }
 		.char13 { margin-left: -3px; }
@@ -76,7 +79,9 @@ aside[role="complementary"] {
 	
 	h2 {
 		font-family: "MillerHeadline Light";
-		font-size: 40px;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 30px;
 		line-height: 45px;
 		margin-bottom: 0;
 		color: #ccc;
@@ -102,21 +107,21 @@ section.module.parallax {
 	padding: 350px;
 }
 section.module.parallax-1 { background-image: url(https://dl.dropboxusercontent.com/u/1277106/20141021-Oregon_Primary_Election_Sen.3.jpg); }
-section.module h3 {
+section.module p {
 	
-	font-size: 28px;
-	line-height: 55px; // Eyeballed this. Would prefer `30px` if Firefox `mix-blend-mode` bug gets fixed (see below).
+	font-size: 18px;
+	line-height: 44px;
 	font-weight: normal;
-	letter-spacing: .05em;
+	letter-spacing: .1em;
 	color: $raven;
 	margin: 0;
-	cursor: pointer;
-	cursor: hand;
 	position: absolute;
 	right: 50px;
 	bottom: 50px;
+	color: $milk;
+	max-width: 300px;
 	
-	> a {
+	> span {
 		
 		// https://github.com/mhulse/data/issues/18
 		padding: 10px;
@@ -127,7 +132,10 @@ section.module h3 {
 		     -o-box-decoration-break: clone;
 		        box-decoration-break: clone;
 		
-		> span { position: relative; } // This fixes overlap if no `mix-blend-mode`.
+		span {
+			font-size: 65%;
+			color: $gray9;
+		}
 		
 	}
 	
