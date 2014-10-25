@@ -491,13 +491,14 @@ module.exports = function(grunt) {
 					}, {
 						
 						expand: true,
+						flatten: true,
 						cwd: './files/icons/',
 						src: [
-							//'*.{ico,png}',
-							'apple-touch-icon-precomposed.png',
-							'favicon.ico',
+							'*.{png,ico}',
+							'!favicon.png',
 						],
 						dest:'../',
+						filter: 'isFile',
 						
 					}, {
 						
