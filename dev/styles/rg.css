@@ -2316,13 +2316,11 @@ figure img {
 }
 
 figcaption {
-  font-family: Cambria, Georgia, serif;
   font-size: 14px;
   line-height: 18px;
   letter-spacing: .1em;
-  word-spacing: .15em;
-  color: #fff;
-  background: #000;
+  color: #999;
+  background: #222;
   padding: 15px 20px;
   display: block;
 }
