@@ -2684,12 +2684,16 @@ aside > :last-child {
   }
 }
 
-nav[role="navigation"] ul {
-  background: #333;
-  text-align: center;
-  border-width: 0 0 5px;
+nav[role="navigation"] {
+  background: #000;
+  border-width: 5px 0;
   border-style: solid;
-  border-color: #111;
+  border-color: #000;
+}
+nav[role="navigation"] ul {
+  background: #222;
+  background-image: linear-gradient(to bottom, #222 0, #333 100%);
+  text-align: center;
 }
 nav[role="navigation"] ul,
 nav[role="navigation"] ul li {
@@ -2697,12 +2701,12 @@ nav[role="navigation"] ul li {
   padding: 0;
 }
 nav[role="navigation"] ul li {
-  font-size: 18px;
-  line-height: 20px;
+  font-size: 16px;
+  line-height: 18px;
   letter-spacing: .1em;
   list-style: none;
   display: inline-block;
-  border-right: 1px solid #111;
+  border-right: 1px solid #000;
   text-shadow: 0 1px 1px #000;
 }
 nav[role="navigation"] ul li:last-child {
@@ -2710,38 +2714,66 @@ nav[role="navigation"] ul li:last-child {
 }
 nav[role="navigation"] ul a {
   display: block;
-  padding: 10px 20px;
-  -webkit-transition: background 200ms linear, color 750ms linear;
-  transition: background 200ms linear, color 750ms linear;
+  background-size: 100% 200%;
+  background-image: linear-gradient(to bottom, transparent 50%, #000 50%);
+  padding: 10px 15px;
+  -webkit-transition: background-position 150ms ease-in, color 200ms linear;
+  -moz-transition: background-position 150ms ease-in, color 200ms linear;
+  -ms-transition: background-position 150ms ease-in, color 200ms linear;
+  -o-transition: background-position 150ms ease-in, color 200ms linear;
+  transition: background-position 150ms ease-in, color 200ms linear;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+nav[role="navigation"] ul a span {
+  display: block;
+  position: relative;
+  -webkit-transition: -webkit-transform 50ms linear;
+  -moz-transition: -moz-transform 50ms linear;
+  -ms-transition: -ms-transform 50ms linear;
+  -o-transition: -o-transform 50ms linear;
+  transition: transform 50ms linear;
 }
 nav[role="navigation"] ul a, nav[role="navigation"] ul a:visited {
-  color: #999;
+  color: #ccc;
   text-decoration: none;
 }
 .no-touch nav[role="navigation"] ul a:visited:hover, nav[role="navigation"] ul a:focus, .no-touch nav[role="navigation"] ul a:focus:hover, .no-touch nav[role="navigation"] ul a:hover, nav[role="navigation"] ul a:active {
-  color: #fff;
-  background: rgba(114, 202, 0, 0.25);
+  color: #31b7ff;
+  background-position: 0 -100%;
 }
-nav[role="navigation"] select {
+.no-touch nav[role="navigation"] ul a:visited:hover span, nav[role="navigation"] ul a:focus span, .no-touch nav[role="navigation"] ul a:focus:hover span, .no-touch nav[role="navigation"] ul a:hover span, nav[role="navigation"] ul a:active span {
+  -webkit-transform: translateY(-3px);
+  -moz-transform: translateY(-3px);
+  -ms-transform: translateY(-3px);
+  -o-transform: translateY(-3px);
+  transform: translateY(-3px);
+}
+.js nav[role="navigation"] ul {
+  display: none;
+  visibility: hidden;
+}
+@media all and (min-width: 960px) {
+  .js nav[role="navigation"] ul {
+    display: block;
+    visibility: visible;
+  }
+}
+nav[role="navigation"] .harmonia-select {
   font-size: 16px;
   width: 100%;
   max-width: 300px;
-  margin: 25px auto;
+  margin: 0 auto;
   display: block;
   padding: 0;
-}
-.js nav[role="navigation"].harmonia {
-  display: none;
-  visibility: hidden;
 }
 @media all and (min-width: 960px) {
   nav[role="navigation"] .harmonia-select {
     display: none;
     visibility: hidden;
-  }
-  .js nav[role="navigation"] .harmonia {
-    display: block;
-    visibility: visible;
   }
 }
 
@@ -3350,7 +3382,7 @@ footer[role="contentinfo"] a:active {
 }
 
 aside[role="complementary"] {
-  background: #000;
+  background: #111;
   color: #fff;
   padding: 25px 0;
   text-rendering: optimizeLegibility;

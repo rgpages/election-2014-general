@@ -1,12 +1,15 @@
 nav[role="navigation"] {
 	
+	background: $raven;
+	border-width: 5px 0;
+	border-style: solid;
+	border-color: $raven;
+	
 	ul {
 		
-		background: $gray3;
+		background: $gray2;
+		background-image: linear-gradient(to bottom, $gray2 0, $gray3 100%);
 		text-align: center;
-		border-width: 0 0 5px;
-		border-style: solid;
-		border-color: $gray1;
 		
 		&,
 		li {
@@ -16,13 +19,13 @@ nav[role="navigation"] {
 		
 		li {
 			
-			font-size: 18px;
-			line-height: 20px;
+			font-size: 16px;
+			line-height: 18px;
 			letter-spacing: .1em;
 			list-style: none;
 			display: inline-block;
-			border-right: 1px solid $gray1;
-			text-shadow: 0 1px 1px #000;
+			border-right: 1px solid $raven;
+			text-shadow: 0 1px 1px $raven;
 			
 			&:last-child { border-right: none; }
 			
@@ -31,11 +34,33 @@ nav[role="navigation"] {
 		a {
 			
 			display: block;
-			padding: 10px 20px;
+			background-size: 100% 200%;
+			background-image: linear-gradient(to bottom, transparent 50%, $raven 50%);
+			padding: 10px 15px;
+			-webkit-transition: background-position 150ms ease-in, color 200ms linear;
+			   -moz-transition: background-position 150ms ease-in, color 200ms linear;
+			    -ms-transition: background-position 150ms ease-in, color 200ms linear;
+			     -o-transition: background-position 150ms ease-in, color 200ms linear;
+			        transition: background-position 150ms ease-in, color 200ms linear;
+			-webkit-transform-style: preserve-3d;
+			   -moz-transform-style: preserve-3d;
+			    -ms-transform-style: preserve-3d;
+			     -o-transform-style: preserve-3d;
+			        transform-style: preserve-3d;
+			
+			span {
+				display: block;
+				position: relative;
+				-webkit-transition: -webkit-transform 50ms linear;
+				   -moz-transition: -moz-transform 50ms linear;
+				    -ms-transition: -ms-transform 50ms linear;
+				     -o-transition: -o-transform 50ms linear;
+				        transition: transform 50ms linear;
+			}
 			
 			&,
 			&:visited {
-				color: $gray9;
+				color: $grayc;
 				text-decoration: none;
 			}
 			.no-touch &:visited:hover,
@@ -43,51 +68,54 @@ nav[role="navigation"] {
 			.no-touch &:focus:hover,
 			.no-touch &:hover,
 			&:active {
-				color: $milk;
-				background: rgba($color3, .25);
+				
+				color: lighten($color2, 20%);
+				background-position: 0 -100%;
+				
+				span {
+					-webkit-transform: translateY(-3px);
+					   -moz-transform: translateY(-3px);
+					    -ms-transform: translateY(-3px);
+					     -o-transform: translateY(-3px);
+					        transform: translateY(-3px);
+				}
+				
 			}
-			
-			-webkit-transition: background 200ms linear, color 750ms linear;
-					transition: background 200ms linear, color 750ms linear;
 			
 		}
 		
-	}
-	
-	select {
-		font-size: 16px; // Makes it so iOS doesn't zoom in on form element.
-		width: 100%;
-		max-width: 300px;
-		margin: 25px auto;
-		display: block;
-		padding: 0;
-	}
-	
-	.js &.harmonia {
-		display: none;
-		visibility: hidden;
-	}
-	
-	@media all and (min-width: 960px) {
-		
-		& {
+		.js & {
 			
-			//margin-left: 20%;
+			display: none;
+			visibility: hidden;
 			
-			.harmonia-select {
-				display: none;
-				visibility: hidden;
-			}
-			
-			.js & {
+			@media all and (min-width: 960px) {
 				
-				.harmonia {
+				& {
 					display: block;
 					visibility: visible;
 				}
 				
 			}
 			
+		}
+		
+	}
+	
+	.harmonia-select {
+		font-size: 16px; // Makes it so iOS doesn't zoom in on form element.
+		width: 100%;
+		max-width: 300px;
+		margin: 0 auto;
+		display: block;
+		padding: 0;
+	}
+	
+	@media all and (min-width: 960px) {
+		
+		.harmonia-select {
+			display: none;
+			visibility: hidden;
 		}
 		
 	}
