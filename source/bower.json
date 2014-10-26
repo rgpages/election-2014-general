@@ -7,6 +7,7 @@
     "imagesloaded": "~3",
     "ion": "https://github.com/mhulse/jquery-ion.git#v1",
     "jquery": "~2",
+    "jquery-smooth-scroll": "~1",
     "letteringjs": "~0",
     "moment.twitter": "~0",
     "normalize-css": "~3",

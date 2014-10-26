@@ -1420,13 +1420,6 @@ figure .scroll {
   content: "\00a0\f0a4";
 }
 
-* {
-  -webkit-transition: color 100ms linear;
-  -moz-transition: color 100ms linear;
-  -ms-transition: color 100ms linear;
-  -o-transition: color 100ms linear;
-  transition: color 100ms linear;
-}
 *, *::before, *::after {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -2691,38 +2684,53 @@ aside > :last-child {
   }
 }
 
-.js ul.harmonia {
-  display: none;
-}
-
-.harmonia-select {
-  font-size: 16px;
-  margin: 0;
-  padding: 0;
-}
-
 nav[role="navigation"] ul {
-  line-height: 1.1;
+  background: #333;
+  text-align: center;
+  border-width: 0 0 5px;
+  border-style: solid;
+  border-color: #111;
+}
+nav[role="navigation"] ul,
+nav[role="navigation"] ul li {
   margin: 0;
   padding: 0;
 }
-nav[role="navigation"] li {
+nav[role="navigation"] ul li {
+  font-size: 18px;
+  line-height: 20px;
   letter-spacing: .1em;
   list-style: none;
+  display: inline-block;
+  border-right: 1px solid #111;
+  text-shadow: 0 1px 1px #000;
 }
-nav[role="navigation"] li li,
-nav[role="navigation"] li span {
-  margin-bottom: 5px;
+nav[role="navigation"] ul li:last-child {
+  border-right: none;
 }
-nav[role="navigation"] li span {
-  font-weight: bold;
+nav[role="navigation"] ul a {
   display: block;
+  padding: 10px 20px;
+  -webkit-transition: background 200ms linear, color 750ms linear;
+  transition: background 200ms linear, color 750ms linear;
+}
+nav[role="navigation"] ul a, nav[role="navigation"] ul a:visited {
+  color: #999;
+  text-decoration: none;
+}
+.no-touch nav[role="navigation"] ul a:visited:hover, nav[role="navigation"] ul a:focus, .no-touch nav[role="navigation"] ul a:focus:hover, .no-touch nav[role="navigation"] ul a:hover, nav[role="navigation"] ul a:active {
+  color: #fff;
+  background: rgba(114, 202, 0, 0.25);
 }
 nav[role="navigation"] select {
   font-size: 16px;
-  color: #333;
+  width: 100%;
+  max-width: 300px;
+  margin: 25px auto;
+  display: block;
+  padding: 0;
 }
-nav[role="navigation"] .harmonia {
+.js nav[role="navigation"].harmonia {
   display: none;
   visibility: hidden;
 }
@@ -2734,11 +2742,6 @@ nav[role="navigation"] .harmonia {
   .js nav[role="navigation"] .harmonia {
     display: block;
     visibility: visible;
-  }
-}
-@media all and (min-width: 1280px) {
-  nav[role="navigation"] {
-    xmargin-left: 50%;
   }
 }
 
