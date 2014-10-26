@@ -80,17 +80,11 @@
 .scroll {
 	
 	width: 100%;
-	margin: {
-		top: 10px;
-		bottom: 10px;
-	}
+	margin: 10px 0;
 	overflow-y: auto;
 	-webkit-overflow-scrolling: touch;
 	
-	img:first-of-type {
-		max-width: none;
-		//display: block;
-	}
+	img:first-of-type { max-width: none; }
 	
 	> *,
 	img:first-of-type {
@@ -110,16 +104,16 @@
 	line-height: 1;
 	letter-spacing: .1em;
 	text-transform: lowercase;
-	text-shadow: 0 #{rex_relative(1)}rem #{rex_relative(3)}rem $raven,
-				 0 #{rex_relative(1)}rem #{rex_relative(3)}rem $raven,
-				 0 #{rex_relative(1)}rem #{rex_relative(3)}rem $raven,
-				 0 #{rex_relative(1)}rem #{rex_relative(3)}rem $raven;
+	text-shadow: 0 1px 3px $raven,
+				 0 1px 3px $raven,
+				 0 1px 3px $raven,
+				 0 1px 3px $raven;
 	text-align: center;
 	color: $milk;
 	position: absolute;
 	z-index: 100;
 	width: 100%;
-	top: #{rex_relative(10)}rem;
+	top: 10px;
 	left: 0;
 	opacity: .5;
 }

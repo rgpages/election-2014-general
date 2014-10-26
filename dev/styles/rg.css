@@ -8,7 +8,7 @@
  * @copyright Copyright (c) 2014 Micky Hulse.
  * @license Released under the Copyright © The Register-Guard 2014. All rights reserved..
  * @version 0.1.1
- * @date 2014/10/25
+ * @date 2014/10/26
  */
 
 
@@ -697,28 +697,11 @@ this the same font stack that Normalize.css sets for the `body`.
 }
 
 @media all and (min-width: 640px) {
-  .pure-u-sm-1,
-  .pure-u-sm-1-1,
-  .pure-u-sm-1-2,
-  .pure-u-sm-1-3,
-  .pure-u-sm-2-3,
-  .pure-u-sm-1-4,
-  .pure-u-sm-3-4,
   .pure-u-sm-1-5,
   .pure-u-sm-2-5,
   .pure-u-sm-3-5,
   .pure-u-sm-4-5,
   .pure-u-sm-5-5,
-  .pure-u-sm-1-6,
-  .pure-u-sm-5-6,
-  .pure-u-sm-1-8,
-  .pure-u-sm-3-8,
-  .pure-u-sm-5-8,
-  .pure-u-sm-7-8,
-  .pure-u-sm-1-12,
-  .pure-u-sm-5-12,
-  .pure-u-sm-7-12,
-  .pure-u-sm-11-12,
   .pure-u-sm-1-24,
   .pure-u-sm-2-24,
   .pure-u-sm-3-24,
@@ -756,17 +739,14 @@ this the same font stack that Normalize.css sets for the `body`.
     width: 4.16666666666667%;
   }
 
-  .pure-u-sm-1-12,
   .pure-u-sm-2-24 {
     width: 8.33333333333333%;
   }
 
-  .pure-u-sm-1-8,
   .pure-u-sm-3-24 {
     width: 12.50000000000000%;
   }
 
-  .pure-u-sm-1-6,
   .pure-u-sm-4-24 {
     width: 16.66666666666666%;
   }
@@ -779,7 +759,6 @@ this the same font stack that Normalize.css sets for the `body`.
     width: 20.83333333333334%;
   }
 
-  .pure-u-sm-1-4,
   .pure-u-sm-6-24 {
     width: 25%;
   }
@@ -788,12 +767,10 @@ this the same font stack that Normalize.css sets for the `body`.
     width: 29.16666666666667%;
   }
 
-  .pure-u-sm-1-3,
   .pure-u-sm-8-24 {
     width: 33.33333333333333%;
   }
 
-  .pure-u-sm-3-8,
   .pure-u-sm-9-24 {
     width: 37.50000000000000%;
   }
@@ -802,7 +779,6 @@ this the same font stack that Normalize.css sets for the `body`.
     width: 40%;
   }
 
-  .pure-u-sm-5-12,
   .pure-u-sm-10-24 {
     width: 41.66666666666667%;
   }
@@ -811,7 +787,6 @@ this the same font stack that Normalize.css sets for the `body`.
     width: 45.83333333333333%;
   }
 
-  .pure-u-sm-1-2,
   .pure-u-sm-12-24 {
     width: 50%;
   }
@@ -820,7 +795,6 @@ this the same font stack that Normalize.css sets for the `body`.
     width: 54.16666666666666%;
   }
 
-  .pure-u-sm-7-12,
   .pure-u-sm-14-24 {
     width: 58.33333333333334%;
   }
@@ -829,12 +803,10 @@ this the same font stack that Normalize.css sets for the `body`.
     width: 60%;
   }
 
-  .pure-u-sm-5-8,
   .pure-u-sm-15-24 {
     width: 62.50000000000000%;
   }
 
-  .pure-u-sm-2-3,
   .pure-u-sm-16-24 {
     width: 66.66666666666666%;
   }
@@ -843,7 +815,6 @@ this the same font stack that Normalize.css sets for the `body`.
     width: 70.83333333333334%;
   }
 
-  .pure-u-sm-3-4,
   .pure-u-sm-18-24 {
     width: 75%;
   }
@@ -856,17 +827,14 @@ this the same font stack that Normalize.css sets for the `body`.
     width: 80%;
   }
 
-  .pure-u-sm-5-6,
   .pure-u-sm-20-24 {
     width: 83.33333333333334%;
   }
 
-  .pure-u-sm-7-8,
   .pure-u-sm-21-24 {
     width: 87.50000000000000%;
   }
 
-  .pure-u-sm-11-12,
   .pure-u-sm-22-24 {
     width: 91.66666666666666%;
   }
@@ -875,36 +843,17 @@ this the same font stack that Normalize.css sets for the `body`.
     width: 95.83333333333334%;
   }
 
-  .pure-u-sm-1,
-  .pure-u-sm-1-1,
   .pure-u-sm-5-5,
   .pure-u-sm-24-24 {
     width: 100%;
   }
 }
 @media all and (min-width: 960px) {
-  .pure-u-md-1,
-  .pure-u-md-1-1,
-  .pure-u-md-1-2,
-  .pure-u-md-1-3,
-  .pure-u-md-2-3,
-  .pure-u-md-1-4,
-  .pure-u-md-3-4,
   .pure-u-md-1-5,
   .pure-u-md-2-5,
   .pure-u-md-3-5,
   .pure-u-md-4-5,
   .pure-u-md-5-5,
-  .pure-u-md-1-6,
-  .pure-u-md-5-6,
-  .pure-u-md-1-8,
-  .pure-u-md-3-8,
-  .pure-u-md-5-8,
-  .pure-u-md-7-8,
-  .pure-u-md-1-12,
-  .pure-u-md-5-12,
-  .pure-u-md-7-12,
-  .pure-u-md-11-12,
   .pure-u-md-1-24,
   .pure-u-md-2-24,
   .pure-u-md-3-24,
@@ -942,17 +891,14 @@ this the same font stack that Normalize.css sets for the `body`.
     width: 4.16666666666667%;
   }
 
-  .pure-u-md-1-12,
   .pure-u-md-2-24 {
     width: 8.33333333333333%;
   }
 
-  .pure-u-md-1-8,
   .pure-u-md-3-24 {
     width: 12.50000000000000%;
   }
 
-  .pure-u-md-1-6,
   .pure-u-md-4-24 {
     width: 16.66666666666666%;
   }
@@ -965,7 +911,6 @@ this the same font stack that Normalize.css sets for the `body`.
     width: 20.83333333333334%;
   }
 
-  .pure-u-md-1-4,
   .pure-u-md-6-24 {
     width: 25%;
   }
@@ -974,12 +919,10 @@ this the same font stack that Normalize.css sets for the `body`.
     width: 29.16666666666667%;
   }
 
-  .pure-u-md-1-3,
   .pure-u-md-8-24 {
     width: 33.33333333333333%;
   }
 
-  .pure-u-md-3-8,
   .pure-u-md-9-24 {
     width: 37.50000000000000%;
   }
@@ -988,7 +931,6 @@ this the same font stack that Normalize.css sets for the `body`.
     width: 40%;
   }
 
-  .pure-u-md-5-12,
   .pure-u-md-10-24 {
     width: 41.66666666666667%;
   }
@@ -997,7 +939,6 @@ this the same font stack that Normalize.css sets for the `body`.
     width: 45.83333333333333%;
   }
 
-  .pure-u-md-1-2,
   .pure-u-md-12-24 {
     width: 50%;
   }
@@ -1006,7 +947,6 @@ this the same font stack that Normalize.css sets for the `body`.
     width: 54.16666666666666%;
   }
 
-  .pure-u-md-7-12,
   .pure-u-md-14-24 {
     width: 58.33333333333334%;
   }
@@ -1015,12 +955,10 @@ this the same font stack that Normalize.css sets for the `body`.
     width: 60%;
   }
 
-  .pure-u-md-5-8,
   .pure-u-md-15-24 {
     width: 62.50000000000000%;
   }
 
-  .pure-u-md-2-3,
   .pure-u-md-16-24 {
     width: 66.66666666666666%;
   }
@@ -1029,7 +967,6 @@ this the same font stack that Normalize.css sets for the `body`.
     width: 70.83333333333334%;
   }
 
-  .pure-u-md-3-4,
   .pure-u-md-18-24 {
     width: 75%;
   }
@@ -1042,17 +979,14 @@ this the same font stack that Normalize.css sets for the `body`.
     width: 80%;
   }
 
-  .pure-u-md-5-6,
   .pure-u-md-20-24 {
     width: 83.33333333333334%;
   }
 
-  .pure-u-md-7-8,
   .pure-u-md-21-24 {
     width: 87.50000000000000%;
   }
 
-  .pure-u-md-11-12,
   .pure-u-md-22-24 {
     width: 91.66666666666666%;
   }
@@ -1061,36 +995,17 @@ this the same font stack that Normalize.css sets for the `body`.
     width: 95.83333333333334%;
   }
 
-  .pure-u-md-1,
-  .pure-u-md-1-1,
   .pure-u-md-5-5,
   .pure-u-md-24-24 {
     width: 100%;
   }
 }
 @media all and (min-width: 1280px) {
-  .pure-u-lg-1,
-  .pure-u-lg-1-1,
-  .pure-u-lg-1-2,
-  .pure-u-lg-1-3,
-  .pure-u-lg-2-3,
-  .pure-u-lg-1-4,
-  .pure-u-lg-3-4,
   .pure-u-lg-1-5,
   .pure-u-lg-2-5,
   .pure-u-lg-3-5,
   .pure-u-lg-4-5,
   .pure-u-lg-5-5,
-  .pure-u-lg-1-6,
-  .pure-u-lg-5-6,
-  .pure-u-lg-1-8,
-  .pure-u-lg-3-8,
-  .pure-u-lg-5-8,
-  .pure-u-lg-7-8,
-  .pure-u-lg-1-12,
-  .pure-u-lg-5-12,
-  .pure-u-lg-7-12,
-  .pure-u-lg-11-12,
   .pure-u-lg-1-24,
   .pure-u-lg-2-24,
   .pure-u-lg-3-24,
@@ -1128,17 +1043,14 @@ this the same font stack that Normalize.css sets for the `body`.
     width: 4.16666666666667%;
   }
 
-  .pure-u-lg-1-12,
   .pure-u-lg-2-24 {
     width: 8.33333333333333%;
   }
 
-  .pure-u-lg-1-8,
   .pure-u-lg-3-24 {
     width: 12.50000000000000%;
   }
 
-  .pure-u-lg-1-6,
   .pure-u-lg-4-24 {
     width: 16.66666666666666%;
   }
@@ -1151,7 +1063,6 @@ this the same font stack that Normalize.css sets for the `body`.
     width: 20.83333333333334%;
   }
 
-  .pure-u-lg-1-4,
   .pure-u-lg-6-24 {
     width: 25%;
   }
@@ -1160,12 +1071,10 @@ this the same font stack that Normalize.css sets for the `body`.
     width: 29.16666666666667%;
   }
 
-  .pure-u-lg-1-3,
   .pure-u-lg-8-24 {
     width: 33.33333333333333%;
   }
 
-  .pure-u-lg-3-8,
   .pure-u-lg-9-24 {
     width: 37.50000000000000%;
   }
@@ -1174,7 +1083,6 @@ this the same font stack that Normalize.css sets for the `body`.
     width: 40%;
   }
 
-  .pure-u-lg-5-12,
   .pure-u-lg-10-24 {
     width: 41.66666666666667%;
   }
@@ -1183,7 +1091,6 @@ this the same font stack that Normalize.css sets for the `body`.
     width: 45.83333333333333%;
   }
 
-  .pure-u-lg-1-2,
   .pure-u-lg-12-24 {
     width: 50%;
   }
@@ -1192,7 +1099,6 @@ this the same font stack that Normalize.css sets for the `body`.
     width: 54.16666666666666%;
   }
 
-  .pure-u-lg-7-12,
   .pure-u-lg-14-24 {
     width: 58.33333333333334%;
   }
@@ -1201,12 +1107,10 @@ this the same font stack that Normalize.css sets for the `body`.
     width: 60%;
   }
 
-  .pure-u-lg-5-8,
   .pure-u-lg-15-24 {
     width: 62.50000000000000%;
   }
 
-  .pure-u-lg-2-3,
   .pure-u-lg-16-24 {
     width: 66.66666666666666%;
   }
@@ -1215,7 +1119,6 @@ this the same font stack that Normalize.css sets for the `body`.
     width: 70.83333333333334%;
   }
 
-  .pure-u-lg-3-4,
   .pure-u-lg-18-24 {
     width: 75%;
   }
@@ -1228,17 +1131,14 @@ this the same font stack that Normalize.css sets for the `body`.
     width: 80%;
   }
 
-  .pure-u-lg-5-6,
   .pure-u-lg-20-24 {
     width: 83.33333333333334%;
   }
 
-  .pure-u-lg-7-8,
   .pure-u-lg-21-24 {
     width: 87.50000000000000%;
   }
 
-  .pure-u-lg-11-12,
   .pure-u-lg-22-24 {
     width: 91.66666666666666%;
   }
@@ -1247,36 +1147,17 @@ this the same font stack that Normalize.css sets for the `body`.
     width: 95.83333333333334%;
   }
 
-  .pure-u-lg-1,
-  .pure-u-lg-1-1,
   .pure-u-lg-5-5,
   .pure-u-lg-24-24 {
     width: 100%;
   }
 }
 @media all and (min-width: 1600px) {
-  .pure-u-xl-1,
-  .pure-u-xl-1-1,
-  .pure-u-xl-1-2,
-  .pure-u-xl-1-3,
-  .pure-u-xl-2-3,
-  .pure-u-xl-1-4,
-  .pure-u-xl-3-4,
   .pure-u-xl-1-5,
   .pure-u-xl-2-5,
   .pure-u-xl-3-5,
   .pure-u-xl-4-5,
   .pure-u-xl-5-5,
-  .pure-u-xl-1-6,
-  .pure-u-xl-5-6,
-  .pure-u-xl-1-8,
-  .pure-u-xl-3-8,
-  .pure-u-xl-5-8,
-  .pure-u-xl-7-8,
-  .pure-u-xl-1-12,
-  .pure-u-xl-5-12,
-  .pure-u-xl-7-12,
-  .pure-u-xl-11-12,
   .pure-u-xl-1-24,
   .pure-u-xl-2-24,
   .pure-u-xl-3-24,
@@ -1314,17 +1195,14 @@ this the same font stack that Normalize.css sets for the `body`.
     width: 4.16666666666667%;
   }
 
-  .pure-u-xl-1-12,
   .pure-u-xl-2-24 {
     width: 8.33333333333333%;
   }
 
-  .pure-u-xl-1-8,
   .pure-u-xl-3-24 {
     width: 12.50000000000000%;
   }
 
-  .pure-u-xl-1-6,
   .pure-u-xl-4-24 {
     width: 16.66666666666666%;
   }
@@ -1337,7 +1215,6 @@ this the same font stack that Normalize.css sets for the `body`.
     width: 20.83333333333334%;
   }
 
-  .pure-u-xl-1-4,
   .pure-u-xl-6-24 {
     width: 25%;
   }
@@ -1346,12 +1223,10 @@ this the same font stack that Normalize.css sets for the `body`.
     width: 29.16666666666667%;
   }
 
-  .pure-u-xl-1-3,
   .pure-u-xl-8-24 {
     width: 33.33333333333333%;
   }
 
-  .pure-u-xl-3-8,
   .pure-u-xl-9-24 {
     width: 37.50000000000000%;
   }
@@ -1360,7 +1235,6 @@ this the same font stack that Normalize.css sets for the `body`.
     width: 40%;
   }
 
-  .pure-u-xl-5-12,
   .pure-u-xl-10-24 {
     width: 41.66666666666667%;
   }
@@ -1369,7 +1243,6 @@ this the same font stack that Normalize.css sets for the `body`.
     width: 45.83333333333333%;
   }
 
-  .pure-u-xl-1-2,
   .pure-u-xl-12-24 {
     width: 50%;
   }
@@ -1378,7 +1251,6 @@ this the same font stack that Normalize.css sets for the `body`.
     width: 54.16666666666666%;
   }
 
-  .pure-u-xl-7-12,
   .pure-u-xl-14-24 {
     width: 58.33333333333334%;
   }
@@ -1387,12 +1259,10 @@ this the same font stack that Normalize.css sets for the `body`.
     width: 60%;
   }
 
-  .pure-u-xl-5-8,
   .pure-u-xl-15-24 {
     width: 62.50000000000000%;
   }
 
-  .pure-u-xl-2-3,
   .pure-u-xl-16-24 {
     width: 66.66666666666666%;
   }
@@ -1401,7 +1271,6 @@ this the same font stack that Normalize.css sets for the `body`.
     width: 70.83333333333334%;
   }
 
-  .pure-u-xl-3-4,
   .pure-u-xl-18-24 {
     width: 75%;
   }
@@ -1414,17 +1283,14 @@ this the same font stack that Normalize.css sets for the `body`.
     width: 80%;
   }
 
-  .pure-u-xl-5-6,
   .pure-u-xl-20-24 {
     width: 83.33333333333334%;
   }
 
-  .pure-u-xl-7-8,
   .pure-u-xl-21-24 {
     width: 87.50000000000000%;
   }
 
-  .pure-u-xl-11-12,
   .pure-u-xl-22-24 {
     width: 91.66666666666666%;
   }
@@ -1433,8 +1299,6 @@ this the same font stack that Normalize.css sets for the `body`.
     width: 95.83333333333334%;
   }
 
-  .pure-u-xl-1,
-  .pure-u-xl-1-1,
   .pure-u-xl-5-5,
   .pure-u-xl-24-24 {
     width: 100%;
@@ -1504,8 +1368,7 @@ this the same font stack that Normalize.css sets for the `body`.
 
 .scroll {
   width: 100%;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin: 10px 0;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
 }
@@ -1531,13 +1394,13 @@ figure .scroll {
   line-height: 1;
   letter-spacing: .1em;
   text-transform: lowercase;
-  text-shadow: 0 rex_relative(1)rem rex_relative(3)rem #000, 0 rex_relative(1)rem rex_relative(3)rem #000, 0 rex_relative(1)rem rex_relative(3)rem #000, 0 rex_relative(1)rem rex_relative(3)rem #000;
+  text-shadow: 0 1px 3px #000, 0 1px 3px #000, 0 1px 3px #000, 0 1px 3px #000;
   text-align: center;
   color: #fff;
   position: absolute;
   z-index: 100;
   width: 100%;
-  top: rex_relative(10)rem;
+  top: 10px;
   left: 0;
   opacity: .5;
 }
@@ -1618,8 +1481,7 @@ hr {
   border: 0;
   border-top: 4px solid #eee;
   height: 0;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin: 50px 0;
   padding: 0;
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
@@ -1627,10 +1489,9 @@ hr {
   box-sizing: content-box;
 }
 article hr, aside hr, section hr {
-  border-top-width: 2px;
+  border-top-width: 1px;
   border-color: #ccc;
-  margin-top: 25px;
-  margin-bottom: 25px;
+  margin: 25px 0;
 }
 
 blockquote {
@@ -1640,16 +1501,14 @@ blockquote {
   line-height: 22px;
   letter-spacing: .05em;
   word-spacing: .15em;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin: 50px 0 0 40px;
   padding: 0;
   position: relative;
 }
 blockquote p {
   font-size: inherit;
   line-height: inherit;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin: 10px 0;
 }
 blockquote footer {
   font-size: 70%;
@@ -1770,8 +1629,7 @@ h1, h2, h3, h4, h5, h6 {
   word-spacing: .12em;
   word-wrap: break-word;
   overflow-wrap: break-word;
-  margin-top: 25px;
-  margin-bottom: 25px;
+  margin: 25px 0;
   padding: 0;
 }
 h1 + h1, h2 + h1, h3 + h1, h4 + h1, h5 + h1, h6 + h1, h1 + h2, h2 + h2, h3 + h2, h4 + h2, h5 + h2, h6 + h2, h1 + h3, h2 + h3, h3 + h3, h4 + h3, h5 + h3, h6 + h3, h1 + h4, h2 + h4, h3 + h4, h4 + h4, h5 + h4, h6 + h4, h1 + h5, h2 + h5, h3 + h5, h4 + h5, h5 + h5, h6 + h5, h1 + h6, h2 + h6, h3 + h6, h4 + h6, h5 + h6, h6 + h6 {
@@ -1870,11 +1728,10 @@ dl > :last-child {
 }
 
 .pager {
+  text-align: center;
   color: #888;
-  width: auto;
   margin: 20px auto;
   padding: 0;
-  display: inline-block;
 }
 .pager > li {
   font-size: 12px;
@@ -1939,8 +1796,7 @@ dl > :last-child {
   empty-cells: hide;
   border-collapse: collapse;
   border-spacing: 0;
-  margin-top: 25px;
-  margin-bottom: 25px;
+  margin: 25px 0;
   width: 100%;
 }
 .table caption {
@@ -2012,8 +1868,7 @@ dl > :last-child {
 }
 .form fieldset {
   border: 0;
-  margin-top: 25px;
-  margin-bottom: 25px;
+  margin: 25px 0;
   padding: 1px 0 0;
 }
 .form fieldset legend {
@@ -2128,8 +1983,7 @@ pre {
   letter-spacing: .05em;
   text-align: left;
   word-wrap: normal;
-  margin-top: 25px;
-  margin-bottom: 25px;
+  margin: 25px 0;
   padding: 10px 15px;
   overflow: auto;
   white-space: pre;
@@ -2173,8 +2027,7 @@ pre.terminal .prompt {
   color: #ccc;
   background: #222;
   border: 5px solid #222;
-  margin-top: 25px;
-  margin-bottom: 25px;
+  margin: 25px 0;
 }
 .pygments table {
   margin: 0;
@@ -2449,66 +2302,43 @@ kbd kbd {
   border-radius: 0;
 }
 
-.gist {
-  text-align: left;
-}
-.gist a, .gist a:visited, .no-touch .gist a:visited:hover, .gist a:focus, .no-touch .gist a:focus:hover, .no-touch .gist a:hover, .gist a:active {
-  box-shadow: none;
-}
-
 .gist-file {
-  margin-top: 25px;
-  margin-bottom: 25px;
+  margin: 25px 0;
 }
 
 figure {
-  margin: 0;
-  margin-top: 25px;
-  margin-bottom: 25px;
+  margin: 25px 0;
 }
 figure img {
-  margin: 0 auto;
+  margin: 0;
   display: block;
   vertical-align: top;
 }
 
 figcaption {
-  font-size: 12px;
-  line-height: 16px;
-  text-transform: uppercase;
-  letter-spacing: .05em;
+  font-family: Cambria, Georgia, serif;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: .1em;
   word-spacing: .15em;
+  color: #fff;
+  background: #000;
+  padding: 15px 20px;
+  display: block;
+}
+.js figcaption {
+  display: none;
 }
 figcaption p {
   font-size: inherit;
   line-height: inherit;
-  margin: 5px 0;
+  margin: 10px 0;
 }
 figcaption p:first-of-type {
   margin-top: 0 !important;
 }
 figcaption p:last-of-type {
   margin-bottom: 0 !important;
-}
-figcaption > div {
-  background: #ddd;
-  margin-top: 13px;
-  padding: 15px 20px;
-  display: inline-block;
-  border-radius: 6px;
-  position: relative;
-}
-figcaption > div::after {
-  content: "";
-  border-width: 0 10px 10px;
-  border-style: solid;
-  border-color: #ddd transparent;
-  width: 0;
-  margin-left: -10px;
-  position: absolute;
-  top: -9px;
-  left: 50%;
-  -webkit-transform: rotate(360deg);
 }
 
 img {
@@ -2546,8 +2376,7 @@ video:active {
 
 audio {
   width: 100%;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin: 25px 0;
 }
 
 .mm {
@@ -2598,9 +2427,8 @@ iframe[id^='twitter-widget-'],
   font-weight: normal;
   text-align: center;
   line-height: normal;
-  max-width: 200px;
   vertical-align: baseline;
-  display: inline-block;
+  display: block;
   zoom: 1;
   cursor: pointer;
   letter-spacing: .08em;
@@ -2617,8 +2445,7 @@ iframe[id^='twitter-widget-'],
   border: none transparent;
   box-shadow: none;
   border-radius: 3px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin: 10px 0;
   padding: 10px 5px;
   -webkit-tap-highlight-color: transparent;
 }
@@ -2738,6 +2565,15 @@ iframe[id^='twitter-widget-'],
 .form input.button-hidden[type="submit"] {
   display: none;
 }
+@media all and (min-width: 640px) {
+  .button, .form button,
+  .form input[type="button"],
+  .form input[type="reset"],
+  .form input[type="submit"] {
+    display: inline-block;
+    max-width: 200px;
+  }
+}
 
 a.social.fa-lg {
   font-size: 1.3875em;
@@ -2795,8 +2631,8 @@ aside > :last-child {
 
 .container {
   max-width: 1600px;
-  margin: 20px auto;
-  padding: 0 20px;
+  margin: 25px auto;
+  padding: 0 25px;
 }
 @media all and (min-width: 640px) {
   .container {
@@ -3051,8 +2887,7 @@ nav[role="navigation"] .harmonia {
 
 .callout {
   color: #333;
-  margin-top: 25px;
-  margin-bottom: 25px;
+  margin: 25px 0;
 }
 .callout.callout-box {
   background-color: #ddd;
@@ -3259,10 +3094,6 @@ aside[role="complementary"] h2 {
   display: none;
 }
 
-body {
-  padding-top: 0 !important;
-}
-
 section.module.parallax {
   background-color: #000;
   background-position: 0 0;
@@ -3308,4 +3139,177 @@ section.module p > span span {
 }
 section.module p:active, section.module p:focus {
   outline: 0;
+}
+
+.poll {
+  font-family: arial, sans-serif;
+  color: #333;
+  border: 1px solid #ccc;
+  background: #eee;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  margin: 10px 0;
+  padding: 0;
+  position: relative;
+  /*
+  <div class="tile">
+  	<div class="tile-grid">
+  		<div class="tile-grid-secondary">
+  			...
+  		</div>
+  		<div class="tile-grid-primary">
+  			...
+  		</div>
+  	</div>
+  	<div class="tile-grid tile-grid-alt">
+  		<div class="tile-grid-secondary">
+  			...
+  		</div>
+  		<div class="tile-grid-tertiary">
+  			...
+  		</div>
+  		<div class="tile-grid-primary">
+  			...
+  		</div>
+  	</div>
+  </div>
+  */
+}
+.poll .poll-spinner {
+  background: url(../images/loading.gif) no-repeat;
+  width: 20px;
+  height: 20px;
+  background-size: cover;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  display: none;
+}
+.poll .poll-head {
+  font-size: 14px;
+  line-height: 25px;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 5px 10px;
+  background: #ddd;
+  color: #333;
+}
+.poll .poll-content {
+  padding: 10px 15px 15px;
+}
+.poll .poll-content :first-child {
+  margin-top: 0;
+}
+.poll .poll-content :last-child {
+  margin-bottom: 0;
+}
+.poll .poll-grid {
+  margin: 5px 0;
+}
+.poll .poll-grid::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.poll .poll-grid .poll-grid-secondary {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.poll .poll-grid .poll-grid-tertiary {
+  width: 50px;
+  float: left;
+}
+.poll .poll-grid .poll-grid-tertiary + .poll-grid-primary {
+  margin-left: 60px;
+}
+@media all and (min-width: 640px) {
+  .poll .poll-grid .poll-grid-secondary {
+    position: static;
+    width: 90px;
+    float: right;
+  }
+  .poll .poll-grid .poll-grid-primary {
+    margin-right: 100px;
+  }
+}
+.poll .poll-bar {
+  margin: 15px 0;
+  position: relative;
+}
+.poll .poll-bar .poll-bar-wrap {
+  border-radius: 3px;
+  background: #eee;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0, rgba(0, 0, 0, 0.1) 100%);
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.35);
+  position: relative;
+}
+.poll .poll-bar .poll-bar-wrap.poll-bar-up::before, .poll .poll-bar .poll-bar-wrap.poll-bar-down::before {
+  font-size: 20px;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 30px;
+  background: rgba(0, 0, 0, 0.75);
+  padding: 0 5px;
+  border-radius: 3px 0 0 3px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+.poll .poll-bar .poll-bar-wrap.poll-bar-up::before {
+  color: #86be27;
+  content: "\f062";
+}
+.poll .poll-bar .poll-bar-wrap.poll-bar-down::before {
+  color: #ed0000;
+  content: "\f063";
+}
+.poll .poll-bar .poll-bar-votes {
+  text-align: right;
+  line-height: 30px;
+  border-radius: 3px;
+  background: #999;
+  background: linear-gradient(to bottom, #ff9a64 0, #ff7931 50%, #fd5900 51%, #ff7931 100%);
+  box-shadow: inset 0 0 3px rgba(151, 53, 0, 0.5);
+  width: 0;
+  height: 30px;
+  -webkit-transition: width 500ms cubic-bezier(0.68, 0, 0.265, 1);
+  -webkit-transition: width 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -moz-transition: width 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -o-transition: width 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: width 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.poll .poll-bar .poll-bar-votes > span {
+  font-size: 14px;
+  letter-spacing: .05em;
+  color: #642300;
+  margin: 0 5px;
+  display: inline-block;
+}
+.poll .poll-bar .poll-bar-title {
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: .025em;
+  color: #333;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+  padding-right: 100px;
+  margin-bottom: 10px;
+  display: block;
+}
+.poll .poll-bar .poll-bar-label,
+.poll .poll-bar .poll-bar-count {
+  font-size: 14px;
+  letter-spacing: .05em;
+  color: #666;
+}
+.poll .poll-bar .poll-bar-label {
+  line-height: 30px;
+}
+@media all and (min-width: 640px) {
+  .poll .poll-bar .poll-bar-count {
+    line-height: 30px;
+  }
 }
