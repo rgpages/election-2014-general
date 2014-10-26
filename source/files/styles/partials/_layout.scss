@@ -28,8 +28,8 @@ aside {
 	
 	[class*="pure-u"] { font-family: $font1; } // http://purecss.io/grids/#using-grids-with-custom-fonts
 	
-	:first-child { padding-top: 0; }
-	:last-child { padding-bottom: 0; }
+	> :first-child { padding-top: 0; }
+	> :last-child { padding-bottom: 0; }
 	
 	&.pure-pad {
 		
@@ -39,8 +39,8 @@ aside {
 			
 			[class*="pure-u"] { padding: 0 20px; }
 			
-			:first-child { padding-left: 0; }
-			:last-child { padding-right: 0; }
+			> :first-child { padding-left: 0; }
+			> :last-child { padding-right: 0; }
 			
 		}
 		

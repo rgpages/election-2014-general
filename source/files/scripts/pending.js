@@ -53,10 +53,10 @@
 				if ( ! $options.flag) {
 					
 					template = [
-						'<div id="' + id1 + '" class="tile">',
-							'<h5 class="tile-head">' + v1.contest_wrapper + '</h5>',
-							'<div class="tile-content">',
-								'<div class="tile-spinner"></div>',
+						'<div id="' + id1 + '" class="poll">',
+							'<div class="poll-spinner"></div>',
+							'<h6 class="poll-head">' + v1.contest_wrapper + '</h6>',
+							'<div class="poll-content">',
 							'</div>',
 						'</div>'
 					].join('\n');
@@ -73,24 +73,24 @@
 					if ( ! $options.flag) {
 						
 						template = [
-							'<div class="bar">',
-								'<span class="bar-label">' + v2.name + ':</span>',
-								'<div class="pure-g">',
-									'<div class="pure-u-21-24">',
-										'<div class="bar-wrap">',
-											'<div id="' + id2 + '" class="bar-votes">',
+							'<div class="poll-bar">',
+								'<span class="poll-bar-title">' + v2.name + '</span>',
+								'<div class="poll-grid">',
+									'<div class="poll-grid-secondary">',
+										'<span class="poll-bar-count">' + v2.lane_votes + '</span>',
+									'</div>',
+									'<div class="poll-grid-primary">',
+										'<div class="poll-bar-wrap">',
+											'<div id="' + id2 + '" class="poll-bar-votes">',
 												'<span></sapn>',
 											'</div>',
 										'</div>',
-									'</div>',
-									'<div class="pure-u-3-24">',
-										'<span class="bar-count">' + v2.lane_votes + '</span>',
 									'</div>',
 								'</div>',
 							'</div>'
 						].join('\n');
 						
-						$('#' + id1 + ' .tile-content').append(template);
+						$('#' + id1 + ' .poll-content').append(template);
 						
 					}
 					
@@ -122,10 +122,10 @@
 				if ( ! $options.flag) {
 					
 					template = [
-						'<div id="' + id1 + '" class="tile">',
-							'<h5 class="tile-head">' + v1.contest_wrapper + '</h5>',
-							'<div class="tile-content">',
-								'<div class="tile-spinner"></div>',
+						'<div id="' + id1 + '" class="poll">',
+							'<div class="poll-spinner"></div>',
+							'<h6 class="poll-head">' + v1.contest_wrapper + '</h6>',
+							'<div class="poll-content">',
 							'</div>',
 						'</div>'
 					].join('\n');
@@ -142,18 +142,18 @@
 					if ( ! $options.flag) {
 						
 						template = [
-							'<div class="bar">',
-								'<span class="bar-label">' + v2.name + ':</span>',
-								'<div class="pure-g">',
-									'<div class="pure-u-21-24">',
-										'<div class="bar-wrap">',
-											'<div id="' + id2 + '" class="bar-votes">',
+							'<div class="poll-bar">',
+								'<span class="poll-bar-title">' + v2.name + '</span>',
+								'<div class="poll-grid">',
+									'<div class="poll-grid-secondary">',
+										'<span class="poll-bar-count">' + v2.lane_votes + '</span>',
+									'</div>',
+									'<div class="poll-grid-primary">',
+										'<div class="poll-bar-wrap">',
+											'<div id="' + id2 + '" class="poll-bar-votes">',
 												'<span></sapn>',
 											'</div>',
 										'</div>',
-									'</div>',
-									'<div class="pure-u-3-24">',
-										'<span class="bar-count">' + v2.lane_votes + '</span>',
 									'</div>',
 								'</div>',
 							'</div>'
@@ -191,10 +191,10 @@
 				if ( ! $options.flag) {
 					
 					template = [
-						'<div id="' + id1 + '" class="tile">',
-							'<h5 class="tile-head">' + v1.contest_wrapper + '</h5>',
-							'<div class="tile-content">',
-								'<div class="tile-spinner"></div>',
+						'<div id="' + id1 + '" class="poll">',
+							'<div class="poll-spinner"></div>',
+							'<h6 class="poll-head">' + v1.contest_wrapper + '</h6>',
+							'<div class="poll-content">',
 							'</div>',
 						'</div>'
 					].join('\n');
@@ -211,18 +211,18 @@
 					if ( ! $options.flag) {
 						
 						template = [
-							'<div class="bar">',
-								'<span class="bar-label">' + v2.name + ':</span>',
-								'<div class="pure-g">',
-									'<div class="pure-u-21-24">',
-										'<div class="bar-wrap">',
-											'<div id="' + id2 + '" class="bar-votes">',
+							'<div class="poll-bar">',
+								'<span class="poll-bar-title">' + v2.name + '</span>',
+								'<div class="poll-grid">',
+									'<div class="poll-grid-secondary">',
+										'<span class="poll-bar-count">' + v2.lane_votes + '</span>',
+									'</div>',
+									'<div class="poll-grid-primary">',
+										'<div class="poll-bar-wrap">',
+											'<div id="' + id2 + '" class="poll-bar-votes">',
 												'<span></sapn>',
 											'</div>',
 										'</div>',
-									'</div>',
-									'<div class="pure-u-3-24">',
-										'<span class="bar-count">' + v2.lane_votes + '</span>',
 									'</div>',
 								'</div>',
 							'</div>'
@@ -260,10 +260,10 @@
 				if ( ! $options.flag) {
 					
 					template = [
-						'<div id="' + id1 + '" class="tile">',
-							'<h5 class="tile-head">' + v1.contest_wrapper + '</h5>',
-							'<div class="tile-content">',
-								'<div class="tile-spinner"></div>',
+						'<div id="' + id1 + '" class="poll">',
+							'<div class="poll-spinner"></div>',
+							'<h6 class="poll-head">' + v1.contest_wrapper + '</h6>',
+							'<div class="poll-content">',
 							'</div>',
 						'</div>'
 					].join('\n');
@@ -280,18 +280,18 @@
 					if ( ! $options.flag) {
 						
 						template = [
-							'<div class="bar">',
-								'<span class="bar-label">' + v2.name + ':</span>',
-								'<div class="pure-g">',
-									'<div class="pure-u-21-24">',
-										'<div class="bar-wrap">',
-											'<div id="' + id2 + '" class="bar-votes">',
+							'<div class="poll-bar">',
+								'<span class="poll-bar-title">' + v2.name + '</span>',
+								'<div class="poll-grid">',
+									'<div class="poll-grid-secondary">',
+										'<span class="poll-bar-count">' + v2.lane_votes + '</span>',
+									'</div>',
+									'<div class="poll-grid-primary">',
+										'<div class="poll-bar-wrap">',
+											'<div id="' + id2 + '" class="poll-bar-votes">',
 												'<span></sapn>',
 											'</div>',
 										'</div>',
-									'</div>',
-									'<div class="pure-u-3-24">',
-										'<span class="bar-count">' + v2.lane_votes + '</span>',
 									'</div>',
 								'</div>',
 							'</div>'
@@ -329,10 +329,10 @@
 				if ( ! $options.flag) {
 					
 					template = [
-						'<div id="' + id1 + '" class="tile">',
-							'<h5 class="tile-head">' + v1.contest_wrapper + '</h5>',
-							'<div class="tile-content">',
-								'<div class="tile-spinner"></div>',
+						'<div id="' + id1 + '" class="poll">',
+							'<div class="poll-spinner"></div>',
+							'<h6 class="poll-head">' + v1.contest_wrapper + '</h6>',
+							'<div class="poll-content">',
 							'</div>',
 						'</div>'
 					].join('\n');
@@ -349,18 +349,18 @@
 					if ( ! $options.flag) {
 						
 						template = [
-							'<div class="bar">',
-								'<span class="bar-label">' + v2.name + ':</span>',
-								'<div class="pure-g">',
-									'<div class="pure-u-21-24">',
-										'<div class="bar-wrap">',
-											'<div id="' + id2 + '" class="bar-votes">',
+							'<div class="poll-bar">',
+								'<span class="poll-bar-title">' + v2.name + '</span>',
+								'<div class="poll-grid">',
+									'<div class="poll-grid-secondary">',
+										'<span class="poll-bar-count">' + v2.lane_votes + '</span>',
+									'</div>',
+									'<div class="poll-grid-primary">',
+										'<div class="poll-bar-wrap">',
+											'<div id="' + id2 + '" class="poll-bar-votes">',
 												'<span></sapn>',
 											'</div>',
 										'</div>',
-									'</div>',
-									'<div class="pure-u-3-24">',
-										'<span class="bar-count">' + v2.lane_votes + '</span>',
 									'</div>',
 								'</div>',
 							'</div>'

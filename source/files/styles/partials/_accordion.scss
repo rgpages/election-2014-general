@@ -1,0 +1,70 @@
+.ion-head {
+	
+	font-size: 18px;
+	line-height: 20px;
+	font-weight: normal;
+	letter-spacing: .08em;
+	text-transform: none;
+	color: lighten($color2, 50%);
+	background-color: $color2;
+	margin: 10px 0;
+	padding: 10px;
+	white-space: nowrap;
+	cursor: pointer;
+	cursor: hand;
+	border-radius: 3px;
+	position: relative;
+	z-index: 2;
+	
+	.no-touch &:hover,
+	&:focus {
+		background-image: linear-gradient(transparent, rgba($raven, .05) 40%,
+		                  rgba($raven, .10));
+	}
+	
+	&:focus { outline: 0; }
+	
+	&:active {
+		box-shadow: 0 0 0 2px rgba($raven, .15) inset,
+		            0 0 10px rgba($raven, .25) inset;
+	}
+	
+	// Applied only if JS is turned ON:
+	.js &::before {
+		font-family: FontAwesome;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 18px;
+		line-height: 20px;
+		content: "\f067";
+		position: absolute;
+		top: 10px;
+		right: 10px;
+	}
+	
+	// JS ON:
+	.js &.ion-head-selected::before { content: "\f068"; }
+	
+}
+
+.ion-panel {
+	
+	background: rgba($raven, .15);
+	border-radius: 0 0 3px 3px;
+	position: relative;
+	top: -13px; // Head `margin` + `border-radius`.
+	z-index: 1;
+	overflow: hidden;
+	
+	.js & { display: none; } // JS ON
+	
+}
+
+.ion-wrap {
+	
+	padding: 13px 10px 10px; // `3px` compensation for negative offset above.
+	
+	> :first-child { margin-top: 0; }
+	> :last-child { margin-bottom: 0; }
+	
+}
