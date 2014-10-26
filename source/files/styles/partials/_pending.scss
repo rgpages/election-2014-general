@@ -147,243 +147,121 @@ section.module p {
 
 //----------------------------------------------------------------------
 
-.poll {
-	
-	// Cascade to children:
-	font-family: arial, sans-serif;
-	color: $gray3;
-	// Skin stuff:
-	border: 1px solid $grayc;
-	background: $graye;
-	box-shadow: 0 0 5px rgba($raven, .1);
-	// Spacing:
-	margin: 10px 0;
-	padding: 0;
-	// For spinner:
-	position: relative;
-	
-	.poll-spinner {
-		background: url(../images/loading.gif) no-repeat; // Note: `loader2.gif` is white on black.
-		// Dimensions should be exceed `25px` in either direction:
-		width: 20px;
-		height: 20px;
-		// For retina display (will fill proportionally):
-		background-size: cover;
-		// Position upper-right hand corner:
-		position: absolute;
-		top: 5px;
-		right: 5px;
-		// JS controls visibility:
-		display: none;
-	}
-	
-	.poll-head {
-		font-size: 14px;
-		line-height: 25px; // Height of `.poll-spinner` + `top` positioning.
-		letter-spacing: .1em;
-		text-transform: uppercase;
-		margin: 0;
-		padding: 5px 10px;
-		background: $grayd;
-		color: $gray3;
-	}
-	
-	.poll-content {
+
+		/*-----------------( TAB SKIN )-----------------*/
 		
-		padding: 10px 15px 15px;
-		
-		// Tidy up spacing of children:
-		:first-child { margin-top: 0; }
-		:last-child { margin-bottom: 0; }
-		
-	}
-	
-	/*
-	<div class="tile">
-		<div class="tile-grid">
-			<div class="tile-grid-secondary">
-				...
-			</div>
-			<div class="tile-grid-primary">
-				...
-			</div>
-		</div>
-		<div class="tile-grid tile-grid-alt">
-			<div class="tile-grid-secondary">
-				...
-			</div>
-			<div class="tile-grid-tertiary">
-				...
-			</div>
-			<div class="tile-grid-primary">
-				...
-			</div>
-		</div>
-	</div>
-	*/
-	
-	.poll-grid {
-		
-		margin: 5px 0;
-		
-		&::after {
-			content: "";
-			display: table;
-			clear: both;
+		.nutshell,
+		.nutshell li {
+			margin: 0;
+			padding: 0;
 		}
-		
-		.poll-grid-secondary {
-			position: absolute;
-			top: 0;
-			right: 0;
-		}
-		
-		.poll-grid-tertiary {
-			
-			width: 50px;
-			float: left;
-			
-			+ .poll-grid-primary { margin-left: 60px; }
-			
-		}
-		
-		@media all and (min-width: 640px) {
-			
-			.poll-grid-secondary {
-				position: static;
-				width: 90px;
-				float: right;
-			}
-			
-			.poll-grid-primary { margin-right: 100px; }
-			
-		}
-		
-	}
-	
-	.poll-bar {
-		
-		margin: 15px 0;
-		position: relative;
-		
-		.poll-bar-wrap {
-			
-			// Match `.poll-bar-votes` radius:
-			border-radius: 3px;
-			// More skin:
-			background: $graye;
-			background: linear-gradient(
-				to bottom,
-				rgba($raven, .3) 0,
-				rgba($raven, .1) 100%
-			);
-			box-shadow: inset 0 0 5px rgba($raven, .35);
+		.nutshell {
 			position: relative;
-			
-			&.poll-bar-up::before,
-			&.poll-bar-down::before {
-				font-size: 20px;
-				font-family: FontAwesome;
-				font-style: normal;
-				font-weight: normal;
-				line-height: 30px;
-				background: rgba($raven, .75);
-				padding: 0 5px;
-				border-radius: 3px 0 0 3px;
-				position: absolute;
-				top: 0;
-				left: 0;
-				z-index: 100;
-			}
-			&.poll-bar-up::before {
-				color: darken($frog, 40%);
-				content: "\f062";
-			}
-			&.poll-bar-down::before {
-				color: darken($chili, 40%);
-				content: "\f063";
-			}
-			
+			margin-bottom: 5px;
 		}
-		
-		.poll-bar-votes {
-			
-			// Align % to right side of bar (I think it looks better):
-			text-align: right;
-			// Pseudo vertical centering:
-			line-height: 30px;
-			// Match `.poll-bar-wrap` radius:
-			border-radius: 3px;
-			// Skin:
-			background: $gray9;
-			background: linear-gradient(
-				to bottom,
-				rgba(lighten($color1, 30%), 1) 0,
-				rgba(lighten($color1, 20%), 1) 50%,
-				rgba(lighten($color1, 10%), 1) 51%,
-				rgba(lighten($color1, 20%), 1) 100%
-			);
-			box-shadow: inset 0 0 3px rgba(darken($color1, 10%), .5);
-			// Start with no width so it scales nicely on load:
-			width: 0;
-			// Match line height:
-			height: 30px;
-			// Animates width when changed by JS:
-			// -webkit-transition: width .4s;
-			//    -moz-transition: width .4s;
-			//      -o-transition: width .4s;
-			//         transition: width .4s;
-			-webkit-transition: width 500ms cubic-bezier(0.680, 0, 0.265, 1); // Older WebKit.
-			-webkit-transition: width 500ms cubic-bezier(0.680, -0.550, 0.265, 1.550);
-			   -moz-transition: width 500ms cubic-bezier(0.680, -0.550, 0.265, 1.550);
-			     -o-transition: width 500ms cubic-bezier(0.680, -0.550, 0.265, 1.550);
-			        transition: width 500ms cubic-bezier(0.680, -0.550, 0.265, 1.550); // easeInOutBack
-			
-			> span {
-				// Make look nice typographically:
-				font-size: 14px;
-				letter-spacing: .05em;
-				// Dark orange to match parent background:
-				color: darken($color1, 20%);
-				// Spacing:
-				margin: 0 5px;
-				display: inline-block;
-			}
-			
-		}
-		
-		.poll-bar-title {
-			font-size: 16px;
-			line-height: 18px;
-			letter-spacing: .025em;
-			color: $gray3;
-			border-bottom: 1px solid $grayc;
-			padding-bottom: 5px;
-			padding-right: 100px; // Same as grid width.
-			margin-bottom: 10px;
-			// Because it's a span:
+		.nutshell li { list-style: none; }
+		.nutshell a {
+			background: transparent;
+			border: 1px solid rgba(0, 0, 0, 0);
+			padding: 5px 10px;
 			display: block;
 		}
-		
-		.poll-bar-label,
-		.poll-bar-count {
-			font-size: 14px;
-			letter-spacing: .05em;
-			color: $gray6;
+		.nutshell a,
+		.nutshell a:visited {
+			color: #000;
+			text-decoration: none;
 		}
+		.nutshell a:visited:hover,
+		.nutshell a:focus,
+		.nutshell a:focus:hover,
+		.nutshell a:hover,
+		.nutshell a:active { text-decoration: none; }
+		.nutshell a.nutshell-selected {
+			border-radius: 3px;
+			border-color: #ccc;
+			background: #fff;
+		}
+		.nutshell a:active,
+		.nutshell a:focus { outline: none; }
 		
-		.poll-bar-label { line-height: 30px; }
-		
-		.poll-bar-count {
+		@media all and (min-width : 480px) {
 			
-			@media all and (min-width: 640px) {
-				
-				& { line-height: 30px; } // Match `.poll-bar-votes` line height.
-				
+			.nutshell { *zoom: 1; } .nutshell:before, .nutshell:after { content: " "; display: table; } .nutshell:after { clear: both; }
+			.nutshell { border-bottom: 1px solid #ccc; }
+			.nutshell li {
+				float: left;
+				display: inline;
+				margin-right: 5px;
+				margin-bottom: -1px;
+			}
+			.nutshell li:last-child { margin-right: 0; }
+			.nutshell a { border-bottom: 0; }
+			.nutshell a.nutshell-selected {
+				border-bottom-right-radius: 0;
+				border-bottom-left-radius: 0;
+				border-color: #ccc;
+				background: #fff;
 			}
 			
 		}
 		
-	}
-	
-}
+		/*-----------------( TAB PANEL )-----------------*/
+		
+		.panel {
+			border: 1px solid #ccc;
+			background: #fff;
+			padding: 10px;
+			border-radius: 0 0 3px 3px;
+			box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+		}
+		.panel > :last-child { margin-bottom: 0; }
+		
+		/*-----------------( UTILITY )-----------------*/
+		
+		.js .panel { display: none; }
+
+
+
+
+
+
+.ion :first-of-type .ion-head { border-top: 1px solid #ccc; }
+		.ion-head {
+			font-size: 1em;
+			line-height: 1;
+			color: #666;
+			border-width: 0 0 1px;
+			border-style: solid;
+			border-color: #ccc;
+			background: #fff;
+			margin: 0;
+			padding: .5em 0;
+			white-space: nowrap;
+			cursor: pointer;
+			cursor: hand;
+			overflow: hidden;
+		}
+		.no-js .ion-head { color: #000; } /* Applied only if JS is turned OFF. */
+		.js .ion-head::before { /* Applied only if JS is turned ON. */
+			font-size: smaller;
+			font-weight: bold;
+			text-align: center;
+			line-height: 1em;
+			color: #999;
+			border: 1px solid #ccc;
+			border-radius: 50%;
+			background: #eee;
+			width: 1em;
+			height: 1em;
+			float: right;
+			display: inline;
+			content: "\002B";
+			position: relative;
+		}
+		.js .ion-head-selected { color: #000; } /* JS ON */
+		.js .ion-head-selected::before { content: "\2212"; } /* JS ON */
+		.ion-panel {
+			overflow: hidden;
+			position: relative;
+		}
+		.js .ion-panel { display: none; } /* JS ON */

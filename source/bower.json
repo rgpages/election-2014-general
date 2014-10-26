@@ -5,10 +5,12 @@
     "fastclick": "~1",
     "harmonia": "https://github.com/mhulse/jquery-harmonia.git#v1",
     "imagesloaded": "~3",
+    "ion": "https://github.com/mhulse/jquery-ion.git#v1",
     "jquery": "~2",
     "letteringjs": "~0",
     "moment.twitter": "~0",
     "normalize-css": "~3",
+    "nutshell": "https://github.com/mhulse/jquery-nutshell.git#v1",
     "pollster": "https://github.com/mhulse/jquery-pollster.git#v1",
     "pure": "~0"
   },
