@@ -34,7 +34,7 @@
 
 (function(){
 	
-	$.pollster.defaults.loader = 'tile-spinner';
+	$.pollster.defaults.loader = 'poll-spinner';
 	$.pollster.defaults.timeout = 600;
 	
 	$.pollster({
@@ -159,7 +159,7 @@
 							'</div>'
 						].join('\n');
 						
-						$('#' + id1 + ' .tile-content').append(template);
+						$('#' + id1 + ' .poll-content').append(template);
 						
 					}
 					
@@ -228,7 +228,7 @@
 							'</div>'
 						].join('\n');
 						
-						$('#' + id1 + ' .tile-content').append(template);
+						$('#' + id1 + ' .poll-content').append(template);
 						
 					}
 					
@@ -297,7 +297,7 @@
 							'</div>'
 						].join('\n');
 						
-						$('#' + id1 + ' .tile-content').append(template);
+						$('#' + id1 + ' .poll-content').append(template);
 						
 					}
 					
@@ -366,7 +366,7 @@
 							'</div>'
 						].join('\n');
 						
-						$('#' + id1 + ' .tile-content').append(template);
+						$('#' + id1 + ' .poll-content').append(template);
 						
 					}
 					
