@@ -7,16 +7,26 @@ aside {
 	
 }
 
+.container,
+.wrap {
+	max-width: 1600px;
+	margin: 0 auto;
+}
 .container {
 	
-	max-width: 1600px;
-	margin: 25px auto;
+	margin: {
+		top: 25px;
+		bottom: 25px;
+	};
 	padding: 0 25px;
 	
 	@media all and (min-width: 640px) { // IBID.
 		
 		& {
-			margin: 50px auto;
+			margin: {
+				top: 50px;
+				bottom: 50px;
+			}
 			padding: 0 50px;
 		}
 		
@@ -50,36 +60,109 @@ aside {
 
 #header {
 	
-	text-align: center;
-	xmargin-top: 50px;
+	color: $graye;
+	background-color: $raven;
 	position: relative;
-	border-bottom: 2px solid $grayd;
-	padding: 10px 0;
-	background: $graye;
+	top: -40px; // Compensate for sticky header.
 	
-	*zoom: 1;
-	&::before,
-	&::after {
-		content: " ";
-		display: table;
-	}
-	&::after { clear: both; }
+	// text-align: center;
+	// position: relative;
 	
-	@media all and (min-width: 960px) {
+	// *zoom: 1;
+	// &::before,
+	// &::after {
+	// 	content: " ";
+	// 	display: table;
+	// }
+	// &::after { clear: both; }
+	
+	> .wrap {
 		
-		& {
+		padding: {
+			top: 25px;
+			bottom: 25px;
+		}
+		position: relative;
+		
+		// text-rendering: optimizeLegibility;
+		// font-feature-settings: "kern";
+		// -webkit-font-feature-settings: "kern";
+		// -moz-font-feature-settings: "kern";
+		// -moz-font-feature-settings: "kern=1";
+		
+		// http://zerosixthree.se/vertical-align-anything-with-just-3-lines-of-css/
+		-webkit-transform-style: preserve-3d;
+		   -moz-transform-style: preserve-3d;
+		    -ms-transform-style: preserve-3d;
+		     -o-transform-style: preserve-3d;
+		        transform-style: preserve-3d;
+		
+		h1 {
+			left: 50px; // Compensate for `.container` left padding.
+			top: 50%;
+			-webkit-transform: translateY(-50%);
+			   -moz-transform: translateY(-50%);
+			    -ms-transform: translateY(-50%);
+			     -o-transform: translateY(-50%);
+			        transform: translateY(-50%);
+		}
+		
+		h2,
+		h3 { margin: 0 0 0 150px; } // Width of `#flag` + some extra for margin.
+		
+		h2 {
 			
-			text-align: left;
-			xmargin-bottom: 100px;
-		
-			h1 {
-				position: absolute;
-				top: 50%;
-				transform: translateY(-50%);
-			}
+			letter-spacing: normal;
+			font-size: 120px;
+			line-height: 100px;
+			font-family: "MillerHeadline Bold";
+			font-weight: bold;
+			font-style: normal;
+			margin-bottom: 5px;
+			
+			.char1 { margin-left: 0; }
+			.char2 { margin-left: 8px; }
+			.char3 { margin-left: -2px; }
+			.char4 { margin-left: 1px; }
+			.char5 { margin-left: 4px; }
+			.char6 { margin-left: 9px; }
+			.char7 { margin-left: -4px; }
+			.char8 { margin-left: -5px; }
+			.char9 { margin-left: 0; }
+			.char10 { margin-left: 0; }
+			.char11 { margin-left: 2px; }
+			.char12 { margin-left: -8px; }
+			.char13 { margin-left: -3px; }
 			
 		}
 		
+		h3 {
+			font-family: "MillerHeadline Light";
+			font-style: normal;
+			font-weight: normal;
+			font-size: 30px;
+			line-height: 35px;
+			letter-spacing: .25em;
+			color: #ccc;
+		}
+		
 	}
+	
+	// @media all and (min-width: 960px) {
+		
+	// 	& {
+			
+	// 		text-align: left;
+	// 		xmargin-bottom: 100px;
+		
+	// 		h1 {
+	// 			position: absolute;
+	// 			top: 50%;
+	// 			transform: translateY(-50%);
+	// 		}
+			
+	// 	}
+		
+	// }
 	
 }

@@ -1,15 +1,16 @@
 nav[role="navigation"] {
 	
-	background: $raven;
+	background: $gray1;
 	border-width: 5px 0;
 	border-style: solid;
-	border-color: $raven;
+	border-color: $gray1;
 	
 	ul {
 		
 		background: $gray2;
 		background-image: linear-gradient(to bottom, $gray2 0, $gray3 100%);
-		text-align: center;
+		//text-align: center;
+		text-align: left;
 		
 		&,
 		li {
@@ -24,10 +25,7 @@ nav[role="navigation"] {
 			letter-spacing: .1em;
 			list-style: none;
 			display: inline-block;
-			border-right: 1px solid $raven;
 			text-shadow: 0 1px 1px $raven;
-			
-			&:last-child { border-right: none; }
 			
 		}
 		
@@ -35,7 +33,7 @@ nav[role="navigation"] {
 			
 			display: block;
 			background-size: 100% 200%;
-			background-image: linear-gradient(to bottom, transparent 50%, $raven 50%);
+			background-image: linear-gradient(to bottom, transparent 50%, $gray1 50%);
 			padding: 10px 15px;
 			-webkit-transition: background-position 150ms ease-in, color 200ms linear;
 			   -moz-transition: background-position 150ms ease-in, color 200ms linear;
