@@ -28,6 +28,8 @@
 
 (function() {
 	
+	var $timeout;
+	
 	// http://stackoverflow.com/a/5533262/922323
 	var len = function(obj) {
 		
@@ -54,6 +56,8 @@
 			var $images = [];
 			var i = 0;
 			
+			window.clearTimeout($timeout);
+			
 			$.each($.parseJSON($data), function(i, v) {
 				
 				$images.push({
@@ -64,6 +68,8 @@
 				});
 				
 			});
+			
+			//console.log($images);
 			
 			// Combine/merge previous image list with current:
 			//var $images = $.extend(true, {}, $this.data('parallax'), $images);
@@ -86,8 +92,8 @@
 								'<span>',
 									'<span>',
 										$images[i].caption,
-										(($images[i].credit) && ('<br><span>' + $images[i].credit) + (($images[i].credit) && ('<br>' + $images[i].org)) + '</span>'),
 									'</span>',
+									(($images[i].credit) && ('<br><span>' + $images[i].credit) + (($images[i].credit) && ('<br>' + $images[i].org)) + '</span>'),
 								'</span>'
 							].join('\n') : '';
 							
@@ -120,7 +126,7 @@
 							}
 							
 							// Rinse, wash and repeat:
-							setTimeout(timer, 10000);
+							$timeout = window.setTimeout(timer, 30000);
 							
 						});
 						

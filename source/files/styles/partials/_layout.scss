@@ -133,6 +133,20 @@ aside {
 			color: $graye;
 			margin-bottom: 5px;
 			
+			.char1 { margin-left: 0; }
+			.char2 { margin-left: 3px; }
+			.char3 { margin-left: -2px; }
+			.char4 { margin-left: 1px; }
+			.char5 { margin-left: 1px; }
+			.char6 { margin-left: 3px; }
+			.char7 { margin-left: -2px; }
+			.char8 { margin-left: -3px; }
+			.char9 { margin-left: 0; }
+			.char10 { margin-left: 0; }
+			.char11 { margin-left: 1px; }
+			.char12 { margin-left: -4px; }
+			.char13 { margin-left: -3px; }
+			
 			@media all and (min-width: 960px) {
 				
 				font-size: 120px;

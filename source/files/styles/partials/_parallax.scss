@@ -42,23 +42,37 @@
 			letter-spacing: .1em;
 			color: $grayc; // Color if no link.
 			background: rgba($raven, .75);
-			padding: 5px;
+			padding: 5px 10px;
 			position: absolute;
 			right: 0;
 			bottom: 0;
 			left: 0;
 			
-			@media all and (min-width: 640px) {
+			br { display: none; }
+			
+			span:last-child {
+				
+				color: $gray8;
+				
+				&::before { content: "("; }
+				&::after { content: ")"; }
+				
+			}
+			
+			@media all and (min-width: 960px) {
 				
 				font-size: 18px;
 				line-height: 44px;
 				background: transparent;
+				padding: 5px;
 				right: 50px;
 				bottom: 50px;
 				left: auto;
 				max-width: 350px;
 				
-				> span {
+				br { display: block; }
+				
+				span:first-child {
 					
 					// https://github.com/mhulse/data/issues/18
 					padding: 10px;
@@ -69,11 +83,31 @@
 					     -o-box-decoration-break: clone;
 					        box-decoration-break: clone;
 					
-					span {
-						font-size: 12px;
-						text-transform: uppercase;
-						color: $gray8;
+				}
+				
+				span:last-child {
+					
+					font-size: 12px;
+					line-height: 18px;
+					text-transform: uppercase;
+					letter-spacing: .05em;
+					display: block;
+					margin: 10px 0 0 30px;
+					text-shadow: 0 1px 1px $raven,
+					             0 1px 1px $raven;
+					position: relative;
+					
+					&::before {
+						font-family: FontAwesome;
+						font-style: normal;
+						font-weight: normal;
+						content: "\f030";
+						position: absolute;
+						top: 0;
+						left: -1.8em;
 					}
+					
+					&::after { content: ""; }
 					
 				}
 				

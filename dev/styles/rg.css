@@ -2853,6 +2853,45 @@ aside > :last-child {
   color: #eee;
   margin-bottom: 5px;
 }
+#header #masthead > div h2 .char1 {
+  margin-left: 0;
+}
+#header #masthead > div h2 .char2 {
+  margin-left: 3px;
+}
+#header #masthead > div h2 .char3 {
+  margin-left: -2px;
+}
+#header #masthead > div h2 .char4 {
+  margin-left: 1px;
+}
+#header #masthead > div h2 .char5 {
+  margin-left: 1px;
+}
+#header #masthead > div h2 .char6 {
+  margin-left: 3px;
+}
+#header #masthead > div h2 .char7 {
+  margin-left: -2px;
+}
+#header #masthead > div h2 .char8 {
+  margin-left: -3px;
+}
+#header #masthead > div h2 .char9 {
+  margin-left: 0;
+}
+#header #masthead > div h2 .char10 {
+  margin-left: 0;
+}
+#header #masthead > div h2 .char11 {
+  margin-left: 1px;
+}
+#header #masthead > div h2 .char12 {
+  margin-left: -4px;
+}
+#header #masthead > div h2 .char13 {
+  margin-left: -3px;
+}
 @media all and (min-width: 960px) {
   #header #masthead > div h2 {
     font-size: 120px;
@@ -3536,23 +3575,39 @@ nav[role="navigation"] .harmonia-select {
   letter-spacing: .1em;
   color: #ccc;
   background: rgba(0, 0, 0, 0.75);
-  padding: 5px;
+  padding: 5px 10px;
   position: absolute;
   right: 0;
   bottom: 0;
   left: 0;
 }
-@media all and (min-width: 640px) {
+#slideshow a#parallax > span br {
+  display: none;
+}
+#slideshow a#parallax > span span:last-child {
+  color: #888;
+}
+#slideshow a#parallax > span span:last-child::before {
+  content: "(";
+}
+#slideshow a#parallax > span span:last-child::after {
+  content: ")";
+}
+@media all and (min-width: 960px) {
   #slideshow a#parallax > span {
     font-size: 18px;
     line-height: 44px;
     background: transparent;
+    padding: 5px;
     right: 50px;
     bottom: 50px;
     left: auto;
     max-width: 350px;
   }
-  #slideshow a#parallax > span > span {
+  #slideshow a#parallax > span br {
+    display: block;
+  }
+  #slideshow a#parallax > span span:first-child {
     padding: 10px;
     background: rgba(0, 0, 0, 0.75);
     -webkit-box-decoration-break: clone;
@@ -3561,10 +3616,27 @@ nav[role="navigation"] .harmonia-select {
     -o-box-decoration-break: clone;
     box-decoration-break: clone;
   }
-  #slideshow a#parallax > span > span span {
+  #slideshow a#parallax > span span:last-child {
     font-size: 12px;
+    line-height: 18px;
     text-transform: uppercase;
-    color: #888;
+    letter-spacing: .05em;
+    display: block;
+    margin: 10px 0 0 30px;
+    text-shadow: 0 1px 1px #000, 0 1px 1px #000;
+    position: relative;
+  }
+  #slideshow a#parallax > span span:last-child::before {
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    content: "\f030";
+    position: absolute;
+    top: 0;
+    left: -1.8em;
+  }
+  #slideshow a#parallax > span span:last-child::after {
+    content: "";
   }
 }
 
@@ -3702,8 +3774,8 @@ p.meta:hover {
 
 .loading {
   background: url(../images/loader2.gif) no-repeat center top;
-  background-size: 40px;
-  min-height: 40px;
+  background-size: 32px 10px;
+  min-height: 32px;
 }
 
 .banner {
