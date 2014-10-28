@@ -55,7 +55,10 @@
 					template = [
 						'<div id="' + id1 + '" class="poll">',
 							'<div class="poll-spinner"></div>',
-							'<h6 class="poll-head">' + v1.contest_wrapper + '</h6>',
+							'<h6 class="poll-head">',
+								v1.contest_wrapper,
+								(v1.contest_name) ? v1.contest_name : '',
+							'</h6>',
 							'<div class="poll-content">',
 							'</div>',
 						'</div>'
@@ -124,7 +127,10 @@
 					template = [
 						'<div id="' + id1 + '" class="poll">',
 							'<div class="poll-spinner"></div>',
-							'<h6 class="poll-head">' + v1.contest_wrapper + '</h6>',
+							'<h6 class="poll-head">',
+								v1.contest_wrapper,
+								(v1.contest_name) ? v1.contest_name : '',
+							'</h6>',
 							'<div class="poll-content">',
 							'</div>',
 						'</div>'
@@ -193,7 +199,10 @@
 					template = [
 						'<div id="' + id1 + '" class="poll">',
 							'<div class="poll-spinner"></div>',
-							'<h6 class="poll-head">' + v1.contest_wrapper + '</h6>',
+							'<h6 class="poll-head">',
+								v1.contest_wrapper,
+								(v1.contest_name) ? v1.contest_name : '',
+							'</h6>',
 							'<div class="poll-content">',
 							'</div>',
 						'</div>'
@@ -262,7 +271,10 @@
 					template = [
 						'<div id="' + id1 + '" class="poll">',
 							'<div class="poll-spinner"></div>',
-							'<h6 class="poll-head">' + v1.contest_wrapper + '</h6>',
+							'<h6 class="poll-head">',
+								v1.contest_wrapper,
+								(v1.contest_name) ? v1.contest_name : '',
+							'</h6>',
 							'<div class="poll-content">',
 							'</div>',
 						'</div>'
@@ -331,7 +343,10 @@
 					template = [
 						'<div id="' + id1 + '" class="poll">',
 							'<div class="poll-spinner"></div>',
-							'<h6 class="poll-head">' + v1.contest_wrapper + '</h6>',
+							'<h6 class="poll-head">',
+								v1.contest_wrapper,
+								(v1.contest_name) ? v1.contest_name : '',
+							'</h6>',
 							'<div class="poll-content">',
 							'</div>',
 						'</div>'
