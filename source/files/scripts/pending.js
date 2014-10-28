@@ -1,4 +1,140 @@
-(function(){
+(function() {
+
+	$("#filter").keyup(function(){
+
+	    // Retrieve the input field text and reset the count to zero
+	    var filter = $(this).val(), count = 0;
+
+	    // Loop through the comment list
+	    $("#filtered").find('.poll').each(function(){
+console.log($(this));
+	        // If the list item does not contain the text phrase fade it out
+	        if ($(this).children('h6').text().search(new RegExp(filter, "i")) < 0) {
+	            $(this).fadeOut();
+
+	        // Show the list item if the phrase matches and increase the count by 1
+	        } else {
+	            $(this).show();
+	            count++;
+	        }
+	    });
+
+	    // Update the count
+	    var numberItems = count;
+	    $("#filter-count").text("Number of Comments = "+count);
+	});
+	
+})();
+
+(function() {
+	
+	// http://stackoverflow.com/a/5533262/922323
+	var len = function(obj) {
+		
+		var l = 0;
+		
+		$.each(obj, function(i, elem) {
+			
+			l++;
+			
+		});
+		
+		return l;
+		
+	};
+	
+	$.pollster({
+		target: 'parallax',
+		api: 'http://sandbox.registerguard.com/electionssp/',
+		timeout: 300, // 5 mins.
+		callback: function($data, $options) {
+			
+			// http://www.programming-free.com/2013/12/change-background-image-jquery.html
+			var $this = $(this);
+			var $images = [];
+			var i = 0;
+			
+			$.each($.parseJSON($data), function(i, v) {
+				
+				$images.push({
+					url: v.url,
+					caption: v.caption,
+					credit: v.credit,
+					org: v.org
+				});
+				
+			});
+			//console.log($images);
+			
+			// Combine/merge previous image list with current:
+			var $images = $.extend(true, {}, $this.data('parallax'), $images);
+			
+			// Store image list for use in next call:
+			$this.data('parallax', $images);
+			
+			// Basic slideshow:
+			(function timer() {
+				
+				// Load the image first:
+				$('<img src="' + $images[i].url + '">')
+					.imagesLoaded(function() {
+						
+						// Hide the current image:
+						$this.fadeOut(1000, function() {
+							
+							// Caption?
+							var template = ($images[i].caption) ? [
+								'<span>',
+									'<span>',
+										$images[i].caption,
+										(($images[i].credit) && ('<br><span>' + $images[i].credit) + (($images[i].credit) && ('<br>' + $images[i].org)) + '</span>'),
+									'</span>',
+								'</span>'
+							].join('\n') : '';
+							
+							// Link?
+							if ($images[i].link) {
+								
+								// Yup, then hot it up:
+								$this.attr('href', $images[i].link);
+								
+							} else {
+								
+								// Nope, so might as well remove it:
+								$this.removeAttr('href');
+								
+							}
+							
+							// Update caption and show new image:
+							$this
+								.html(template)
+								.css('background-image', 'url(' + $images[i].url +')')
+								.fadeIn(1000);
+							
+							i++
+							
+							// Start from beginning?
+							if (i == len($images)) {
+								
+								i = 0; // Yes.
+								
+							}
+							
+							// Rinse, wash and repeat:
+							setTimeout(timer, 10000);
+							
+						});
+						
+					});
+				
+			}());
+			
+		}
+	});
+	
+})();
+
+(function() {
 	
 	$('figure').each(function(index) {
 		
@@ -14,28 +150,30 @@
 	
 })();
 
-(function(){
+(function(window) {
+	
+	var $window = $(window)
+	
+	$window.scroll(function($e) {
+		
+		parallax();
+		
+	});
+	
+	function parallax() {
+		
+		var scrolled = $window.scrollTop();
+		
+		$('#parallax').css('background-position', '50% ' + ((scrolled * .5) + 'px'));
+		
+	}
 
-  var parallax = document.querySelectorAll(".parallax"),
-      speed = 0.5;
+})(window);
 
-  window.onscroll = function(){
-    [].slice.call(parallax).forEach(function(el,i){
-
-      var windowYOffset = window.pageYOffset,
-          elBackgrounPos = "50% " + (windowYOffset * speed) + "px";
-      
-      el.style.backgroundPosition = elBackgrounPos;
-
-    });
-  };
-
-})();
-
-(function(){
+(function() {
 	
 	$.pollster.defaults.loader = 'poll-spinner';
-	$.pollster.defaults.timeout = 600;
+	$.pollster.defaults.timeout = 600; // 10 mins.
 	
 	$.pollster({
 		target: 'results-state-races',

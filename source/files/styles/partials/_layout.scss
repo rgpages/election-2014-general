@@ -86,56 +86,73 @@ aside {
 		position: relative;
 		padding: 25px 0;
 		
-		// text-rendering: optimizeLegibility;
-		// font-feature-settings: "kern";
-		// -webkit-font-feature-settings: "kern";
-		// -moz-font-feature-settings: "kern";
-		// -moz-font-feature-settings: "kern=1";
-		
-		// http://zerosixthree.se/vertical-align-anything-with-just-3-lines-of-css/
-		-webkit-transform-style: preserve-3d;
-		   -moz-transform-style: preserve-3d;
-		    -ms-transform-style: preserve-3d;
-		     -o-transform-style: preserve-3d;
-		        transform-style: preserve-3d;
-		
-		// Flag (move to `_flag.scss`?):
-		h1 {
-			top: 50%;
-			-webkit-transform: translateY(-50%);
-			   -moz-transform: translateY(-50%);
-			    -ms-transform: translateY(-50%);
-			     -o-transform: translateY(-50%);
-			        transform: translateY(-50%);
+		@media all and (min-width: 960px) {
+			
+			// http://zerosixthree.se/vertical-align-anything-with-just-3-lines-of-css/
+			-webkit-transform-style: preserve-3d;
+			   -moz-transform-style: preserve-3d;
+			    -ms-transform-style: preserve-3d;
+			     -o-transform-style: preserve-3d;
+			        transform-style: preserve-3d;
+			
+			// Flag (move to `_flag.scss`?):
+			h1 {
+				top: 50%;
+				-webkit-transform: translateY(-50%);
+				   -moz-transform: translateY(-50%);
+				    -ms-transform: translateY(-50%);
+				     -o-transform: translateY(-50%);
+				        transform: translateY(-50%);
+			}
+			
 		}
 		
 		h2,
-		h3 { margin: 0 0 0 150px; } // Left `margin` = `width` of `#flag` + some extra for margin.
+		h3 {
+			
+			text-align: center;
+			margin: 0;
+			
+			@media all and (min-width: 960px) {
+				
+				text-align: left;
+				margin-left: 150px; // Left `margin` = `width` of `#flag` + some extra for margin.
+				
+			}
+			
+		}
 		
 		h2 {
 			
 			font-family: "MillerHeadline Bold";
 			font-weight: bold;
 			font-style: normal;
-			font-size: 120px;
-			line-height: 100px;
+			font-size: 80px;
+			line-height: 70px;
 			letter-spacing: normal;
 			color: $graye;
 			margin-bottom: 5px;
 			
-			.char1 { margin-left: 0; }
-			.char2 { margin-left: 5px; }
-			.char3 { margin-left: -1px; }
-			.char4 { margin-left: 3px; }
-			.char5 { margin-left: 3px; }
-			.char6 { margin-left: 5px; }
-			.char7 { margin-left: -1px; }
-			.char8 { margin-left: -2px; }
-			.char9 { margin-left: 0; }
-			.char10 { margin-left: 0; }
-			.char11 { margin-left: 3px; }
-			.char12 { margin-left: -5px; }
-			.char13 { margin-left: -2px; }
+			@media all and (min-width: 960px) {
+				
+				font-size: 120px;
+				line-height: 100px;
+				
+				.char1 { margin-left: 0; }
+				.char2 { margin-left: 5px; }
+				.char3 { margin-left: -1px; }
+				.char4 { margin-left: 3px; }
+				.char5 { margin-left: 3px; }
+				.char6 { margin-left: 5px; }
+				.char7 { margin-left: -1px; }
+				.char8 { margin-left: -2px; }
+				.char9 { margin-left: 0; }
+				.char10 { margin-left: 0; }
+				.char11 { margin-left: 3px; }
+				.char12 { margin-left: -5px; }
+				.char13 { margin-left: -2px; }
+				
+			}
 			
 		}
 		
@@ -144,50 +161,26 @@ aside {
 			font-family: "MillerHeadline Light";
 			font-style: normal;
 			font-weight: normal;
+			font-size: 20px;
+			line-height: 25px;
 			letter-spacing: .08em;
+			color: $grayc;
+			text-rendering: optimizeLegibility;
+			-webkit-font-feature-settings: "kern";
+			   -moz-font-feature-settings: "kern";
+			   -moz-font-feature-settings: "kern=1";
+			        font-feature-settings: "kern";
 			
-			// font-family: Helvetica, Arial, sans-serif;
-			// font-style: normal;
-			// font-weight: 100;
-			
-			font-size: 30px;
-			line-height: 35px;
-			color: #ccc;
-			
-			// .char1 { margin-left: 0; }
-			// .char2 { margin-left: 5px; }
-			// .char3 { margin-left: -1px; }
-			// .char4 { margin-left: 3px; }
-			// .char5 { margin-left: 3px; }
-			// .char6 { margin-left: 5px; }
-			// .char7 { margin-left: -1px; }
-			// .char8 { margin-left: -2px; }
-			// .char9 { margin-left: 0; }
-			// .char10 { margin-left: 0; }
-			// .char11 { margin-left: 3px; }
-			// .char12 { margin-left: -5px; }
-			// .char13 { margin-left: -2px; }
+			@media all and (min-width: 960px) {
+				
+				font-size: 30px;
+				line-height: 35px;
+				
+			}
 			
 		}
 		
 	}
-	
-	// @media all and (min-width: 960px) {
-		
-	// 	& {
-			
-	// 		text-align: left;
-	// 		xmargin-bottom: 100px;
-		
-	// 		h1 {
-	// 			position: absolute;
-	// 			top: 50%;
-	// 			transform: translateY(-50%);
-	// 		}
-			
-	// 	}
-		
-	// }
 	
 }
 

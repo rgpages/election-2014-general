@@ -8,7 +8,7 @@
  * @copyright Copyright (c) 2014 Micky Hulse.
  * @license Released under the Copyright © The Register-Guard 2014. All rights reserved..
  * @version 0.1.1
- * @date 2014/10/27
+ * @date 2014/10/28
  */
 
 
@@ -2813,81 +2813,110 @@ aside > :last-child {
 #header #banner > div {
   position: relative;
   padding: 25px 0;
-  -webkit-transform-style: preserve-3d;
-  -moz-transform-style: preserve-3d;
-  -ms-transform-style: preserve-3d;
-  -o-transform-style: preserve-3d;
-  transform-style: preserve-3d;
 }
-#header #banner > div h1 {
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  transform: translateY(-50%);
+@media all and (min-width: 960px) {
+  #header #banner > div {
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+  }
+  #header #banner > div h1 {
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
 }
 #header #banner > div h2,
 #header #banner > div h3 {
-  margin: 0 0 0 150px;
+  text-align: center;
+  margin: 0;
+}
+@media all and (min-width: 960px) {
+  #header #banner > div h2,
+  #header #banner > div h3 {
+    text-align: left;
+    margin-left: 150px;
+  }
 }
 #header #banner > div h2 {
   font-family: "MillerHeadline Bold";
   font-weight: bold;
   font-style: normal;
-  font-size: 120px;
-  line-height: 100px;
+  font-size: 80px;
+  line-height: 70px;
   letter-spacing: normal;
   color: #eee;
   margin-bottom: 5px;
 }
-#header #banner > div h2 .char1 {
-  margin-left: 0;
-}
-#header #banner > div h2 .char2 {
-  margin-left: 5px;
-}
-#header #banner > div h2 .char3 {
-  margin-left: -1px;
-}
-#header #banner > div h2 .char4 {
-  margin-left: 3px;
-}
-#header #banner > div h2 .char5 {
-  margin-left: 3px;
-}
-#header #banner > div h2 .char6 {
-  margin-left: 5px;
-}
-#header #banner > div h2 .char7 {
-  margin-left: -1px;
-}
-#header #banner > div h2 .char8 {
-  margin-left: -2px;
-}
-#header #banner > div h2 .char9 {
-  margin-left: 0;
-}
-#header #banner > div h2 .char10 {
-  margin-left: 0;
-}
-#header #banner > div h2 .char11 {
-  margin-left: 3px;
-}
-#header #banner > div h2 .char12 {
-  margin-left: -5px;
-}
-#header #banner > div h2 .char13 {
-  margin-left: -2px;
+@media all and (min-width: 960px) {
+  #header #banner > div h2 {
+    font-size: 120px;
+    line-height: 100px;
+  }
+  #header #banner > div h2 .char1 {
+    margin-left: 0;
+  }
+  #header #banner > div h2 .char2 {
+    margin-left: 5px;
+  }
+  #header #banner > div h2 .char3 {
+    margin-left: -1px;
+  }
+  #header #banner > div h2 .char4 {
+    margin-left: 3px;
+  }
+  #header #banner > div h2 .char5 {
+    margin-left: 3px;
+  }
+  #header #banner > div h2 .char6 {
+    margin-left: 5px;
+  }
+  #header #banner > div h2 .char7 {
+    margin-left: -1px;
+  }
+  #header #banner > div h2 .char8 {
+    margin-left: -2px;
+  }
+  #header #banner > div h2 .char9 {
+    margin-left: 0;
+  }
+  #header #banner > div h2 .char10 {
+    margin-left: 0;
+  }
+  #header #banner > div h2 .char11 {
+    margin-left: 3px;
+  }
+  #header #banner > div h2 .char12 {
+    margin-left: -5px;
+  }
+  #header #banner > div h2 .char13 {
+    margin-left: -2px;
+  }
 }
 #header #banner > div h3 {
   font-family: "MillerHeadline Light";
   font-style: normal;
   font-weight: normal;
+  font-size: 20px;
+  line-height: 25px;
   letter-spacing: .08em;
-  font-size: 30px;
-  line-height: 35px;
   color: #ccc;
+  text-rendering: optimizeLegibility;
+  -webkit-font-feature-settings: "kern";
+  -moz-font-feature-settings: "kern";
+  -moz-font-feature-settings: "kern=1";
+  font-feature-settings: "kern";
+}
+@media all and (min-width: 960px) {
+  #header #banner > div h3 {
+    font-size: 30px;
+    line-height: 35px;
+  }
 }
 
 footer[role="contentinfo"] {
@@ -3476,7 +3505,12 @@ nav[role="navigation"] .harmonia-select {
   margin-bottom: 0;
 }
 
-.parallax {
+#slideshow {
+  height: 650px;
+  height: 65vh;
+  position: relative;
+}
+#slideshow a#parallax {
   background-position: center top;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
@@ -3484,43 +3518,54 @@ nav[role="navigation"] .harmonia-select {
   -ms-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 650px;
-  height: 65vh;
-  position: relative;
-}
-.parallax a {
   display: block;
   width: 100%;
   height: 100%;
 }
-.parallax a > span {
-  font-size: 18px;
-  line-height: 44px;
-  font-weight: normal;
-  letter-spacing: .1em;
-  color: #000;
-  margin: 0;
-  position: absolute;
-  right: 50px;
-  bottom: 50px;
+#slideshow a#parallax, #slideshow a#parallax:visited, .no-touch #slideshow a#parallax:visited:hover, #slideshow a#parallax:focus, .no-touch #slideshow a#parallax:focus:hover, .no-touch #slideshow a#parallax:hover, #slideshow a#parallax:active {
   color: #fff;
-  max-width: 300px;
+  text-decoration: none;
 }
-.parallax a > span > span {
-  padding: 10px;
-  background: rgba(0, 0, 0, 0.75);
-  -webkit-box-decoration-break: clone;
-  -moz-box-decoration-break: clone;
-  -ms-box-decoration-break: clone;
-  -o-box-decoration-break: clone;
-  box-decoration-break: clone;
-}
-.parallax a > span > span span {
-  font-size: 65%;
-  color: #999;
-}
-.parallax a:active, .parallax a:focus {
+#slideshow a#parallax:active, #slideshow a#parallax:focus {
   outline: 0;
+}
+#slideshow a#parallax > span {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 20px;
+  letter-spacing: .1em;
+  color: #ccc;
+  background: rgba(0, 0, 0, 0.75);
+  padding: 5px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+@media all and (min-width: 640px) {
+  #slideshow a#parallax > span {
+    font-size: 18px;
+    line-height: 44px;
+    background: transparent;
+    right: 50px;
+    bottom: 50px;
+    left: auto;
+    max-width: 300px;
+  }
+  #slideshow a#parallax > span > span {
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.75);
+    -webkit-box-decoration-break: clone;
+    -moz-box-decoration-break: clone;
+    -ms-box-decoration-break: clone;
+    -o-box-decoration-break: clone;
+    box-decoration-break: clone;
+  }
+  #slideshow a#parallax > span > span span {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #888;
+  }
 }
 
 .callout {

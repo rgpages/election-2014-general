@@ -67,19 +67,17 @@
 	
 	<aside id="slideshow" role="complementary">
 		
-		<div class="parallax">
-			
-			<a href="#">
-				<span>
-					<span>
-						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-						<br>
-						<span>(Chris Pietsch/The Register-Guard)</span>
-					</span>
-				</span>
-			</a>
-			
-		</div> <!-- /.parallax -->
+		<a id="parallax"></a>
+		
+		<!--
+		<span>
+			<span>
+				Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+				<br>
+				<span>(Chris Pietsch/The Register-Guard)</span>
+			</span>
+		</span>
+		-->
 		
 	</aside> <!-- /#slideshow -->
 	
@@ -159,7 +157,10 @@
 			
 			<h1>Results</h1>
 			
-			<div class="pure-g pure-pad">
+			<input type="text" class="text-input" id="filter" value="">
+			<span id="filter-count"></span>
+			
+			<div id="filtered" class="pure-g pure-pad">
 				
 				<div class="pure-u-1 pure-u-md-12-24">
 					
