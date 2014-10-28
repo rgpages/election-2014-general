@@ -2,3 +2,10 @@
 // ...
 
 .js #disqus { display: none; }
+
+.loading {
+	// Before anything loads, show:
+	background: url(../images/loader2.gif) no-repeat center top;
+	background-size: 40px;
+	min-height: 40px; // Match background image height.
+}

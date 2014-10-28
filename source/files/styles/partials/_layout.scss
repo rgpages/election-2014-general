@@ -76,6 +76,11 @@ aside {
 	// }
 	// &::after { clear: both; }
 	
+	#slideshow {
+		background: url(../images/loader1.gif) no-repeat center center;
+		background-size: 40px;
+	}
+	
 	#banner > div {
 		
 		position: relative;
@@ -188,7 +193,7 @@ aside {
 
 footer[role="contentinfo"] {
 	
-	margin: 50px 0;
+	margin: 25px 0 50px;
 	text-align: center;
 	
 	p {

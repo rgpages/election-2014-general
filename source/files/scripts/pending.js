@@ -113,7 +113,11 @@
 							'</div>'
 						].join('\n');
 						
-						$('#' + id1 + ' .poll-content').append(template);
+						$('#' + id1)
+							.find('.poll-content')
+							.append(template)
+							.end()
+							.fadeIn();
 						
 					}
 					
@@ -210,7 +214,11 @@
 							'</div>'
 						].join('\n');
 						
-						$('#' + id1 + ' .poll-content').append(template);
+						$('#' + id1)
+							.find('.poll-content')
+							.append(template)
+							.end()
+							.fadeIn();
 						
 					}
 					
@@ -287,7 +295,11 @@
 							'</div>'
 						].join('\n');
 						
-						$('#' + id1 + ' .poll-content').append(template);
+						$('#' + id1)
+							.find('.poll-content')
+							.append(template)
+							.end()
+							.fadeIn();
 						
 					}
 					
@@ -359,7 +371,11 @@
 							'</div>'
 						].join('\n');
 						
-						$('#' + id1 + ' .poll-content').append(template);
+						$('#' + id1)
+							.find('.poll-content')
+							.append(template)
+							.end()
+							.fadeIn();
 						
 					}
 					
@@ -431,7 +447,11 @@
 							'</div>'
 						].join('\n');
 						
-						$('#' + id1 + ' .poll-content').append(template);
+						$('#' + id1)
+							.find('.poll-content')
+							.append(template)
+							.end()
+							.fadeIn();
 						
 					}
 					
@@ -503,7 +523,11 @@
 							'</div>'
 						].join('\n');
 						
-						$('#' + id1 + ' .poll-content').append(template);
+						$('#' + id1)
+							.find('.poll-content')
+							.append(template)
+							.end()
+							.fadeIn();
 						
 					}
 					

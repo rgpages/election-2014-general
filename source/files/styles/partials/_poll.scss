@@ -12,6 +12,8 @@
 	padding: 0;
 	// For spinner:
 	position: relative;
+	// Hide for JS:
+	display: none;
 	
 	.poll-spinner {
 		background: url(../images/loading.gif) no-repeat; // Note: `loader2.gif` is white on black.
