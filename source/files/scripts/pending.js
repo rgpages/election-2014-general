@@ -1,30 +1,30 @@
-(function() {
+// (function() {
 
-	$("#filter").keyup(function(){
+// 	$("#filter").keyup(function(){
 
-	    // Retrieve the input field text and reset the count to zero
-	    var filter = $(this).val(), count = 0;
+// 	    // Retrieve the input field text and reset the count to zero
+// 	    var filter = $(this).val(), count = 0;
 
-	    // Loop through the comment list
-	    $("#filtered").find('.poll').each(function(){
-console.log($(this));
-	        // If the list item does not contain the text phrase fade it out
-	        if ($(this).children('h6').text().search(new RegExp(filter, "i")) < 0) {
-	            $(this).fadeOut();
+// 	    // Loop through the comment list
+// 	    $("#filtered").find('.poll').each(function(){
+// console.log($(this));
+// 	        // If the list item does not contain the text phrase fade it out
+// 	        if ($(this).children('h6').text().search(new RegExp(filter, "i")) < 0) {
+// 	            $(this).fadeOut();
 
-	        // Show the list item if the phrase matches and increase the count by 1
-	        } else {
-	            $(this).show();
-	            count++;
-	        }
-	    });
+// 	        // Show the list item if the phrase matches and increase the count by 1
+// 	        } else {
+// 	            $(this).show();
+// 	            count++;
+// 	        }
+// 	    });
 
-	    // Update the count
-	    var numberItems = count;
-	    $("#filter-count").text("Number of Comments = "+count);
-	});
+// 	    // Update the count
+// 	    var numberItems = count;
+// 	    $("#filter-count").text("Number of Comments = "+count);
+// 	});
 	
-})();
+// })();
 
 (function() {
 	
@@ -64,13 +64,12 @@ console.log($(this));
 				});
 				
 			});
-			//console.log($images);
 			
 			// Combine/merge previous image list with current:
-			var $images = $.extend(true, {}, $this.data('parallax'), $images);
+			//var $images = $.extend(true, {}, $this.data('parallax'), $images);
 			
 			// Store image list for use in next call:
-			$this.data('parallax', $images);
+			//$this.data('parallax', $images);
 			
 			// Basic slideshow:
 			(function timer() {

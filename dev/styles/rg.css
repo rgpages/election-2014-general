@@ -2810,19 +2810,19 @@ aside > :last-child {
   background: url(../images/loader1.gif) no-repeat center center;
   background-size: 40px;
 }
-#header #banner > div {
+#header #masthead > div {
   position: relative;
   padding: 25px 0;
 }
 @media all and (min-width: 960px) {
-  #header #banner > div {
+  #header #masthead > div {
     -webkit-transform-style: preserve-3d;
     -moz-transform-style: preserve-3d;
     -ms-transform-style: preserve-3d;
     -o-transform-style: preserve-3d;
     transform-style: preserve-3d;
   }
-  #header #banner > div h1 {
+  #header #masthead > div h1 {
     top: 50%;
     -webkit-transform: translateY(-50%);
     -moz-transform: translateY(-50%);
@@ -2831,19 +2831,19 @@ aside > :last-child {
     transform: translateY(-50%);
   }
 }
-#header #banner > div h2,
-#header #banner > div h3 {
+#header #masthead > div h2,
+#header #masthead > div h3 {
   text-align: center;
   margin: 0;
 }
 @media all and (min-width: 960px) {
-  #header #banner > div h2,
-  #header #banner > div h3 {
+  #header #masthead > div h2,
+  #header #masthead > div h3 {
     text-align: left;
     margin-left: 150px;
   }
 }
-#header #banner > div h2 {
+#header #masthead > div h2 {
   font-family: "MillerHeadline Bold";
   font-weight: bold;
   font-style: normal;
@@ -2854,51 +2854,51 @@ aside > :last-child {
   margin-bottom: 5px;
 }
 @media all and (min-width: 960px) {
-  #header #banner > div h2 {
+  #header #masthead > div h2 {
     font-size: 120px;
     line-height: 100px;
   }
-  #header #banner > div h2 .char1 {
+  #header #masthead > div h2 .char1 {
     margin-left: 0;
   }
-  #header #banner > div h2 .char2 {
+  #header #masthead > div h2 .char2 {
     margin-left: 5px;
   }
-  #header #banner > div h2 .char3 {
+  #header #masthead > div h2 .char3 {
     margin-left: -1px;
   }
-  #header #banner > div h2 .char4 {
+  #header #masthead > div h2 .char4 {
     margin-left: 3px;
   }
-  #header #banner > div h2 .char5 {
+  #header #masthead > div h2 .char5 {
     margin-left: 3px;
   }
-  #header #banner > div h2 .char6 {
+  #header #masthead > div h2 .char6 {
     margin-left: 5px;
   }
-  #header #banner > div h2 .char7 {
+  #header #masthead > div h2 .char7 {
     margin-left: -1px;
   }
-  #header #banner > div h2 .char8 {
+  #header #masthead > div h2 .char8 {
     margin-left: -2px;
   }
-  #header #banner > div h2 .char9 {
+  #header #masthead > div h2 .char9 {
     margin-left: 0;
   }
-  #header #banner > div h2 .char10 {
+  #header #masthead > div h2 .char10 {
     margin-left: 0;
   }
-  #header #banner > div h2 .char11 {
+  #header #masthead > div h2 .char11 {
     margin-left: 3px;
   }
-  #header #banner > div h2 .char12 {
+  #header #masthead > div h2 .char12 {
     margin-left: -5px;
   }
-  #header #banner > div h2 .char13 {
+  #header #masthead > div h2 .char13 {
     margin-left: -2px;
   }
 }
-#header #banner > div h3 {
+#header #masthead > div h3 {
   font-family: "MillerHeadline Light";
   font-style: normal;
   font-weight: normal;
@@ -2913,7 +2913,7 @@ aside > :last-child {
   font-feature-settings: "kern";
 }
 @media all and (min-width: 960px) {
-  #header #banner > div h3 {
+  #header #masthead > div h3 {
     font-size: 30px;
     line-height: 35px;
   }
@@ -3550,7 +3550,7 @@ nav[role="navigation"] .harmonia-select {
     right: 50px;
     bottom: 50px;
     left: auto;
-    max-width: 300px;
+    max-width: 350px;
   }
   #slideshow a#parallax > span > span {
     padding: 10px;
@@ -3566,6 +3566,37 @@ nav[role="navigation"] .harmonia-select {
     text-transform: uppercase;
     color: #888;
   }
+}
+
+.advert {
+  text-align: center;
+  /* Oldschool centering technique. */
+  position: relative;
+  /* Just in case ad decides to `position: absolute;` without a `position: relative;` parent. */
+  margin: 0 auto;
+  /* Putting `auto` here to assist `.advert`s that have a width. */
+  /*overflow-x: hidden;*/
+  /* Avoid rogue ads breaking out of container. */
+}
+
+.advert * {
+  /* http://meyerweb.com/eric/tools/css/reset/ */
+  font-size: 100%;
+  font: inherit;
+  border: 0;
+  margin: 0 auto;
+  /* Centers. */
+  padding: 0;
+  outline: 0;
+}
+
+.advert img {
+  /* Responsive images: */
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  -ms-interpolation-mode: bicubic;
 }
 
 .callout {
@@ -3673,4 +3704,22 @@ p.meta:hover {
   background: url(../images/loader2.gif) no-repeat center top;
   background-size: 40px;
   min-height: 40px;
+}
+
+.banner {
+  text-align: center;
+  background: #eee;
+  border-width: 2px 0;
+  border-color: #ddd;
+  border-style: solid;
+  padding: 5px 0 10px;
+  margin: 25px 0;
+}
+.banner > p {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: .15em;
+  color: #999;
+  margin: 0;
+  padding: 0;
 }
