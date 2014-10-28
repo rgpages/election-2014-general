@@ -376,7 +376,7 @@
 	});
 	
 	$.pollster({
-		target: 'results-regional',
+		target: 'results-regional-races',
 		api: 'http://projects.registerguard.com/ballot/json/region/',
 		callback: function($data, $options) {
 			
@@ -448,8 +448,8 @@
 	});
 	
 	$.pollster({
-		target: 'results-regional-measures',
-		api: 'http://projects.registerguard.com/ballot/json/regmea/',
+		target: 'results-lane-county-measures',
+		api: 'http://projects.registerguard.com/ballot/json/laneme/',
 		callback: function($data, $options) {
 			
 			var $this = $(this);
