@@ -7,7 +7,7 @@
 	text-transform: none;
 	color: lighten($color2, 50%);
 	background-color: $color2;
-	margin: 10px 0;
+	margin: 10px 0 5px;
 	padding: 10px;
 	white-space: nowrap;
 	cursor: pointer;
@@ -49,10 +49,10 @@
 
 .ion-panel {
 	
-	background: rgba($raven, .15);
+	background: rgba($raven, .1);
 	border-radius: 0 0 3px 3px;
 	position: relative;
-	top: -13px; // Head `margin` + `border-radius`.
+	top: -8px; // Head `margin` + `border-radius`.
 	z-index: 1;
 	overflow: hidden;
 	

@@ -8,7 +8,7 @@
  * @copyright Copyright (c) 2014 Micky Hulse.
  * @license Released under the Copyright © The Register-Guard 2014. All rights reserved..
  * @version 0.1.1
- * @date 2014/10/26
+ * @date 2014/10/27
  */
 
 
@@ -697,11 +697,28 @@ this the same font stack that Normalize.css sets for the `body`.
 }
 
 @media all and (min-width: 640px) {
+  .pure-u-sm-1,
+  .pure-u-sm-1-1,
+  .pure-u-sm-1-2,
+  .pure-u-sm-1-3,
+  .pure-u-sm-2-3,
+  .pure-u-sm-1-4,
+  .pure-u-sm-3-4,
   .pure-u-sm-1-5,
   .pure-u-sm-2-5,
   .pure-u-sm-3-5,
   .pure-u-sm-4-5,
   .pure-u-sm-5-5,
+  .pure-u-sm-1-6,
+  .pure-u-sm-5-6,
+  .pure-u-sm-1-8,
+  .pure-u-sm-3-8,
+  .pure-u-sm-5-8,
+  .pure-u-sm-7-8,
+  .pure-u-sm-1-12,
+  .pure-u-sm-5-12,
+  .pure-u-sm-7-12,
+  .pure-u-sm-11-12,
   .pure-u-sm-1-24,
   .pure-u-sm-2-24,
   .pure-u-sm-3-24,
@@ -739,14 +756,17 @@ this the same font stack that Normalize.css sets for the `body`.
     width: 4.16666666666667%;
   }
 
+  .pure-u-sm-1-12,
   .pure-u-sm-2-24 {
     width: 8.33333333333333%;
   }
 
+  .pure-u-sm-1-8,
   .pure-u-sm-3-24 {
     width: 12.50000000000000%;
   }
 
+  .pure-u-sm-1-6,
   .pure-u-sm-4-24 {
     width: 16.66666666666666%;
   }
@@ -759,6 +779,7 @@ this the same font stack that Normalize.css sets for the `body`.
     width: 20.83333333333334%;
   }
 
+  .pure-u-sm-1-4,
   .pure-u-sm-6-24 {
     width: 25%;
   }
@@ -767,10 +788,12 @@ this the same font stack that Normalize.css sets for the `body`.
     width: 29.16666666666667%;
   }
 
+  .pure-u-sm-1-3,
   .pure-u-sm-8-24 {
     width: 33.33333333333333%;
   }
 
+  .pure-u-sm-3-8,
   .pure-u-sm-9-24 {
     width: 37.50000000000000%;
   }
@@ -779,6 +802,7 @@ this the same font stack that Normalize.css sets for the `body`.
     width: 40%;
   }
 
+  .pure-u-sm-5-12,
   .pure-u-sm-10-24 {
     width: 41.66666666666667%;
   }
@@ -787,6 +811,7 @@ this the same font stack that Normalize.css sets for the `body`.
     width: 45.83333333333333%;
   }
 
+  .pure-u-sm-1-2,
   .pure-u-sm-12-24 {
     width: 50%;
   }
@@ -795,6 +820,7 @@ this the same font stack that Normalize.css sets for the `body`.
     width: 54.16666666666666%;
   }
 
+  .pure-u-sm-7-12,
   .pure-u-sm-14-24 {
     width: 58.33333333333334%;
   }
@@ -803,10 +829,12 @@ this the same font stack that Normalize.css sets for the `body`.
     width: 60%;
   }
 
+  .pure-u-sm-5-8,
   .pure-u-sm-15-24 {
     width: 62.50000000000000%;
   }
 
+  .pure-u-sm-2-3,
   .pure-u-sm-16-24 {
     width: 66.66666666666666%;
   }
@@ -815,6 +843,7 @@ this the same font stack that Normalize.css sets for the `body`.
     width: 70.83333333333334%;
   }
 
+  .pure-u-sm-3-4,
   .pure-u-sm-18-24 {
     width: 75%;
   }
@@ -827,14 +856,17 @@ this the same font stack that Normalize.css sets for the `body`.
     width: 80%;
   }
 
+  .pure-u-sm-5-6,
   .pure-u-sm-20-24 {
     width: 83.33333333333334%;
   }
 
+  .pure-u-sm-7-8,
   .pure-u-sm-21-24 {
     width: 87.50000000000000%;
   }
 
+  .pure-u-sm-11-12,
   .pure-u-sm-22-24 {
     width: 91.66666666666666%;
   }
@@ -843,17 +875,36 @@ this the same font stack that Normalize.css sets for the `body`.
     width: 95.83333333333334%;
   }
 
+  .pure-u-sm-1,
+  .pure-u-sm-1-1,
   .pure-u-sm-5-5,
   .pure-u-sm-24-24 {
     width: 100%;
   }
 }
 @media all and (min-width: 960px) {
+  .pure-u-md-1,
+  .pure-u-md-1-1,
+  .pure-u-md-1-2,
+  .pure-u-md-1-3,
+  .pure-u-md-2-3,
+  .pure-u-md-1-4,
+  .pure-u-md-3-4,
   .pure-u-md-1-5,
   .pure-u-md-2-5,
   .pure-u-md-3-5,
   .pure-u-md-4-5,
   .pure-u-md-5-5,
+  .pure-u-md-1-6,
+  .pure-u-md-5-6,
+  .pure-u-md-1-8,
+  .pure-u-md-3-8,
+  .pure-u-md-5-8,
+  .pure-u-md-7-8,
+  .pure-u-md-1-12,
+  .pure-u-md-5-12,
+  .pure-u-md-7-12,
+  .pure-u-md-11-12,
   .pure-u-md-1-24,
   .pure-u-md-2-24,
   .pure-u-md-3-24,
@@ -891,14 +942,17 @@ this the same font stack that Normalize.css sets for the `body`.
     width: 4.16666666666667%;
   }
 
+  .pure-u-md-1-12,
   .pure-u-md-2-24 {
     width: 8.33333333333333%;
   }
 
+  .pure-u-md-1-8,
   .pure-u-md-3-24 {
     width: 12.50000000000000%;
   }
 
+  .pure-u-md-1-6,
   .pure-u-md-4-24 {
     width: 16.66666666666666%;
   }
@@ -911,6 +965,7 @@ this the same font stack that Normalize.css sets for the `body`.
     width: 20.83333333333334%;
   }
 
+  .pure-u-md-1-4,
   .pure-u-md-6-24 {
     width: 25%;
   }
@@ -919,10 +974,12 @@ this the same font stack that Normalize.css sets for the `body`.
     width: 29.16666666666667%;
   }
 
+  .pure-u-md-1-3,
   .pure-u-md-8-24 {
     width: 33.33333333333333%;
   }
 
+  .pure-u-md-3-8,
   .pure-u-md-9-24 {
     width: 37.50000000000000%;
   }
@@ -931,6 +988,7 @@ this the same font stack that Normalize.css sets for the `body`.
     width: 40%;
   }
 
+  .pure-u-md-5-12,
   .pure-u-md-10-24 {
     width: 41.66666666666667%;
   }
@@ -939,6 +997,7 @@ this the same font stack that Normalize.css sets for the `body`.
     width: 45.83333333333333%;
   }
 
+  .pure-u-md-1-2,
   .pure-u-md-12-24 {
     width: 50%;
   }
@@ -947,6 +1006,7 @@ this the same font stack that Normalize.css sets for the `body`.
     width: 54.16666666666666%;
   }
 
+  .pure-u-md-7-12,
   .pure-u-md-14-24 {
     width: 58.33333333333334%;
   }
@@ -955,10 +1015,12 @@ this the same font stack that Normalize.css sets for the `body`.
     width: 60%;
   }
 
+  .pure-u-md-5-8,
   .pure-u-md-15-24 {
     width: 62.50000000000000%;
   }
 
+  .pure-u-md-2-3,
   .pure-u-md-16-24 {
     width: 66.66666666666666%;
   }
@@ -967,6 +1029,7 @@ this the same font stack that Normalize.css sets for the `body`.
     width: 70.83333333333334%;
   }
 
+  .pure-u-md-3-4,
   .pure-u-md-18-24 {
     width: 75%;
   }
@@ -979,14 +1042,17 @@ this the same font stack that Normalize.css sets for the `body`.
     width: 80%;
   }
 
+  .pure-u-md-5-6,
   .pure-u-md-20-24 {
     width: 83.33333333333334%;
   }
 
+  .pure-u-md-7-8,
   .pure-u-md-21-24 {
     width: 87.50000000000000%;
   }
 
+  .pure-u-md-11-12,
   .pure-u-md-22-24 {
     width: 91.66666666666666%;
   }
@@ -995,17 +1061,36 @@ this the same font stack that Normalize.css sets for the `body`.
     width: 95.83333333333334%;
   }
 
+  .pure-u-md-1,
+  .pure-u-md-1-1,
   .pure-u-md-5-5,
   .pure-u-md-24-24 {
     width: 100%;
   }
 }
 @media all and (min-width: 1280px) {
+  .pure-u-lg-1,
+  .pure-u-lg-1-1,
+  .pure-u-lg-1-2,
+  .pure-u-lg-1-3,
+  .pure-u-lg-2-3,
+  .pure-u-lg-1-4,
+  .pure-u-lg-3-4,
   .pure-u-lg-1-5,
   .pure-u-lg-2-5,
   .pure-u-lg-3-5,
   .pure-u-lg-4-5,
   .pure-u-lg-5-5,
+  .pure-u-lg-1-6,
+  .pure-u-lg-5-6,
+  .pure-u-lg-1-8,
+  .pure-u-lg-3-8,
+  .pure-u-lg-5-8,
+  .pure-u-lg-7-8,
+  .pure-u-lg-1-12,
+  .pure-u-lg-5-12,
+  .pure-u-lg-7-12,
+  .pure-u-lg-11-12,
   .pure-u-lg-1-24,
   .pure-u-lg-2-24,
   .pure-u-lg-3-24,
@@ -1043,14 +1128,17 @@ this the same font stack that Normalize.css sets for the `body`.
     width: 4.16666666666667%;
   }
 
+  .pure-u-lg-1-12,
   .pure-u-lg-2-24 {
     width: 8.33333333333333%;
   }
 
+  .pure-u-lg-1-8,
   .pure-u-lg-3-24 {
     width: 12.50000000000000%;
   }
 
+  .pure-u-lg-1-6,
   .pure-u-lg-4-24 {
     width: 16.66666666666666%;
   }
@@ -1063,6 +1151,7 @@ this the same font stack that Normalize.css sets for the `body`.
     width: 20.83333333333334%;
   }
 
+  .pure-u-lg-1-4,
   .pure-u-lg-6-24 {
     width: 25%;
   }
@@ -1071,10 +1160,12 @@ this the same font stack that Normalize.css sets for the `body`.
     width: 29.16666666666667%;
   }
 
+  .pure-u-lg-1-3,
   .pure-u-lg-8-24 {
     width: 33.33333333333333%;
   }
 
+  .pure-u-lg-3-8,
   .pure-u-lg-9-24 {
     width: 37.50000000000000%;
   }
@@ -1083,6 +1174,7 @@ this the same font stack that Normalize.css sets for the `body`.
     width: 40%;
   }
 
+  .pure-u-lg-5-12,
   .pure-u-lg-10-24 {
     width: 41.66666666666667%;
   }
@@ -1091,6 +1183,7 @@ this the same font stack that Normalize.css sets for the `body`.
     width: 45.83333333333333%;
   }
 
+  .pure-u-lg-1-2,
   .pure-u-lg-12-24 {
     width: 50%;
   }
@@ -1099,6 +1192,7 @@ this the same font stack that Normalize.css sets for the `body`.
     width: 54.16666666666666%;
   }
 
+  .pure-u-lg-7-12,
   .pure-u-lg-14-24 {
     width: 58.33333333333334%;
   }
@@ -1107,10 +1201,12 @@ this the same font stack that Normalize.css sets for the `body`.
     width: 60%;
   }
 
+  .pure-u-lg-5-8,
   .pure-u-lg-15-24 {
     width: 62.50000000000000%;
   }
 
+  .pure-u-lg-2-3,
   .pure-u-lg-16-24 {
     width: 66.66666666666666%;
   }
@@ -1119,6 +1215,7 @@ this the same font stack that Normalize.css sets for the `body`.
     width: 70.83333333333334%;
   }
 
+  .pure-u-lg-3-4,
   .pure-u-lg-18-24 {
     width: 75%;
   }
@@ -1131,14 +1228,17 @@ this the same font stack that Normalize.css sets for the `body`.
     width: 80%;
   }
 
+  .pure-u-lg-5-6,
   .pure-u-lg-20-24 {
     width: 83.33333333333334%;
   }
 
+  .pure-u-lg-7-8,
   .pure-u-lg-21-24 {
     width: 87.50000000000000%;
   }
 
+  .pure-u-lg-11-12,
   .pure-u-lg-22-24 {
     width: 91.66666666666666%;
   }
@@ -1147,17 +1247,36 @@ this the same font stack that Normalize.css sets for the `body`.
     width: 95.83333333333334%;
   }
 
+  .pure-u-lg-1,
+  .pure-u-lg-1-1,
   .pure-u-lg-5-5,
   .pure-u-lg-24-24 {
     width: 100%;
   }
 }
 @media all and (min-width: 1600px) {
+  .pure-u-xl-1,
+  .pure-u-xl-1-1,
+  .pure-u-xl-1-2,
+  .pure-u-xl-1-3,
+  .pure-u-xl-2-3,
+  .pure-u-xl-1-4,
+  .pure-u-xl-3-4,
   .pure-u-xl-1-5,
   .pure-u-xl-2-5,
   .pure-u-xl-3-5,
   .pure-u-xl-4-5,
   .pure-u-xl-5-5,
+  .pure-u-xl-1-6,
+  .pure-u-xl-5-6,
+  .pure-u-xl-1-8,
+  .pure-u-xl-3-8,
+  .pure-u-xl-5-8,
+  .pure-u-xl-7-8,
+  .pure-u-xl-1-12,
+  .pure-u-xl-5-12,
+  .pure-u-xl-7-12,
+  .pure-u-xl-11-12,
   .pure-u-xl-1-24,
   .pure-u-xl-2-24,
   .pure-u-xl-3-24,
@@ -1195,14 +1314,17 @@ this the same font stack that Normalize.css sets for the `body`.
     width: 4.16666666666667%;
   }
 
+  .pure-u-xl-1-12,
   .pure-u-xl-2-24 {
     width: 8.33333333333333%;
   }
 
+  .pure-u-xl-1-8,
   .pure-u-xl-3-24 {
     width: 12.50000000000000%;
   }
 
+  .pure-u-xl-1-6,
   .pure-u-xl-4-24 {
     width: 16.66666666666666%;
   }
@@ -1215,6 +1337,7 @@ this the same font stack that Normalize.css sets for the `body`.
     width: 20.83333333333334%;
   }
 
+  .pure-u-xl-1-4,
   .pure-u-xl-6-24 {
     width: 25%;
   }
@@ -1223,10 +1346,12 @@ this the same font stack that Normalize.css sets for the `body`.
     width: 29.16666666666667%;
   }
 
+  .pure-u-xl-1-3,
   .pure-u-xl-8-24 {
     width: 33.33333333333333%;
   }
 
+  .pure-u-xl-3-8,
   .pure-u-xl-9-24 {
     width: 37.50000000000000%;
   }
@@ -1235,6 +1360,7 @@ this the same font stack that Normalize.css sets for the `body`.
     width: 40%;
   }
 
+  .pure-u-xl-5-12,
   .pure-u-xl-10-24 {
     width: 41.66666666666667%;
   }
@@ -1243,6 +1369,7 @@ this the same font stack that Normalize.css sets for the `body`.
     width: 45.83333333333333%;
   }
 
+  .pure-u-xl-1-2,
   .pure-u-xl-12-24 {
     width: 50%;
   }
@@ -1251,6 +1378,7 @@ this the same font stack that Normalize.css sets for the `body`.
     width: 54.16666666666666%;
   }
 
+  .pure-u-xl-7-12,
   .pure-u-xl-14-24 {
     width: 58.33333333333334%;
   }
@@ -1259,10 +1387,12 @@ this the same font stack that Normalize.css sets for the `body`.
     width: 60%;
   }
 
+  .pure-u-xl-5-8,
   .pure-u-xl-15-24 {
     width: 62.50000000000000%;
   }
 
+  .pure-u-xl-2-3,
   .pure-u-xl-16-24 {
     width: 66.66666666666666%;
   }
@@ -1271,6 +1401,7 @@ this the same font stack that Normalize.css sets for the `body`.
     width: 70.83333333333334%;
   }
 
+  .pure-u-xl-3-4,
   .pure-u-xl-18-24 {
     width: 75%;
   }
@@ -1283,14 +1414,17 @@ this the same font stack that Normalize.css sets for the `body`.
     width: 80%;
   }
 
+  .pure-u-xl-5-6,
   .pure-u-xl-20-24 {
     width: 83.33333333333334%;
   }
 
+  .pure-u-xl-7-8,
   .pure-u-xl-21-24 {
     width: 87.50000000000000%;
   }
 
+  .pure-u-xl-11-12,
   .pure-u-xl-22-24 {
     width: 91.66666666666666%;
   }
@@ -1299,6 +1433,8 @@ this the same font stack that Normalize.css sets for the `body`.
     width: 95.83333333333334%;
   }
 
+  .pure-u-xl-1,
+  .pure-u-xl-1-1,
   .pure-u-xl-5-5,
   .pure-u-xl-24-24 {
     width: 100%;
@@ -1443,7 +1579,7 @@ body {
   line-height: 20px;
   font-family: Arial, sans-serif;
   color: #000;
-  background: #fff;
+  background: #000;
   min-height: 100%;
   text-rendering: optimizeLegibility;
 }
@@ -1739,7 +1875,6 @@ dl > :last-child {
   letter-spacing: .05em;
   white-space: nowrap;
   background: #eee;
-  width: 100%;
   height: 100%;
   padding: 1em 1.5em;
   display: block;
@@ -2311,10 +2446,10 @@ figure img {
 figcaption {
   font-size: 14px;
   line-height: 18px;
-  letter-spacing: .1em;
-  color: #999;
+  letter-spacing: .05em;
+  color: #ccc;
   background: #222;
-  padding: 15px 20px;
+  padding: 10px 15px;
   display: block;
 }
 .js figcaption {
@@ -2609,6 +2744,29 @@ a.social-tumblr, a.social-tumblr:visited, .no-touch a.social-tumblr:visited:hove
   color: #34465d;
 }
 
+main {
+  background-color: #fff;
+  margin-top: -1px;
+  margin-bottom: -1px;
+  padding: 1px 0;
+}
+
+.main {
+  padding-right: 25px;
+  padding-left: 25px;
+}
+@media all and (min-width: 640px) {
+  .main {
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+}
+
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
 section > :first-child,
 article > :first-child,
 aside > :first-child {
@@ -2618,25 +2776,6 @@ section > :last-child,
 article > :last-child,
 aside > :last-child {
   margin-bottom: 0 !important;
-}
-
-.container,
-.wrap {
-  max-width: 1600px;
-  margin: 0 auto;
-}
-
-.container {
-  margin-top: 25px;
-  margin-bottom: 25px;
-  padding: 0 25px;
-}
-@media all and (min-width: 640px) {
-  .container {
-    margin-top: 50px;
-    margin-bottom: 50px;
-    padding: 0 50px;
-  }
 }
 
 .pure-g [class*="pure-u"] {
@@ -2664,23 +2803,19 @@ aside > :last-child {
 }
 
 #header {
-  color: #eee;
   background-color: #000;
-  position: relative;
-  top: -40px;
+  margin-top: -40px;
 }
-#header > .wrap {
-  padding-top: 25px;
-  padding-bottom: 25px;
+#header #banner > div {
   position: relative;
+  padding: 25px 0;
   -webkit-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
   -ms-transform-style: preserve-3d;
   -o-transform-style: preserve-3d;
   transform-style: preserve-3d;
 }
-#header > .wrap h1 {
-  left: 50px;
+#header #banner > div h1 {
   top: 50%;
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
@@ -2688,66 +2823,107 @@ aside > :last-child {
   -o-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-#header > .wrap h2,
-#header > .wrap h3 {
+#header #banner > div h2,
+#header #banner > div h3 {
   margin: 0 0 0 150px;
 }
-#header > .wrap h2 {
-  letter-spacing: normal;
-  font-size: 120px;
-  line-height: 100px;
+#header #banner > div h2 {
   font-family: "MillerHeadline Bold";
   font-weight: bold;
   font-style: normal;
+  font-size: 120px;
+  line-height: 100px;
+  letter-spacing: normal;
+  color: #eee;
   margin-bottom: 5px;
 }
-#header > .wrap h2 .char1 {
+#header #banner > div h2 .char1 {
   margin-left: 0;
 }
-#header > .wrap h2 .char2 {
-  margin-left: 8px;
+#header #banner > div h2 .char2 {
+  margin-left: 5px;
 }
-#header > .wrap h2 .char3 {
+#header #banner > div h2 .char3 {
+  margin-left: -1px;
+}
+#header #banner > div h2 .char4 {
+  margin-left: 3px;
+}
+#header #banner > div h2 .char5 {
+  margin-left: 3px;
+}
+#header #banner > div h2 .char6 {
+  margin-left: 5px;
+}
+#header #banner > div h2 .char7 {
+  margin-left: -1px;
+}
+#header #banner > div h2 .char8 {
   margin-left: -2px;
 }
-#header > .wrap h2 .char4 {
-  margin-left: 1px;
+#header #banner > div h2 .char9 {
+  margin-left: 0;
 }
-#header > .wrap h2 .char5 {
-  margin-left: 4px;
+#header #banner > div h2 .char10 {
+  margin-left: 0;
 }
-#header > .wrap h2 .char6 {
-  margin-left: 9px;
+#header #banner > div h2 .char11 {
+  margin-left: 3px;
 }
-#header > .wrap h2 .char7 {
-  margin-left: -4px;
-}
-#header > .wrap h2 .char8 {
+#header #banner > div h2 .char12 {
   margin-left: -5px;
 }
-#header > .wrap h2 .char9 {
-  margin-left: 0;
+#header #banner > div h2 .char13 {
+  margin-left: -2px;
 }
-#header > .wrap h2 .char10 {
-  margin-left: 0;
-}
-#header > .wrap h2 .char11 {
-  margin-left: 2px;
-}
-#header > .wrap h2 .char12 {
-  margin-left: -8px;
-}
-#header > .wrap h2 .char13 {
-  margin-left: -3px;
-}
-#header > .wrap h3 {
+#header #banner > div h3 {
   font-family: "MillerHeadline Light";
   font-style: normal;
   font-weight: normal;
+  letter-spacing: .08em;
   font-size: 30px;
   line-height: 35px;
-  letter-spacing: .25em;
   color: #ccc;
+}
+
+footer[role="contentinfo"] {
+  margin: 50px 0;
+  text-align: center;
+}
+footer[role="contentinfo"] p {
+  font: 11px/24px Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  color: #666;
+  margin: 0;
+  padding: 0;
+}
+footer[role="contentinfo"] span {
+  display: block;
+}
+footer[role="contentinfo"] span span {
+  display: none;
+}
+footer[role="contentinfo"] a {
+  color: #999;
+  text-decoration: none;
+}
+footer[role="contentinfo"] a:visited {
+  color: #999;
+}
+footer[role="contentinfo"] .no-touch a:visited:hover,
+footer[role="contentinfo"] a:focus,
+footer[role="contentinfo"] .no-touch a:focus:hover,
+footer[role="contentinfo"] .no-touch a:hover,
+footer[role="contentinfo"] a:active {
+  color: #000;
+  text-decoration: underline;
+}
+@media all and (min-width: 640px) {
+  footer[role="contentinfo"] span,
+  footer[role="contentinfo"] span span {
+    display: inline;
+  }
 }
 
 nav[role="navigation"] {
@@ -2755,11 +2931,8 @@ nav[role="navigation"] {
   border-width: 5px 0;
   border-style: solid;
   border-color: #111;
-}
-nav[role="navigation"] ul {
   background: #222;
   background-image: linear-gradient(to bottom, #222 0, #333 100%);
-  text-align: left;
 }
 nav[role="navigation"] ul,
 nav[role="navigation"] ul li {
@@ -2790,15 +2963,6 @@ nav[role="navigation"] ul a {
   -o-transform-style: preserve-3d;
   transform-style: preserve-3d;
 }
-nav[role="navigation"] ul a span {
-  display: block;
-  position: relative;
-  -webkit-transition: -webkit-transform 50ms linear;
-  -moz-transition: -moz-transform 50ms linear;
-  -ms-transition: -ms-transform 50ms linear;
-  -o-transition: -o-transform 50ms linear;
-  transition: transform 50ms linear;
-}
 nav[role="navigation"] ul a, nav[role="navigation"] ul a:visited {
   color: #ccc;
   text-decoration: none;
@@ -2806,13 +2970,6 @@ nav[role="navigation"] ul a, nav[role="navigation"] ul a:visited {
 .no-touch nav[role="navigation"] ul a:visited:hover, nav[role="navigation"] ul a:focus, .no-touch nav[role="navigation"] ul a:focus:hover, .no-touch nav[role="navigation"] ul a:hover, nav[role="navigation"] ul a:active {
   color: #31b7ff;
   background-position: 0 -100%;
-}
-.no-touch nav[role="navigation"] ul a:visited:hover span, nav[role="navigation"] ul a:focus span, .no-touch nav[role="navigation"] ul a:focus:hover span, .no-touch nav[role="navigation"] ul a:hover span, nav[role="navigation"] ul a:active span {
-  -webkit-transform: translateY(-3px);
-  -moz-transform: translateY(-3px);
-  -ms-transform: translateY(-3px);
-  -o-transform: translateY(-3px);
-  transform: translateY(-3px);
 }
 .js nav[role="navigation"] ul {
   display: none;
@@ -3153,10 +3310,8 @@ nav[role="navigation"] .harmonia-select {
   }
 }
 
-/*-----------------( TAB SKIN )-----------------*/
 .nutshell {
   position: relative;
-  border-bottom: 5px solid #0083ca;
 }
 .nutshell,
 .nutshell li {
@@ -3165,6 +3320,7 @@ nav[role="navigation"] .harmonia-select {
 }
 .nutshell li {
   list-style: none;
+  margin-bottom: 5px;
 }
 .nutshell a {
   font-size: 18px;
@@ -3177,7 +3333,7 @@ nav[role="navigation"] .harmonia-select {
   white-space: nowrap;
   cursor: pointer;
   cursor: hand;
-  border-radius: 3px 3px 0 0;
+  border-radius: 3px;
   position: relative;
   z-index: 2;
   display: block;
@@ -3211,6 +3367,8 @@ nav[role="navigation"] .harmonia-select {
 }
 @media all and (min-width: 480px) {
   .nutshell {
+    border-bottom: 5px solid #0083ca;
+    border-radius: 3px 3px 0 0;
     *zoom: 1;
   }
   .nutshell::before, .nutshell::after {
@@ -3232,15 +3390,22 @@ nav[role="navigation"] .harmonia-select {
 }
 
 .nutshell-panel {
-  background: rgba(0, 0, 0, 0.15);
-  padding: 10px;
-  border-radius: 0 0 3px 3px;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  margin-top: -8px;
+  padding: 13px 10px 10px;
 }
 .nutshell-panel > :last-child {
   margin-bottom: 0;
 }
 .js .nutshell-panel {
   display: none;
+}
+@media all and (min-width: 480px) {
+  .nutshell-panel {
+    margin-top: 0;
+    border-radius: 0 0 3px 3px;
+  }
 }
 
 .ion-head {
@@ -3251,7 +3416,7 @@ nav[role="navigation"] .harmonia-select {
   text-transform: none;
   color: #caecff;
   background-color: #0083ca;
-  margin: 10px 0;
+  margin: 10px 0 5px;
   padding: 10px;
   white-space: nowrap;
   cursor: pointer;
@@ -3285,10 +3450,10 @@ nav[role="navigation"] .harmonia-select {
 }
 
 .ion-panel {
-  background: rgba(0, 0, 0, 0.15);
+  background: rgba(0, 0, 0, 0.1);
   border-radius: 0 0 3px 3px;
   position: relative;
-  top: -13px;
+  top: -8px;
   z-index: 1;
   overflow: hidden;
 }
@@ -3449,46 +3614,6 @@ p.meta {
 .no-touch ul.meta > li:hover, .no-touch
 p.meta:hover {
   background: #fff;
-}
-
-footer[role="contentinfo"] {
-  margin: 10px 0 0;
-  text-align: center;
-}
-footer[role="contentinfo"] p {
-  font: 11px/24px Arial, sans-serif;
-  text-transform: uppercase;
-  letter-spacing: .1em;
-  color: #999;
-  margin: 0;
-  padding: 0;
-}
-footer[role="contentinfo"] span {
-  display: block;
-}
-footer[role="contentinfo"] span span {
-  display: none;
-}
-footer[role="contentinfo"] a {
-  color: #666;
-  text-decoration: none;
-}
-footer[role="contentinfo"] a:visited {
-  color: #666;
-}
-footer[role="contentinfo"] .no-touch a:visited:hover,
-footer[role="contentinfo"] a:focus,
-footer[role="contentinfo"] .no-touch a:focus:hover,
-footer[role="contentinfo"] .no-touch a:hover,
-footer[role="contentinfo"] a:active {
-  color: #000;
-  text-decoration: underline;
-}
-@media all and (min-width: 640px) {
-  footer[role="contentinfo"] span,
-  footer[role="contentinfo"] span span {
-    display: inline;
-  }
 }
 
 .js #disqus {

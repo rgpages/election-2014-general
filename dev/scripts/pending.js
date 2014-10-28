@@ -38,8 +38,8 @@
 	$.pollster.defaults.timeout = 600;
 	
 	$.pollster({
-		target: 'results-lane-county',
-		api: 'http://projects.registerguard.com/ballot/json/statew/',
+		target: 'results-state-measures',
+		api: 'http://projects.registerguard.com/ballot/json/statem/',
 		callback: function($data, $options) {
 			
 			var $this = $(this);
@@ -107,77 +107,8 @@
 	});
 	
 	$.pollster({
-		target: 'results-nation',
-		api: 'http://projects.registerguard.com/ballot/json/nation/',
-		callback: function($data, $options) {
-			
-			var $this = $(this);
-			var template;
-			
-			$.each($data, function(i1, v1) {
-				
-				var $contest;
-				var id1 = 'con-' + v1.contest_id;
-				
-				if ( ! $options.flag) {
-					
-					template = [
-						'<div id="' + id1 + '" class="poll">',
-							'<div class="poll-spinner"></div>',
-							'<h6 class="poll-head">' + v1.contest_wrapper + '</h6>',
-							'<div class="poll-content">',
-							'</div>',
-						'</div>'
-					].join('\n');
-					
-					$this.append(template);
-					
-				}
-				
-				$.each(v1.options, function(i2, v2) {
-					
-					var id2 = 'con-' + v1.contest_id + '_cand-meas-' + v2.cand_meas_id;
-					var percent = v2.percent_of_lane_votes + '%';
-					
-					if ( ! $options.flag) {
-						
-						template = [
-							'<div class="poll-bar">',
-								'<span class="poll-bar-title">' + v2.name + '</span>',
-								'<div class="poll-grid">',
-									'<div class="poll-grid-secondary">',
-										'<span class="poll-bar-count">' + v2.lane_votes + '</span>',
-									'</div>',
-									'<div class="poll-grid-primary">',
-										'<div class="poll-bar-wrap">',
-											'<div id="' + id2 + '" class="poll-bar-votes">',
-												'<span></sapn>',
-											'</div>',
-										'</div>',
-									'</div>',
-								'</div>',
-							'</div>'
-						].join('\n');
-						
-						$('#' + id1 + ' .poll-content').append(template);
-						
-					}
-					
-					$('#' + id2)
-						.width(percent)
-						.children('span')
-						.text(percent);
-					
-				});
-				
-			});
-			
-		}
-	});
-	
-	$.pollster({
-		target: 'results-oregon',
-		api: 'http://projects.registerguard.com/ballot/json/oregon/',
+		target: 'results-state-races',
+		api: 'http://projects.registerguard.com/ballot/json/stater/',
 		callback: function($data, $options) {
 			
 			var $this = $(this);

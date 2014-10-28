@@ -293,7 +293,7 @@ module.exports = function(grunt) {
 					
 					decimals : 14,                   // Grid unit width accuracy.
 					includeOldIEWidths : false,      // Don't make grid units work properly in IE 6/7.
-					includeReducedFractions : false, // Output class names in their regular and reduced fractional form.
+					//includeReducedFractions : false, // Output class names in their regular and reduced fractional form.
 					
 					mediaQueries : {
 						

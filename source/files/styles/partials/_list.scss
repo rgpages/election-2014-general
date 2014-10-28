@@ -57,7 +57,7 @@ dl {
 				letter-spacing: .05em;
 				white-space: nowrap;
 				background: $graye;
-				width: 100%;
+				//width: 100%; // This was making Chrome freak out.
 				height: 100%;
 				padding: 1em 1.5em;
 				display: block;

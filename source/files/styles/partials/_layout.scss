@@ -1,36 +1,41 @@
+main {
+	background-color: $milk;
+	margin: {
+		top: -1px;
+		bottom: -1px;
+	}
+	padding: 1px 0;
+}
+.main {
+	
+	padding: {
+		right: 25px;
+		left: 25px;
+	}
+	
+	@media all and (min-width: 640px) {
+		
+		padding: {
+			right: 50px;
+			left: 50px;
+		}
+		
+	}
+	
+}
+
+// Note: Use `.main` for padding.
+.container {
+	max-width: 1600px;
+	margin: 0 auto;
+}
+
 section,
 article,
 aside {
 	
 	> :first-child { margin-top: 0 !important; }
 	> :last-child { margin-bottom: 0 !important; }
-	
-}
-
-.container,
-.wrap {
-	max-width: 1600px;
-	margin: 0 auto;
-}
-.container {
-	
-	margin: {
-		top: 25px;
-		bottom: 25px;
-	};
-	padding: 0 25px;
-	
-	@media all and (min-width: 640px) { // IBID.
-		
-		& {
-			margin: {
-				top: 50px;
-				bottom: 50px;
-			}
-			padding: 0 50px;
-		}
-		
-	}
 	
 }
 
@@ -60,13 +65,8 @@ aside {
 
 #header {
 	
-	color: $graye;
 	background-color: $raven;
-	position: relative;
-	top: -40px; // Compensate for sticky header.
-	
-	// text-align: center;
-	// position: relative;
+	margin-top: -40px; // Compensate for sticky header.
 	
 	// *zoom: 1;
 	// &::before,
@@ -76,13 +76,10 @@ aside {
 	// }
 	// &::after { clear: both; }
 	
-	> .wrap {
+	#banner > div {
 		
-		padding: {
-			top: 25px;
-			bottom: 25px;
-		}
 		position: relative;
+		padding: 25px 0;
 		
 		// text-rendering: optimizeLegibility;
 		// font-feature-settings: "kern";
@@ -97,8 +94,8 @@ aside {
 		     -o-transform-style: preserve-3d;
 		        transform-style: preserve-3d;
 		
+		// Flag (move to `_flag.scss`?):
 		h1 {
-			left: 50px; // Compensate for `.container` left padding.
 			top: 50%;
 			-webkit-transform: translateY(-50%);
 			   -moz-transform: translateY(-50%);
@@ -108,42 +105,64 @@ aside {
 		}
 		
 		h2,
-		h3 { margin: 0 0 0 150px; } // Width of `#flag` + some extra for margin.
+		h3 { margin: 0 0 0 150px; } // Left `margin` = `width` of `#flag` + some extra for margin.
 		
 		h2 {
 			
-			letter-spacing: normal;
-			font-size: 120px;
-			line-height: 100px;
 			font-family: "MillerHeadline Bold";
 			font-weight: bold;
 			font-style: normal;
+			font-size: 120px;
+			line-height: 100px;
+			letter-spacing: normal;
+			color: $graye;
 			margin-bottom: 5px;
 			
 			.char1 { margin-left: 0; }
-			.char2 { margin-left: 8px; }
-			.char3 { margin-left: -2px; }
-			.char4 { margin-left: 1px; }
-			.char5 { margin-left: 4px; }
-			.char6 { margin-left: 9px; }
-			.char7 { margin-left: -4px; }
-			.char8 { margin-left: -5px; }
+			.char2 { margin-left: 5px; }
+			.char3 { margin-left: -1px; }
+			.char4 { margin-left: 3px; }
+			.char5 { margin-left: 3px; }
+			.char6 { margin-left: 5px; }
+			.char7 { margin-left: -1px; }
+			.char8 { margin-left: -2px; }
 			.char9 { margin-left: 0; }
 			.char10 { margin-left: 0; }
-			.char11 { margin-left: 2px; }
-			.char12 { margin-left: -8px; }
-			.char13 { margin-left: -3px; }
+			.char11 { margin-left: 3px; }
+			.char12 { margin-left: -5px; }
+			.char13 { margin-left: -2px; }
 			
 		}
 		
 		h3 {
+			
 			font-family: "MillerHeadline Light";
 			font-style: normal;
 			font-weight: normal;
+			letter-spacing: .08em;
+			
+			// font-family: Helvetica, Arial, sans-serif;
+			// font-style: normal;
+			// font-weight: 100;
+			
 			font-size: 30px;
 			line-height: 35px;
-			letter-spacing: .25em;
 			color: #ccc;
+			
+			// .char1 { margin-left: 0; }
+			// .char2 { margin-left: 5px; }
+			// .char3 { margin-left: -1px; }
+			// .char4 { margin-left: 3px; }
+			// .char5 { margin-left: 3px; }
+			// .char6 { margin-left: 5px; }
+			// .char7 { margin-left: -1px; }
+			// .char8 { margin-left: -2px; }
+			// .char9 { margin-left: 0; }
+			// .char10 { margin-left: 0; }
+			// .char11 { margin-left: 3px; }
+			// .char12 { margin-left: -5px; }
+			// .char13 { margin-left: -2px; }
+			
 		}
 		
 	}
@@ -164,5 +183,45 @@ aside {
 	// 	}
 		
 	// }
+	
+}
+
+footer[role="contentinfo"] {
+	
+	margin: 50px 0;
+	text-align: center;
+	
+	p {
+		font: 11px/24px Arial, sans-serif;
+		text-transform: uppercase;
+		letter-spacing: .1em;
+		color: $gray6;
+		margin: 0;
+		padding: 0;
+	}
+	
+	span { display: block; }
+	span span { display: none; }
+	
+	a {
+		color: $gray9;
+		text-decoration: none;
+	}
+	a:visited { color: $gray9; }
+	.no-touch a:visited:hover,
+	a:focus,
+	.no-touch a:focus:hover,
+	.no-touch a:hover,
+	a:active {
+		color: $raven;
+		text-decoration: underline;
+	}
+	
+	@media all and (min-width: 640px) {
+		
+		span,
+		span span { display: inline; }
+		
+	}
 	
 }

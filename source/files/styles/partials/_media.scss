@@ -14,10 +14,10 @@ figcaption {
 	
 	font-size: 14px;
 	line-height: 18px;
-	letter-spacing: .1em;
-	color: $gray9;
+	letter-spacing: .05em;
+	color: $grayc;
 	background: $gray2;
-	padding: 15px 20px;
+	padding: 10px 15px;
 	display: block;
 	
 	.js & { display: none; }

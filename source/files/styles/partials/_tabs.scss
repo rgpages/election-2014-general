@@ -1,10 +1,6 @@
-/*-----------------( TAB SKIN )-----------------*/
-
 .nutshell {
 	
 	position: relative;
-	
-	border-bottom: 5px solid $color2;
 	
 	&,
 	li {
@@ -12,7 +8,10 @@
 		padding: 0;
 	}
 	
-	li { list-style: none; }
+	li {
+		list-style: none;
+		margin-bottom: 5px;
+	}
 	
 	a {
 		
@@ -26,7 +25,7 @@
 		white-space: nowrap;
 		cursor: pointer;
 		cursor: hand;
-		border-radius: 3px 3px 0 0;
+		border-radius: 3px;
 		position: relative;
 		z-index: 2;
 		display: block;
@@ -75,27 +74,25 @@
 	
 	@media all and (min-width: 480px) {
 		
-		& {
+		border-bottom: 5px solid $color2;
+		border-radius: 3px 3px 0 0;
+		
+		*zoom: 1;
+		&::before,
+		&::after {
+			content: " ";
+			display: table;
+		}
+		&::after { clear: both; }
+		
+		li {
 			
-			*zoom: 1;
+			float: left;
+			display: inline;
+			margin-right: 5px;
+			margin-bottom: -5px;
 			
-			&::before,
-			&::after {
-				content: " ";
-				display: table;
-			}
-			&::after { clear: both; }
-			
-			& li {
-				
-				float: left;
-				display: inline;
-				margin-right: 5px;
-				margin-bottom: -5px;
-				
-				&:last-child { margin-right: 0; }
-				
-			}
+			&:last-child { margin-right: 0; }
 			
 		}
 		
@@ -105,12 +102,20 @@
 
 .nutshell-panel {
 	
-	background: rgba($raven, .15);
-	padding: 10px;
-	border-radius: 0 0 3px 3px;
+	background: rgba($raven, .1);
+	border-radius: 3px;
+	margin-top: -8px; // The `margin` + `border-radius`.
+	padding: 13px 10px 10px;
 	
 	> :last-child { margin-bottom: 0; }
 	
 	.js & { display: none; }
+	
+	@media all and (min-width: 480px) {
+		
+		margin-top: 0;
+		border-radius: 0 0 3px 3px;
+		
+	}
 	
 }
