@@ -48,7 +48,7 @@
 	$.pollster({
 		target: 'parallax',
 		api: 'http://sandbox.registerguard.com/electionssp/',
-		timeout: 300, // 5 mins.
+		seconds: 300, // 5 mins.
 		callback: function($data, $options) {
 			
 			// http://www.programming-free.com/2013/12/change-background-image-jquery.html
@@ -56,7 +56,9 @@
 			var $images = [];
 			var i = 0;
 			
+			// http://stackoverflow.com/a/3969579/922323
 			window.clearTimeout($timeout);
+			$timeout = 0;
 			
 			$.each($.parseJSON($data), function(i, v) {
 				
@@ -178,7 +180,7 @@
 (function() {
 	
 	$.pollster.defaults.loader = 'poll-spinner';
-	$.pollster.defaults.timeout = 600; // 10 mins.
+	$.pollster.defaults.seconds = 600; // 10 mins.
 	
 	$.pollster({
 		target: 'results-state-races',
@@ -193,7 +195,7 @@
 				var $contest;
 				var id1 = 'con-' + v1.contest_id;
 				
-				if ( ! $options.flag) {
+				if ( ! $options.first) {
 					
 					template = [
 						'<div id="' + id1 + '" class="poll">',
@@ -218,7 +220,7 @@
 					var percent = v2.percent_of_lane_votes + '%';
 					var percent_state = v2.percent_of_state_votes + '%';
 					
-					if ( ! $options.flag) {
+					if ( ! $options.first) {
 						
 						template = [
 							'<div class="poll-bar">',
@@ -294,7 +296,7 @@
 				var $contest;
 				var id1 = 'con-' + v1.contest_id;
 				
-				if ( ! $options.flag) {
+				if ( ! $options.first) {
 					
 					template = [
 						'<div id="' + id1 + '" class="poll">',
@@ -319,7 +321,7 @@
 					var percent = v2.percent_of_lane_votes + '%';
 					var percent_state = v2.percent_of_state_votes + '%';
 					
-					if ( ! $options.flag) {
+					if ( ! $options.first) {
 						
 						template = [
 							'<div class="poll-bar">',
@@ -395,7 +397,7 @@
 				var $contest;
 				var id1 = 'con-' + v1.contest_id;
 				
-				if ( ! $options.flag) {
+				if ( ! $options.first) {
 					
 					template = [
 						'<div id="' + id1 + '" class="poll">',
@@ -418,7 +420,7 @@
 					var id2 = 'con-' + v1.contest_id + '_cand-meas-' + v2.cand_meas_id;
 					var percent = v2.percent_of_lane_votes + '%';
 					
-					if ( ! $options.flag) {
+					if ( ! $options.first) {
 						
 						template = [
 							'<div class="poll-bar">',
@@ -471,7 +473,7 @@
 				var $contest;
 				var id1 = 'con-' + v1.contest_id;
 				
-				if ( ! $options.flag) {
+				if ( ! $options.first) {
 					
 					template = [
 						'<div id="' + id1 + '" class="poll">',
@@ -494,7 +496,7 @@
 					var id2 = 'con-' + v1.contest_id + '_cand-meas-' + v2.cand_meas_id;
 					var percent = v2.percent_of_lane_votes + '%';
 					
-					if ( ! $options.flag) {
+					if ( ! $options.first) {
 						
 						template = [
 							'<div class="poll-bar">',
@@ -547,7 +549,7 @@
 				var $contest;
 				var id1 = 'con-' + v1.contest_id;
 				
-				if ( ! $options.flag) {
+				if ( ! $options.first) {
 					
 					template = [
 						'<div id="' + id1 + '" class="poll">',
@@ -570,7 +572,7 @@
 					var id2 = 'con-' + v1.contest_id + '_cand-meas-' + v2.cand_meas_id;
 					var percent = v2.percent_of_lane_votes + '%';
 					
-					if ( ! $options.flag) {
+					if ( ! $options.first) {
 						
 						template = [
 							'<div class="poll-bar">',
@@ -623,7 +625,7 @@
 				var $contest;
 				var id1 = 'con-' + v1.contest_id;
 				
-				if ( ! $options.flag) {
+				if ( ! $options.first) {
 					
 					template = [
 						'<div id="' + id1 + '" class="poll">',
@@ -646,7 +648,7 @@
 					var id2 = 'con-' + v1.contest_id + '_cand-meas-' + v2.cand_meas_id;
 					var percent = v2.percent_of_lane_votes + '%';
 					
-					if ( ! $options.flag) {
+					if ( ! $options.first) {
 						
 						template = [
 							'<div class="poll-bar">',
