@@ -1,30 +1,43 @@
-// (function() {
-
-// 	$("#filter").keyup(function(){
-
-// 	    // Retrieve the input field text and reset the count to zero
-// 	    var filter = $(this).val(), count = 0;
-
-// 	    // Loop through the comment list
-// 	    $("#filtered").find('.poll').each(function(){
-// console.log($(this));
-// 	        // If the list item does not contain the text phrase fade it out
-// 	        if ($(this).children('h6').text().search(new RegExp(filter, "i")) < 0) {
-// 	            $(this).fadeOut();
-
-// 	        // Show the list item if the phrase matches and increase the count by 1
-// 	        } else {
-// 	            $(this).show();
-// 	            count++;
-// 	        }
-// 	    });
-
-// 	    // Update the count
-// 	    var numberItems = count;
-// 	    $("#filter-count").text("Number of Comments = "+count);
-// 	});
+(function() {
 	
-// })();
+	$.pollster.defaults.api = 'http://registerguard.com/csp/cms/sites/rg/feeds/json.csp',
+	$.pollster.defaults.seconds = 300; // 5 mins.
+	
+	$.each($('.stories'), function(n, y) {
+		
+		$t = $(this);
+		
+		$.pollster({
+			target: $t.attr('id'),
+			params: 'subcats=' + encodeURIComponent($t.data('cats')),
+			callback: function($data, $options) {
+				
+				var $this = $(this);
+				var template = [];
+				
+				$.each($data.stories, function(i, v) {
+					
+					template.push([
+						'<div class="story">',
+							'<time>' + moment(v.published).twitterShort() + '</time>',
+							'<h4><a href="' + v.server + v.path + '" target="_blank">' + v.headline + '</a></h4>',
+							(v.deck) && ('<h5 class="sh5">' + v.deck + '</h5>'),
+						'</div>'
+					].join('\n'));
+					
+				});
+				
+				$this
+					.removeClass('loading')
+					.html(template);
+				
+			}
+		});
+		
+	});
+	
+})();
+
 
 (function() {
 	

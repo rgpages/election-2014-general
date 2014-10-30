@@ -30,14 +30,12 @@ main {
 	margin: 0 auto;
 }
 
-section,
-article,
-aside {
-	
-	> :first-child { margin-top: 0 !important; }
-	> :last-child { margin-bottom: 0 !important; }
-	
-}
+// section,
+// article,
+// aside {
+// 	> :first-child { margin-top: 0 !important; }
+// 	> :last-child { margin-bottom: 0 !important; }
+// }
 
 .pure-g {
 	

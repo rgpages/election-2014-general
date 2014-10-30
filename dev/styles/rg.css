@@ -8,7 +8,7 @@
  * @copyright Copyright (c) 2014 Micky Hulse.
  * @license Released under the Copyright © The Register-Guard 2014. All rights reserved..
  * @version 0.1.1
- * @date 2014/10/28
+ * @date 2014/10/29
  */
 
 
@@ -2767,17 +2767,6 @@ main {
   margin: 0 auto;
 }
 
-section > :first-child,
-article > :first-child,
-aside > :first-child {
-  margin-top: 0 !important;
-}
-section > :last-child,
-article > :last-child,
-aside > :last-child {
-  margin-bottom: 0 !important;
-}
-
 .pure-g [class*="pure-u"] {
   font-family: Arial, sans-serif;
 }
@@ -3780,8 +3769,7 @@ p.meta:hover {
 
 .banner {
   text-align: center;
-  background: #eee;
-  border-width: 2px 0;
+  border-width: 1px 0;
   border-color: #ddd;
   border-style: solid;
   padding: 5px 0 10px;
@@ -3794,4 +3782,116 @@ p.meta:hover {
   color: #999;
   margin: 0;
   padding: 0;
+}
+
+.story {
+  position: relative;
+  border-width: 1px 0;
+  border-style: solid;
+  border-color: #ccc;
+  padding: 10px 0;
+}
+.story h4 {
+  margin-top: 0;
+}
+.story h5 {
+  margin-bottom: 0;
+}
+.story time {
+  font-size: 12px;
+  line-height: 12px;
+  float: right;
+  margin: 0 0 10px 10px;
+}
+
+.bars {
+  display: block;
+  clear: all;
+  overflow: hidden;
+  border-top: 2px solid #ccc;
+  border-bottom: 2px solid #ccc;
+}
+
+.bar {
+  background: #eee;
+  text-align: center;
+  line-height: 0;
+}
+
+.bar-mod-container {
+  overflow: hidden;
+  display: inline-block;
+}
+
+.bar-mod {
+  color: black;
+  line-height: 48px;
+  font-size: 24px;
+  float: left;
+  margin: 5px;
+  padding: 5px;
+  max-width: 310px;
+  -webkit-transition: background .5s;
+  transition: background .5s;
+  border-radius: 1px;
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  border: 1px solid #ccc;
+}
+
+.bar-mod:hover {
+  background: rgba(200, 200, 200, 0.5);
+  -webkit-transition: background .5s;
+  transition: background .5s;
+}
+
+@media (max-width: 1080px) {
+  .bar-mod {
+    float: none;
+    display: inline-block;
+  }
+}
+.bar-label {
+  font-size: 14px;
+  line-height: 25px;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  background: #ddd;
+  color: #333;
+}
+
+.bar_contest {
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: .025em;
+  color: #333;
+}
+
+.bar_circle {
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  width: 50px;
+  height: 50px;
+}
+
+.bar-measure {
+  color: white;
+  font-size: 24px;
+  padding: 5px 10px;
+}
+
+.bar-y {
+  background: #1c491c;
+}
+
+.bar-n {
+  background: #491c1c;
+}
+
+.bar_result {
+  font-family: "MillerHeadline Bold", serif;
+  letter-spacing: .001em;
+  color: #555;
 }
