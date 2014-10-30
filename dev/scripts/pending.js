@@ -73,7 +73,7 @@
 			window.clearTimeout($timeout);
 			$timeout = 0;
 			
-			$.each($.parseJSON($data), function(i, v) {
+			$.each($data, function(i, v) {
 				
 				$images.push({
 					url: v.url,
