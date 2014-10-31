@@ -8,7 +8,7 @@
  * @copyright Copyright (c) 2014 Micky Hulse.
  * @license Released under the Copyright © The Register-Guard 2014. All rights reserved..
  * @version 0.1.1
- * @date 2014/10/29
+ * @date 2014/10/30
  */
 
 
@@ -2744,25 +2744,25 @@ a.social-tumblr, a.social-tumblr:visited, .no-touch a.social-tumblr:visited:hove
   color: #34465d;
 }
 
-main {
+.base {
   background-color: #fff;
   margin-top: -1px;
   margin-bottom: -1px;
   padding: 1px 0;
 }
 
-.main {
+.wrap {
   padding-right: 25px;
   padding-left: 25px;
 }
 @media all and (min-width: 640px) {
-  .main {
+  .wrap {
     padding-right: 50px;
     padding-left: 50px;
   }
 }
 
-.container {
+.core {
   max-width: 1600px;
   margin: 0 auto;
 }
@@ -2988,12 +2988,8 @@ footer[role="contentinfo"] a:active {
 }
 
 nav[role="navigation"] {
-  background: #111;
-  border-width: 5px 0;
-  border-style: solid;
-  border-color: #111;
-  background: #222;
-  background-image: linear-gradient(to bottom, #222 0, #333 100%);
+  padding: 10px 0;
+  background: #000;
 }
 nav[role="navigation"] ul,
 nav[role="navigation"] ul li {
@@ -3011,7 +3007,7 @@ nav[role="navigation"] ul li {
 nav[role="navigation"] ul a {
   display: block;
   background-size: 100% 200%;
-  background-image: linear-gradient(to bottom, transparent 50%, #111 50%);
+  background-image: linear-gradient(to bottom, transparent 50%, #000 50%);
   padding: 10px 15px;
   -webkit-transition: background-position 150ms ease-in, color 200ms linear;
   -moz-transition: background-position 150ms ease-in, color 200ms linear;
@@ -3051,6 +3047,11 @@ nav[role="navigation"] .harmonia-select {
   padding: 0;
 }
 @media all and (min-width: 960px) {
+  nav[role="navigation"] {
+    background: #222;
+    background-image: linear-gradient(to bottom, #222 0, #333 100%);
+    padding: 0;
+  }
   nav[role="navigation"] .harmonia-select {
     display: none;
     visibility: hidden;
@@ -3808,29 +3809,28 @@ p.meta:hover {
   display: block;
   clear: all;
   overflow: hidden;
-  border-top: 2px solid #ccc;
   border-bottom: 2px solid #ccc;
-}
-
-.bar {
-  background: #eee;
   text-align: center;
+  background: #eee;
   line-height: 0;
+  margin-bottom: 25px;
 }
-
-.bar-mod-container {
-  overflow: hidden;
+.bars .bar {
   display: inline-block;
 }
-
-.bar-mod {
+@media (max-width: 640px) {
+  .bars .bar {
+    margin: 0 5px;
+  }
+}
+.bars .bar-mod {
   color: black;
-  line-height: 48px;
+  line-height: 49px;
   font-size: 24px;
   float: left;
   margin: 5px;
-  padding: 5px;
-  max-width: 310px;
+  /*padding: 5px 0;*/
+  width: 300px;
   -webkit-transition: background .5s;
   transition: background .5s;
   border-radius: 1px;
@@ -3838,60 +3838,105 @@ p.meta:hover {
   -moz-border-radius: 1px;
   border: 1px solid #ccc;
 }
-
-.bar-mod:hover {
+.bars .bar-mod:hover {
   background: rgba(200, 200, 200, 0.5);
   -webkit-transition: background .5s;
   transition: background .5s;
 }
-
-@media (max-width: 1080px) {
-  .bar-mod {
-    float: none;
-    display: inline-block;
-  }
-}
-.bar-label {
-  font-size: 14px;
-  line-height: 25px;
-  letter-spacing: .05em;
-  text-transform: uppercase;
-  padding: 5px 10px;
-  background: #ddd;
-  color: #333;
-}
-
-.bar_contest {
-  font-size: 18px;
+.bars .bar-mod .bar_contest {
+  font-size: 24px;
   line-height: 18px;
   letter-spacing: .025em;
   color: #333;
+  font-family: "MillerHeadline Light", Georgia, Cambria, serif;
 }
-
-.bar_circle {
+.bars .bar-mod .bar_circle {
   border-radius: 25px;
   -webkit-border-radius: 25px;
   -moz-border-radius: 25px;
   width: 50px;
   height: 50px;
 }
-
-.bar-measure {
+.bars .bar-mod .bar-measure {
   color: white;
-  font-size: 24px;
-  padding: 5px 10px;
+  font-size: 28px;
+  padding: 5px 11px;
 }
-
-.bar-y {
+.bars .bar-mod .bar-y {
   background: #1c491c;
 }
-
-.bar-n {
+.bars .bar-mod .bar-n {
   background: #491c1c;
 }
-
-.bar_result {
+.bars .bar-mod .bar_result {
   font-family: "MillerHeadline Bold", serif;
   letter-spacing: .001em;
   color: #555;
+}
+@media (max-width: 1080px) {
+  .bars .bar-mod {
+    float: none;
+    display: inline-block;
+  }
+}
+@media (max-width: 640px) {
+  .bars .bar-mod {
+    margin: 5px 0;
+    width: 100%;
+  }
+}
+
+.attn {
+  text-align: center;
+  border-bottom: 2px solid #ccc;
+  background: #eee;
+  margin-bottom: 25px;
+  padding: 10px;
+}
+.attn::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.attn img {
+  display: block;
+  max-width: none;
+  width: 50px;
+}
+.attn .attn-wrap {
+  display: block;
+}
+@media all and (min-width: 960px) {
+  .attn .attn-wrap {
+    display: inline-block;
+    overflow: hidden;
+  }
+}
+.attn .attn-box {
+  font-size: 24px;
+  line-height: 50px;
+  height: 62px;
+  display: block;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 1px;
+  -webkit-transition: background .5s;
+  -moz-transition: background .5s;
+  -ms-transition: background .5s;
+  -o-transition: background .5s;
+  transition: background .5s;
+}
+.attn .attn-box, .attn .attn-box:visited, .no-touch .attn .attn-box:visited:hover, .attn .attn-box:focus, .no-touch .attn .attn-box:focus:hover, .no-touch .attn .attn-box:hover, .attn .attn-box:active {
+  background: #ccc;
+}
+.attn .attn-box span {
+  float: left;
+}
+.attn .attn-box .attn-box-contest::after {
+  content: ":";
+}
+@media all and (min-width: 960px) {
+  .attn .attn-box {
+    float: left;
+  }
 }

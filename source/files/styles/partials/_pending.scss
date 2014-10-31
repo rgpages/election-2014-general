@@ -53,95 +53,179 @@
 }
 
 
-.bars{
+.bars {
+	
 	display: block;
 	clear: all;
 	overflow: hidden;
-	border-top: 2px solid #ccc;
 	border-bottom: 2px solid #ccc;
-}
-
-.bar{
-	background: #eee;
 	text-align: center;
+	background: #eee;
 	line-height: 0;
-}
-
-.bar-mod-container{
-	overflow: hidden;
-	display: inline-block;
-}
-
-.bar-mod{
-	color: black;
-	line-height: 48px;
-	font-size: 24px;
-	float: left;
-	margin: 5px;
-	padding: 5px;
-	max-width: 310px;
-	-webkit-transition: background .5s;
-	transition: background .5s;
-	border-radius: 1px;
-	-webkit-border-radius: 1px;
-	-moz-border-radius: 1px;
-	border: 1px solid #ccc;
-}
-
-.bar-mod:hover{
-	background: rgba(200,200,200,.5);
-	-webkit-transition: background .5s;
-	transition: background .5s;
-}
-
-@media (max-width: 1080px){
-	.bar-mod{
-		float: none;
+	margin-bottom: 25px;
+	
+	.bar {
+		
 		display: inline-block;
+		
+		@media (max-width: 640px) {
+			
+			margin: 0 5px;
+			
+		}
+		
 	}
+	
+	.bar-mod {
+		
+		color: black;
+		line-height: 49px;
+		font-size: 24px;
+		float: left;
+		margin: 5px;
+		/*padding: 5px 0;*/
+		width: 300px;
+		-webkit-transition: background .5s;
+		transition: background .5s;
+		border-radius: 1px;
+		-webkit-border-radius: 1px;
+		-moz-border-radius: 1px;
+		border: 1px solid #ccc;
+		
+		&:hover {
+			background: rgba(200,200,200,.5);
+			-webkit-transition: background .5s;
+			transition: background .5s;
+		}
+		
+		.bar_contest {
+			font-size: 24px;
+			line-height: 18px;
+			letter-spacing: .025em;
+			color: #333;
+			font-family: "MillerHeadline Light", Georgia, Cambria, serif;
+		}
+		
+		.bar_circle {
+			border-radius: 25px;
+			-webkit-border-radius: 25px;
+			-moz-border-radius: 25px;
+			width: 50px;
+			height: 50px;
+		}
+		
+		.bar-measure {
+			color: white;
+			font-size: 28px;
+			padding: 5px 11px;
+		}
+		
+		.bar-y { background: rgb(28, 73, 28); }
+		
+		.bar-n { background: rgb(73, 28, 28); }
+		
+		.bar_result {
+			font-family: "MillerHeadline Bold", serif;
+			letter-spacing: .001em;
+			color: #555;
+		}
+		
+		@media (max-width: 1080px) {
+			
+			float: none;
+			display: inline-block;
+			
+		}
+		
+		@media (max-width: 640px) {
+			
+			margin: 5px 0;
+			width: 100%;
+			
+		}
+		
+	}
+	
 }
 
-.bar-label{
-	font-size: 14px;
-	line-height: 25px;
-	letter-spacing: .05em;
-	text-transform: uppercase;
-	padding: 5px 10px;
-	background: #ddd;
-	color: #333;
-}
-
-.bar_contest {
-	font-size: 18px;
-	line-height: 18px;
-	letter-spacing: .025em;
-	color: #333;
-}
-
-.bar_circle{
-	border-radius: 25px;
-	-webkit-border-radius: 25px;
-	-moz-border-radius: 25px;
-	width: 50px;
-	height: 50px;
-}
-
-.bar-measure{
-	color: white;
-	font-size: 24px;
-	padding: 5px 10px;
-}
-
-.bar-y{
-	background: rgb(28, 73, 28);
-}
-
-.bar-n{
-	background: rgb(73, 28, 28);
-}
-
-.bar_result {
-	font-family: "MillerHeadline Bold", serif;
-	letter-spacing: .001em;
-	color: #555;
+.attn {
+	
+	text-align: center; // For the `inline-block` child.
+	border-bottom: 2px solid $grayc;
+	background: $graye;
+	margin-bottom: 25px;
+	padding: 10px;
+	
+	// Float clearing:
+	&::after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+	
+	img {
+		display: block;
+		max-width: none;
+		width: 50px;
+	}
+	
+	.attn-wrap {
+		
+		display: block;
+		
+		@media all and (min-width: 960px) {
+			
+			display: inline-block;
+			overflow: hidden;
+			
+		}
+		
+	}
+	
+	.attn-box {
+		
+		font-size: 24px;
+		line-height: 50px; // Height of image.
+		height: 62px; // Sum of `line-height` + top/bottom `border` & `padding`.
+		display: block;
+		padding: 5px;
+		border: 1px solid #ccc;
+		border-radius: 1px;
+		
+		-webkit-transition: background .5s;
+		   -moz-transition: background .5s;
+		    -ms-transition: background .5s;
+		     -o-transition: background .5s;
+		        transition: background .5s;
+		
+		& {
+			
+			&,
+			&:visited,
+			.no-touch &:visited:hover,
+			&:focus {
+				
+			}
+			.no-touch &:focus:hover,
+			.no-touch &:hover,
+			&:active { background: $grayc; }
+			
+		}
+		
+		span {
+			float: left;
+		}
+		
+		.attn-box-contest::after {
+			content: ":";
+		}
+		
+		@media all and (min-width: 960px) {
+			
+			float: left;
+			
+		}
+		
+	}
+	
 }

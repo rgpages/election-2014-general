@@ -1,4 +1,5 @@
-main {
+// White background:
+.base {
 	background-color: $milk;
 	margin: {
 		top: -1px;
@@ -6,7 +7,9 @@ main {
 	}
 	padding: 1px 0;
 }
-.main {
+
+// Meant to wrap `.core`:
+.wrap {
 	
 	padding: {
 		right: 25px;
@@ -24,8 +27,8 @@ main {
 	
 }
 
-// Note: Use `.main` for padding.
-.container {
+// Note: Use `.wrap` for padding.
+.core {
 	max-width: 1600px;
 	margin: 0 auto;
 }
