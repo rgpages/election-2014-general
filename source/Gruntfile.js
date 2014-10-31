@@ -261,11 +261,16 @@ module.exports = function(grunt) {
 						'./files/scripts/moment-twitter.js',
 						'./files/scripts/jquery.js',
 						'./files/scripts/jquery.*.js',
+						'./files/scripts/iframeResizer.js',
 						'./files/scripts/imagesloaded.pkgd.js',
 						'./files/scripts/<%= pkg.name %>.js',
 						'./files/scripts/<%= pkg.name %>.mod.*.js',
 						'./files/scripts/<%= pkg.name %>.init.js',
 						'./files/scripts/pending.js', // Bypass jshint, for quick and dirty JS tests.
+					],
+					
+					'../prod/<%= pkg.version %>/<%= now %>/<%= ver %>/scripts/iframeResizer.contentWindow.min.js' : [
+						'./files/scripts/iframeResizer.contentWindow.js',
 					],
 					
 				},
@@ -342,6 +347,7 @@ module.exports = function(grunt) {
 					
 					'../dev/styles/<%= pkg.name %>.css' : './files/styles/<%= pkg.name %>.scss',
 					'../dev/styles/development.css' : './files/styles/development.scss',
+					'../dev/styles/test.css' : './files/styles/test.scss',
 					
 				},
 				

@@ -1,5 +1,19 @@
 (function() {
 	
+	var $attn = $('#attn').iFrameResize({
+		resizedCallback: function(iframe, height, width, type) {
+			
+			console.log(this, iframe, height, width, type);
+			
+			$attn.fadeIn();
+			
+		}
+	});
+	
+})();
+
+(function() {
+	
 	$.pollster.defaults.api = 'http://registerguard.com/csp/cms/sites/rg/feeds/json.csp',
 	$.pollster.defaults.seconds = 300; // 5 mins.
 	

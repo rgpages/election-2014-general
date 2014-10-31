@@ -1,0 +1,133 @@
+// Helpers:
+@import "partials/variable";
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.attn {
+	
+	font-family: $font1;
+	font-size: 0;
+	line-height: 0;
+	color: $gray3;
+	text-align: center; // For the `inline-block` child.
+	border-bottom: 2px solid $grayc;
+	background: $graye;
+	overflow: hidden;
+	
+	* { vertical-align: middle; }
+	
+	img {
+		display: block;
+		max-width: none;
+	}
+	
+	a {
+		
+		font-size: 24px;
+		line-height: 50px; // Height of image.
+		border-radius: 1px;
+		border: 1px solid $grayb;
+		background: $graye;
+		height: 50px;
+		margin: 5px;
+		padding: 5px;
+		display: block;
+		white-space: nowrap;
+		
+		-webkit-transition: all .5s;
+		   -moz-transition: all .5s;
+		    -ms-transition: all .5s;
+		     -o-transition: all .5s;
+		        transition: all .5s;
+		
+		&,
+		&:visited {
+			color: $gray6;
+			text-decoration: none;
+		}
+		&:visited:hover,
+		&:focus,
+		&:focus:hover,
+		&:hover,
+		&:active {
+			color: $gray3;
+			border-color: $grayb;
+			background: $grayd;
+		}
+		
+		> :first-child {
+			
+			text-transform: lowercase;
+			
+			&::after { content: ":"; }
+			
+		}
+		
+		@media all and (min-width: 820px) { // Just eyeballed this number.
+			
+			white-space: normal;
+			float: left;
+			
+		}
+		
+	}
+	
+	span {
+		
+		display: inline-block;
+		
+		:first-child {
+			color: $milk;
+			border-radius: 50%;
+			width: 50px;
+			height: 50px;
+		}
+		
+		span { font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, $serif; }
+		
+		@media all and (min-width: 820px) { // Just eyeballed this number.
+			
+			float: left;
+			margin-right: 5px;
+			
+			&:last-child { margin-right: 0; }
+			
+		}
+		
+	}
+	
+	div {
+		
+		display: block;
+		
+		// YES!
+		&:last-child span span:first-child {
+			text-shadow: 0 1px 2px darken($frog, 80%);
+			background: darken($frog, 60%);
+		}
+		
+		// NO!
+		&:last-child a > span:last-child span:first-child {
+			text-shadow: 0 1px 2px darken($chili, 80%);
+			background: darken($chili, 60%);
+		}
+		
+		@media all and (min-width: 820px) {
+			
+			display: inline-block;
+			
+			// Float clearing:
+			&::after {
+				content: "";
+				display: table;
+				clear: both;
+			}
+			
+		}
+		
+	}
+	
+}

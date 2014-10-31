@@ -8,7 +8,7 @@
  * @copyright Copyright (c) 2014 Micky Hulse.
  * @license Released under the Copyright © The Register-Guard 2014. All rights reserved..
  * @version 0.1.1
- * @date 2014/10/30
+ * @date 2014/10/31
  */
 
 
@@ -3886,57 +3886,6 @@ p.meta:hover {
   }
 }
 
-.attn {
-  text-align: center;
-  border-bottom: 2px solid #ccc;
-  background: #eee;
-  margin-bottom: 25px;
-  padding: 10px;
-}
-.attn::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.attn img {
-  display: block;
-  max-width: none;
-  width: 50px;
-}
-.attn .attn-wrap {
-  display: block;
-}
-@media all and (min-width: 960px) {
-  .attn .attn-wrap {
-    display: inline-block;
-    overflow: hidden;
-  }
-}
-.attn .attn-box {
-  font-size: 24px;
-  line-height: 50px;
-  height: 62px;
-  display: block;
-  padding: 5px;
-  border: 1px solid #ccc;
-  border-radius: 1px;
-  -webkit-transition: background .5s;
-  -moz-transition: background .5s;
-  -ms-transition: background .5s;
-  -o-transition: background .5s;
-  transition: background .5s;
-}
-.attn .attn-box, .attn .attn-box:visited, .no-touch .attn .attn-box:visited:hover, .attn .attn-box:focus, .no-touch .attn .attn-box:focus:hover, .no-touch .attn .attn-box:hover, .attn .attn-box:active {
-  background: #ccc;
-}
-.attn .attn-box span {
-  float: left;
-}
-.attn .attn-box .attn-box-contest::after {
-  content: ":";
-}
-@media all and (min-width: 960px) {
-  .attn .attn-box {
-    float: left;
-  }
+#attn {
+  display: none;
 }

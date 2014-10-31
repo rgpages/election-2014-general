@@ -1,0 +1,116 @@
+/**
+ * 2014 General Election
+ * General election coverage for Lane County, Oregon; developed and curated by The Register-Guard.
+ *
+ * @author Micky Hulse
+ * @link http://mky.io
+ * @docs https://github.com/registerguard/election-2014-general
+ * @copyright Copyright (c) 2014 Micky Hulse.
+ * @license Released under the Copyright © The Register-Guard 2014. All rights reserved..
+ * @version 0.1.1
+ * @date 2014/10/31
+ */
+
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.attn {
+  font-family: Arial, sans-serif;
+  font-size: 0;
+  line-height: 0;
+  color: #333;
+  text-align: center;
+  border-bottom: 2px solid #ccc;
+  background: #eee;
+  overflow: hidden;
+}
+.attn * {
+  vertical-align: middle;
+}
+.attn img {
+  display: block;
+  max-width: none;
+}
+.attn a {
+  font-size: 24px;
+  line-height: 50px;
+  border-radius: 1px;
+  border: 1px solid #bbb;
+  background: #eee;
+  height: 50px;
+  margin: 5px;
+  padding: 5px;
+  display: block;
+  white-space: nowrap;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -ms-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+}
+.attn a, .attn a:visited {
+  color: #666;
+  text-decoration: none;
+}
+.attn a:visited:hover, .attn a:focus, .attn a:focus:hover, .attn a:hover, .attn a:active {
+  color: #333;
+  border-color: #bbb;
+  background: #ddd;
+}
+.attn a > :first-child {
+  text-transform: lowercase;
+}
+.attn a > :first-child::after {
+  content: ":";
+}
+@media all and (min-width: 820px) {
+  .attn a {
+    white-space: normal;
+    float: left;
+  }
+}
+.attn span {
+  display: inline-block;
+}
+.attn span :first-child {
+  color: #fff;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+.attn span span {
+  font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Cambria, Georgia, serif;
+}
+@media all and (min-width: 820px) {
+  .attn span {
+    float: left;
+    margin-right: 5px;
+  }
+  .attn span:last-child {
+    margin-right: 0;
+  }
+}
+.attn div {
+  display: block;
+}
+.attn div:last-child span span:first-child {
+  text-shadow: 0 1px 2px #0f1504;
+  background: #4a6a15;
+}
+.attn div:last-child a > span:last-child span:first-child {
+  text-shadow: 0 1px 2px #210000;
+  background: #870000;
+}
+@media all and (min-width: 820px) {
+  .attn div {
+    display: inline-block;
+  }
+  .attn div::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}

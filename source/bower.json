@@ -1,10 +1,10 @@
 {
   "name": "bower",
   "dependencies": {
-    "d3": "~3",
     "fastclick": "~1",
     "harmonia": "https://github.com/mhulse/jquery-harmonia.git#v1",
     "imagesloaded": "~3",
+    "iframe-resizer": "~2",
     "ion": "https://github.com/mhulse/jquery-ion.git#v1",
     "jquery": "~2",
     "jquery-smooth-scroll": "~1",

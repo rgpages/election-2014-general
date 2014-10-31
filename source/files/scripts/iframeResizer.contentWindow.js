@@ -1,0 +1,1 @@
+../plugins/iframe-resizer/iframeResizer.contentWindow.js
