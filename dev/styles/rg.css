@@ -1819,6 +1819,24 @@ hgroup > :last-child {
   margin-bottom: 0 !important;
 }
 
+.mast {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  color: #ccc;
+  border-bottom: 2px solid #ddd;
+  margin: 25px 0;
+  padding: 5px 0;
+}
+.mast a, .mast a:visited {
+  color: #aaa;
+}
+.no-touch .mast a:visited:hover, .mast a:focus, .no-touch .mast a:focus:hover, .no-touch .mast a:hover, .mast a:active {
+  color: #333;
+}
+
 ul, ol, dl {
   margin: 25px 0;
 }
