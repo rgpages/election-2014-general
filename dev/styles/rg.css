@@ -1989,7 +1989,7 @@ dl > :last-child {
 }
 
 .form {
-  font-family: arial, sans-serif;
+  font-family: Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
   margin: 0;
@@ -3065,7 +3065,7 @@ nav[role="navigation"] .harmonia-select {
   -webkit-tap-highlight-color: transparent;
   -webkit-tap-highlight-color: transparent;
   /*
-  font-family: $serif;
+  font-family: $font2;
   font-size: 125px;
   line-height: 125px;
   font-weight: normal;
