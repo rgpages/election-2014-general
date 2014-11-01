@@ -436,6 +436,7 @@ module.exports = function(grunt) {
 						cwd : './files/templates/',
 						src : [
 							'index.html',
+							'attn.html',
 						],
 						dest : '../prod/<%= pkg.version %>/<%= now %>/<%= ver %>/',
 						
