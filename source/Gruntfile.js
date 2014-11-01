@@ -496,8 +496,9 @@ module.exports = function(grunt) {
 						expand : true,
 						cwd : './files/',
 						src : [
-							'images/**/*.{gif,png}',
+							'images/**/*',
 							'media/**/*',
+							'!**/junk/**',
 						],
 						dest : '../prod/<%= pkg.version %>/<%= now %>/<%= ver %>/',
 						
@@ -507,8 +508,8 @@ module.exports = function(grunt) {
 						flatten: true,
 						cwd: './files/icons/',
 						src: [
-							'*.{png,ico}',
-							'!favicon.png',
+							'!**/fonts/**',
+							'!**/psd/**',
 						],
 						dest:'../',
 						filter: 'isFile',
