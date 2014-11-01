@@ -24,6 +24,7 @@ RG.register(function() {
 					
 					template.push([
 						'<div class="story">',
+							'<h6>' + v.category + '</h6>',
 							'<time>' + moment(v.published).twitterShort() + '</time>',
 							'<h4><a href="' + v.server + v.path + '" target="_blank">' + v.headline + '</a></h4>',
 							(v.deck) && ('<h5 class="sh5">' + v.deck + '</h5>'),

@@ -25,11 +25,9 @@ dl {
 }
 
 %arrow {
-	font-family: FontAwesome;
+	@include font-awesome;
 	line-height: 0;
 	position: relative;
-	font-style: normal;
-	font-weight: normal;
 	text-decoration: inherit;
 	//display: inline-block;
 }

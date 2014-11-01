@@ -8,7 +8,7 @@
 	background: $graye;
 	box-shadow: 0 0 5px rgba($raven, .1);
 	// Spacing:
-	margin: 25px 0;
+	margin: 0 0 25px;
 	padding: 0;
 	// For spinner:
 	position: relative;
@@ -141,10 +141,8 @@
 			
 			&.poll-bar-up::before,
 			&.poll-bar-down::before {
+				@include font-awesome;
 				font-size: 20px;
-				font-family: FontAwesome;
-				font-style: normal;
-				font-weight: normal;
 				line-height: 30px;
 				background: rgba($raven, .75);
 				padding: 0 5px;

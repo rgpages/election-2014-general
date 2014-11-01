@@ -1,0 +1,29 @@
+.js #disqus { display: none; }
+
+.story {
+	
+	position: relative;
+	border-width: 0 0 1px;
+	border-style: solid;
+	border-color: $grayc;
+	padding: 10px 0;
+	
+	h4 {
+		//@include miller-bold;
+		margin-top: 0;
+	}
+	h5 {
+		//@include miller-light;
+		margin-bottom: 0;
+	}
+	
+	time {
+		font-size: 12px;
+		line-height: 12px;
+		float: right;
+		margin: 0 0 10px 10px;
+	}
+	
+}
+
+.glow { box-shadow: 0 0 20px $chili; }

@@ -122,8 +122,8 @@ blockquote {
 	
 	&::before,
 	&::after {
+		@include font-awesome;
 		font-size: 60px;
-		font-family: FontAwesome;
 		color: rgba($raven, .1);
 		line-height: 1;
 		position: absolute;

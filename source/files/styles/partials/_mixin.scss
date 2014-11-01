@@ -4,20 +4,20 @@
 	font-weight: normal;
 }
 
-@mixin miller-light() {
-	font-family: "MillerHeadline Light", $serif;
-	font-style: normal;
-	font-style: normal;
-}
-
 @mixin miller-bold() {
-	font-family: "MillerHeadline Bold", $serif;
+	font-family: "MillerHeadline Bold", $font2;
 	font-weight: bold;
 	font-style: normal;
 }
 
+@mixin miller-light() {
+	font-family: "MillerHeadline Light", $font2;
+	font-style: normal;
+	font-style: normal;
+}
+
 @mixin benton() {
-	font-family: "BentonSansCond Regular", $sans;
+	font-family: "BentonSansCond Regular", $font1;
 	font-style: normal;
 	font-weight: bold;
 }

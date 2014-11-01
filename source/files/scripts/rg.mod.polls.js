@@ -8,7 +8,7 @@ RG.register(function() {
 	$.pollster.defaults.seconds = 600; // 10 mins.
 	
 	$.pollster({
-		target: 'results-state-races',
+		target: 'state-races-results',
 		api: 'http://projects.registerguard.com/ballot/json/stater/',
 		callback: function($data, $options) {
 			
@@ -110,7 +110,7 @@ RG.register(function() {
 	});
 	
 	$.pollster({
-		target: 'results-state-measures',
+		target: 'state-measures-results',
 		api: 'http://projects.registerguard.com/ballot/json/statem/',
 		callback: function($data, $options) {
 			
@@ -212,7 +212,7 @@ RG.register(function() {
 	});
 	
 	$.pollster({
-		target: 'results-lane-county',
+		target: 'lane-county-results',
 		api: 'http://projects.registerguard.com/ballot/json/laneco/',
 		callback: function($data, $options) {
 			
@@ -289,7 +289,7 @@ RG.register(function() {
 	});
 	
 	$.pollster({
-		target: 'results-eugspr',
+		target: 'eugspr-results',
 		api: 'http://projects.registerguard.com/ballot/json/eugspr/',
 		callback: function($data, $options) {
 			
@@ -366,7 +366,7 @@ RG.register(function() {
 	});
 	
 	$.pollster({
-		target: 'results-regional-races',
+		target: 'regional-races-results',
 		api: 'http://projects.registerguard.com/ballot/json/region/',
 		callback: function($data, $options) {
 			
@@ -393,7 +393,7 @@ RG.register(function() {
 					
 					$this
 						.removeClass('loading')
-						.append(template);					
+						.append(template);
 				}
 				
 				$.each(v1.options, function(i2, v2) {
@@ -442,7 +442,7 @@ RG.register(function() {
 	});
 	
 	$.pollster({
-		target: 'results-lane-county-measures',
+		target: 'lane-county-measures-results',
 		api: 'http://projects.registerguard.com/ballot/json/laneme/',
 		callback: function($data, $options) {
 			

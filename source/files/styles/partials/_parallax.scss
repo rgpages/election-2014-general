@@ -100,9 +100,7 @@
 					position: relative;
 					
 					&::before {
-						font-family: FontAwesome;
-						font-style: normal;
-						font-weight: normal;
+						@include font-awesome;
 						content: "\f030";
 						position: absolute;
 						top: 0;

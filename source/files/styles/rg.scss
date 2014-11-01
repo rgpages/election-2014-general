@@ -1,6 +1,6 @@
 // Helpers:
-@import "partials/variable";
-@import "partials/mixin";
+@import "partials/variable",
+        "partials/mixin";
 
 // Normalization:
 @import "partials/normalize";
@@ -28,7 +28,8 @@
         "partials/accordion",
         "partials/parallax",
         "partials/advert",
-        "partials/box";
+        "partials/box",
+        "partials/miscellany";
 
 // To be sorted:
 @import "partials/pending";

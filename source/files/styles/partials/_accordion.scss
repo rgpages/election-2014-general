@@ -31,9 +31,7 @@
 	
 	// Applied only if JS is turned ON:
 	.js &::before {
-		font-family: FontAwesome;
-		font-style: normal;
-		font-weight: normal;
+		@include font-awesome;
 		font-size: 18px;
 		line-height: 20px;
 		content: "\f067";

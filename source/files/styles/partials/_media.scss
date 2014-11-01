@@ -104,3 +104,10 @@ audio {
 
 iframe[id^='twitter-widget-'],
 .twitter-timeline { width: 100%; }
+
+.loading {
+	// Before anything loads, show:
+	background: url(../images/loader2.gif) no-repeat center top;
+	background-size: 32px 10px;
+	min-height: 32px; // Match background image height.
+}

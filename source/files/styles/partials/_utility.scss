@@ -64,10 +64,8 @@
 
 // http://css-tricks.com/examples/IconFont/
 [data-icon]:before {
-	font-family: FontAwesome;
+	@include font-awesome;
 	font-size: inherit;
-	font-style: normal;
-	font-weight: normal;
 	content: attr(data-icon);
 	speak: none;
 }
@@ -118,10 +116,6 @@
 	opacity: .5;
 }
 .scroll-overlay::before,
-.scroll-overlay::after {
-	font-family: FontAwesome;
-	font-style: normal;
-	font-weight: normal;
-}
+.scroll-overlay::after { @include font-awesome; }
 .scroll-overlay::before { content: "\f0a5\00a0"; }
 .scroll-overlay::after { content: "\00a0\f0a4"; }
