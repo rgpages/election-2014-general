@@ -517,6 +517,12 @@ module.exports = function(grunt) {
 						src: '../prod/<%= pkg.version %>/<%= now %>/<%= ver %>/index.html',
 						dest: '../index.html',
 						
+					}, {
+						
+						// COPY ATTN TO ROOT:
+						src: '../prod/<%= pkg.version %>/<%= now %>/<%= ver %>/attn.html',
+						dest: '../attn.html',
+						
 					},
 					
 				],
