@@ -229,6 +229,7 @@ module.exports = function(grunt) {
 				'apple-touch-icon-precomposed.png',
 				'favicon.ico',
 				'../index.html',
+				'../attn.html',
 				
 			],
 			
