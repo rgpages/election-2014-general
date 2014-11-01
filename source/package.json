@@ -13,7 +13,7 @@
     "url": "http://mky.io"
   },
   "//": "The following FQDN is the endpoint for your assets (no trailing slash):",
-  "production": "http://pages.registerguard.com/election-2014-general",
+  "production": "http://vote.registerguard.com",
   "licenses": [
     {
       "type": "Copyright © The Register-Guard 2014. All rights reserved.",

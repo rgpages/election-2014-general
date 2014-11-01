@@ -368,6 +368,7 @@ module.exports = function(grunt) {
 				files : {
 					
 					'../prod/<%= pkg.version %>/<%= now %>/<%= ver %>/styles/<%= pkg.name %>.min.css' : './files/styles/<%= pkg.name %>.scss',
+					'../prod/<%= pkg.version %>/<%= now %>/<%= ver %>/styles/attn.min.css' : './files/styles/attn.scss',
 					
 				},
 				

@@ -12,7 +12,17 @@
 	<meta name="description" content="">
 	<meta name="keywords" content="">
 	
+	<!-- @if NODE_ENV == 'DEVELOPMENT' -->
+	
 	<link rel="stylesheet" href="styles/attn.css">
+	
+	<!-- @endif -->
+	
+	<!-- @if NODE_ENV == 'PRODUCTION' -->
+	
+	<script src="<!-- @echo production -->/prod/<!-- @echo version -->/<!-- @echo now -->/<!-- @echo ver -->/styles/attn.min.css"></script>
+	
+	<!-- @endif -->
 	
 	<base target="_parent">
 	
