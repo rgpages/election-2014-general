@@ -35,23 +35,28 @@ $(function() {
 				
 				$.each(v1, function(k2, v2) {
 					
+					var $div;
+					
+					if ($options.first) {
+						
+						$div = $('<div />')
+							.hide();
+						
+					}
+					
 					switch (k2) {
 						
 						case 'races':
-							
-							var $div = $('<div />');
-							$div.hide();
 							
 							$.each(v2, function(k3, v3) {
 								
 								var id1 = 'con-' + v3.contest_id;
 								
-								if ( ! $options.first) {
+								if ($options.first) {
 									
 									template = [
 										'<a id="' + id1 + '" href="http://vote.registerguard.com/#' + id1 + '">',
 											'<span>' + ((v3.contest_wrapper == 'Governor') ? 'Gov' : 'Sen') + '</span>', // Can't think of a better way to handle race names.
-											'<span class="attn-content"></span>',
 										'</a>'
 									].join('\n');
 									
@@ -61,15 +66,22 @@ $(function() {
 								
 								$.each(v3.race.slice(0, 2), function(k4, v4) {
 									
-									if ( ! $options.first) {
+									var id2 = 'con-' + v3.contest_id + '_cand-meas-' + v4.cand_meas_id;
+									var percent = v4.percent_of_state_votes + '%';
+									var src = v4.image_url;
+									var name = v4.name;
+									
+									if ($options.first) {
 										
 										template = [
-											'<span><img src="images/img6.png" width="50" title="' + v4.name + '"></span>',
-											'<span>' + v4.percent_of_state_votes + '%</span>'
+											'<span id="' + id2 + '">',
+												'<span><img src="' + src + '" width="50" title="' + name + '"></span>',
+												'<span>' + percent + '</span>',
+											'</span>'
 										].join('\n');
 										
 										$div
-											.find('#' + id1 + ' .attn-content')
+											.find('#' + id1)
 											.append(template);
 										
 									}
@@ -78,11 +90,22 @@ $(function() {
 								
 							});
 							
-							if ( ! $options.first) {
+							if ($options.first) {
 								
 								$div
 									.appendTo($this)
 									.fadeIn();
+								
+							} else {
+								
+								$('#' + id2)
+									.children()
+									.find('img')
+									.attr('src', src)
+									.attr('title', name)
+									.end()
+									.last()
+									.text(percent);
 								
 							}
 							
@@ -90,19 +113,15 @@ $(function() {
 						
 						case 'measures':
 							
-							var $div = $('<div />');
-							$div.hide();
-							
 							$.each(v2, function(k3, v3) {
 								
 								var id1 = 'con-' + v3.contest_id;
 								
-								if ( ! $options.first) {
+								if ($options.first) {
 									
 									template = [
 										'<a id="' + id1 + '" href="http://vote.registerguard.com/#' + id1 + '">',
 											'<span>' + v3.contest_name + '</span>',
-											'<span class="attn-content"></span>',
 										'</a>'
 									].join('\n');
 									
@@ -112,15 +131,21 @@ $(function() {
 								
 								$.each(v3.measure, function(k4, v4) {
 									
-									if ( ! $options.first) {
+									var id2 = 'con-' + v3.contest_id + '_cand-meas-' + v4.cand_meas_id;
+									var percent = v4.percent_of_state_votes + '%';
+									var name = v4.name.charAt(0).toLowerCase();
+									
+									if ($options.first) {
 										
 										template = [
-											'<span><img src="images/img6.png" width="50" title="' + v4.name + '"></span>',
-											'<span>' + v4.percent_of_state_votes + '%</span>'
+											'<span id="' + id2 + '">',
+												'<span class="attn-' + name + '">' + name + '</span>',
+												'<span>' + percent + '</span>',
+											'</span>'
 										].join('\n');
 										
 										$div
-											.find('#' + id1 + ' .attn-content')
+											.find('#' + id1)
 											.append(template);
 										
 									}
@@ -129,11 +154,22 @@ $(function() {
 								
 							});
 							
-							if ( ! $options.first) {
+							if ($options.first) {
 								
 								$div
 									.appendTo($this)
 									.fadeIn();
+								
+							} else {
+								
+								$('#' + id2)
+									.children()
+									.first()
+									.attr('class', '')
+									.addClass('attn-' + name)
+									.end()
+									.last()
+									.text(percent);
 								
 							}
 							

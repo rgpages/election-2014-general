@@ -474,6 +474,7 @@ body {
   display: inline-block;
 }
 .attn span :first-child {
+  text-transform: uppercase;
   color: #fff;
   border-radius: 50%;
   width: 50px;
@@ -494,14 +495,6 @@ body {
 .attn div {
   display: block;
 }
-.attn div:last-child span span:first-child {
-  text-shadow: 0 1px 2px #0f1504;
-  background: #4a6a15;
-}
-.attn div:last-child a > span:last-child span:first-child {
-  text-shadow: 0 1px 2px #210000;
-  background: #870000;
-}
 @media all and (min-width: 820px) {
   .attn div {
     display: inline-block;
@@ -511,4 +504,12 @@ body {
     display: table;
     clear: both;
   }
+}
+.attn .attn-y {
+  text-shadow: 0 1px 2px #0f1504;
+  background: #4a6a15;
+}
+.attn .attn-n {
+  text-shadow: 0 1px 2px #210000;
+  background: #870000;
 }

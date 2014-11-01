@@ -245,7 +245,7 @@
 				
 				var id1 = 'con-' + v1.contest_id;
 				
-				if ( ! $options.first) {
+				if ($options.first) {
 					
 					template = [
 						'<div id="' + id1 + '" class="poll">',
@@ -272,7 +272,7 @@
 					var percent = v2.percent_of_lane_votes + '%';
 					var percent_state = v2.percent_of_state_votes + '%';
 					
-					if ( ! $options.first) {
+					if ($options.first) {
 						
 						template = [
 							'<div class="poll-bar">',
@@ -347,7 +347,7 @@
 				
 				var id1 = 'con-' + v1.contest_id;
 				
-				if ( ! $options.first) {
+				if ($options.first) {
 					
 					template = [
 						'<div id="' + id1 + '" class="poll">',
@@ -374,7 +374,7 @@
 					var percent = v2.percent_of_lane_votes + '%';
 					var percent_state = v2.percent_of_state_votes + '%';
 					
-					if ( ! $options.first) {
+					if ($options.first) {
 						
 						template = [
 							'<div class="poll-bar">',
@@ -449,7 +449,7 @@
 				
 				var id1 = 'con-' + v1.contest_id;
 				
-				if ( ! $options.first) {
+				if ($options.first) {
 					
 					template = [
 						'<div id="' + id1 + '" class="poll">',
@@ -474,7 +474,7 @@
 					var id2 = 'con-' + v1.contest_id + '_cand-meas-' + v2.cand_meas_id;
 					var percent = v2.percent_of_lane_votes + '%';
 					
-					if ( ! $options.first) {
+					if ($options.first) {
 						
 						template = [
 							'<div class="poll-bar">',
@@ -526,7 +526,7 @@
 				
 				var id1 = 'con-' + v1.contest_id;
 				
-				if ( ! $options.first) {
+				if ($options.first) {
 					
 					template = [
 						'<div id="' + id1 + '" class="poll">',
@@ -551,7 +551,7 @@
 					var id2 = 'con-' + v1.contest_id + '_cand-meas-' + v2.cand_meas_id;
 					var percent = v2.percent_of_lane_votes + '%';
 					
-					if ( ! $options.first) {
+					if ($options.first) {
 						
 						template = [
 							'<div class="poll-bar">',
@@ -603,7 +603,7 @@
 				
 				var id1 = 'con-' + v1.contest_id;
 				
-				if ( ! $options.first) {
+				if ($options.first) {
 					
 					template = [
 						'<div id="' + id1 + '" class="poll">',
@@ -627,7 +627,7 @@
 					var id2 = 'con-' + v1.contest_id + '_cand-meas-' + v2.cand_meas_id;
 					var percent = v2.percent_of_lane_votes + '%';
 					
-					if ( ! $options.first) {
+					if ($options.first) {
 						
 						template = [
 							'<div class="poll-bar">',
@@ -679,7 +679,7 @@
 				
 				var id1 = 'con-' + v1.contest_id;
 				
-				if ( ! $options.first) {
+				if ($options.first) {
 					
 					template = [
 						'<div id="' + id1 + '" class="poll">',
@@ -704,7 +704,7 @@
 					var id2 = 'con-' + v1.contest_id + '_cand-meas-' + v2.cand_meas_id;
 					var percent = v2.percent_of_lane_votes + '%';
 					
-					if ( ! $options.first) {
+					if ($options.first) {
 						
 						template = [
 							'<div class="poll-bar">',
