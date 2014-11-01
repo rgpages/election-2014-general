@@ -269,7 +269,7 @@ module.exports = function(grunt) {
 						'./files/scripts/pending.js', // Bypass jshint, for quick and dirty JS tests.
 					],
 					
-					'../prod/<%= pkg.version %>/<%= now %>/<%= ver %>/scripts/attn.js' : [
+					'../prod/<%= pkg.version %>/<%= now %>/<%= ver %>/scripts/attn.min.js' : [
 						'./files/scripts/jquery.js',
 						'./files/scripts/jquery.pollster.js',
 						'./files/scripts/iframeResizer.contentWindow.js',
