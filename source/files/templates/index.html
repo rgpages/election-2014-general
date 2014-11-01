@@ -26,7 +26,17 @@
 	
 	<div class="base">
 		
+		<!-- @if NODE_ENV == 'DEVELOPMENT' -->
+		
 		<iframe id="attn" src="attn.html" width="100%" height="0" scrolling="no"></iframe>
+		
+		<!-- @endif -->
+		
+		<!-- @if NODE_ENV == 'PRODUCTION' -->
+		
+		<iframe id="attn" src="<!-- @echo production -->/prod/<!-- @echo version -->/<!-- @echo now -->/<!-- @echo ver -->/attn.html"></script>
+		
+		<!-- @endif -->
 		
 		<div class="wrap">
 			

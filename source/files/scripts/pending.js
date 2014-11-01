@@ -2,19 +2,33 @@
 	
 	var $attn = $('#attn').iFrameResize({
 		enablePublicMethods: true,
-		resizedCallback: function(obj) {
+		resizedCallback: function($obj) {
 			
 			//console.log(obj.iframe, obj.height, obj.width, obj.type);
 			
 			//$attn.show();
 			
 		},
-		messageCallback: function (obj) {
+		messageCallback: function ($obj) {
 			
-			console.log(obj.message);
+			//console.log(obj.message);
 			
 			$.smoothScroll({
-				scrollTarget: obj.message
+				scrollTarget: $obj.message,
+				afterScroll: function($o) {
+					
+					$($o.scrollTarget)
+						.addClass('glow')
+						.delay(1000)
+						.queue(function() {
+							
+							$(this)
+								.removeClass('glow')
+								.dequeue();
+							
+						});
+					
+				}
 			});
 			
 		}
@@ -245,7 +259,9 @@
 						'</div>'
 					].join('\n');
 					
-					$this.append(template);
+					$this
+						.removeClass('loading')
+						.append(template);
 					
 				}
 				
@@ -345,7 +361,9 @@
 						'</div>'
 					].join('\n');
 					
-					$this.append(template);
+					$this
+						.removeClass('loading')
+						.append(template);
 					
 				}
 				
@@ -445,7 +463,9 @@
 						'</div>'
 					].join('\n');
 					
-					$this.append(template);
+					$this
+						.removeClass('loading')
+						.append(template);
 					
 				}
 				
@@ -520,7 +540,9 @@
 						'</div>'
 					].join('\n');
 					
-					$this.append(template);
+					$this
+						.removeClass('loading')
+						.append(template);
 					
 				}
 				
@@ -595,8 +617,9 @@
 						'</div>'
 					].join('\n');
 					
-					$this.append(template);
-					
+					$this
+						.removeClass('loading')
+						.append(template);					
 				}
 				
 				$.each(v1.options, function(i2, v2) {
@@ -670,7 +693,9 @@
 						'</div>'
 					].join('\n');
 					
-					$this.append(template);
+					$this
+						.removeClass('loading')
+						.append(template);
 					
 				}
 				

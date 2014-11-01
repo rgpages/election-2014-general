@@ -15,6 +15,12 @@
 	// Hide for JS:
 	display: none;
 	
+	// Highlight if JS adds class of `glow`:
+	-webkit-transition: box-shadow .4s;
+	   -moz-transition: box-shadow .4s;
+	     -o-transition: box-shadow .4s;
+	        transition: box-shadow .4s;
+	
 	.poll-spinner {
 		background: url(../images/loading.gif) no-repeat; // Note: `loader2.gif` is white on black.
 		// Dimensions should be exceed `25px` in either direction:

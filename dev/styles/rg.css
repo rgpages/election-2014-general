@@ -8,7 +8,7 @@
  * @copyright Copyright (c) 2014 Micky Hulse.
  * @license Released under the Copyright © The Register-Guard 2014. All rights reserved..
  * @version 0.1.1
- * @date 2014/10/31
+ * @date 2014/11/01
  */
 
 
@@ -3209,6 +3209,10 @@ nav[role="navigation"] .harmonia-select {
   padding: 0;
   position: relative;
   display: none;
+  -webkit-transition: box-shadow .4s;
+  -moz-transition: box-shadow .4s;
+  -o-transition: box-shadow .4s;
+  transition: box-shadow .4s;
   /*
   <div class="tile">
   	<div class="tile-grid">
@@ -3884,4 +3888,8 @@ p.meta:hover {
     margin: 5px 0;
     width: 100%;
   }
+}
+
+.glow {
+  box-shadow: 0 0 20px #ffbaba;
 }
