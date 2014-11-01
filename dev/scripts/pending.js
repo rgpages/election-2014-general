@@ -1,11 +1,21 @@
 (function() {
 	
 	var $attn = $('#attn').iFrameResize({
-		resizedCallback: function(iframe, height, width, type) {
+		enablePublicMethods: true,
+		resizedCallback: function(obj) {
 			
-			console.log(this, iframe, height, width, type);
+			//console.log(obj.iframe, obj.height, obj.width, obj.type);
 			
-			$attn.fadeIn();
+			//$attn.show();
+			
+		},
+		messageCallback: function (obj) {
+			
+			console.log(obj.message);
+			
+			$.smoothScroll({
+				scrollTarget: obj.message
+			});
 			
 		}
 	});
@@ -219,7 +229,6 @@
 			
 			$.each($data, function(i1, v1) {
 				
-				var $contest;
 				var id1 = 'con-' + v1.contest_id;
 				
 				if ( ! $options.first) {
@@ -320,7 +329,6 @@
 			
 			$.each($data, function(i1, v1) {
 				
-				var $contest;
 				var id1 = 'con-' + v1.contest_id;
 				
 				if ( ! $options.first) {
@@ -421,7 +429,6 @@
 			
 			$.each($data, function(i1, v1) {
 				
-				var $contest;
 				var id1 = 'con-' + v1.contest_id;
 				
 				if ( ! $options.first) {
@@ -497,7 +504,6 @@
 			
 			$.each($data, function(i1, v1) {
 				
-				var $contest;
 				var id1 = 'con-' + v1.contest_id;
 				
 				if ( ! $options.first) {
@@ -573,7 +579,6 @@
 			
 			$.each($data, function(i1, v1) {
 				
-				var $contest;
 				var id1 = 'con-' + v1.contest_id;
 				
 				if ( ! $options.first) {
@@ -649,7 +654,6 @@
 			
 			$.each($data, function(i1, v1) {
 				
-				var $contest;
 				var id1 = 'con-' + v1.contest_id;
 				
 				if ( ! $options.first) {

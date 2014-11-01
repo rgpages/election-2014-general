@@ -269,8 +269,11 @@ module.exports = function(grunt) {
 						'./files/scripts/pending.js', // Bypass jshint, for quick and dirty JS tests.
 					],
 					
-					'../prod/<%= pkg.version %>/<%= now %>/<%= ver %>/scripts/iframeResizer.contentWindow.min.js' : [
+					'../prod/<%= pkg.version %>/<%= now %>/<%= ver %>/scripts/attn.js' : [
+						'./files/scripts/jquery.js',
+						'./files/scripts/jquery.pollster.js',
 						'./files/scripts/iframeResizer.contentWindow.js',
+						'./files/scripts/attn.js',
 					],
 					
 				},
@@ -347,7 +350,7 @@ module.exports = function(grunt) {
 					
 					'../dev/styles/<%= pkg.name %>.css' : './files/styles/<%= pkg.name %>.scss',
 					'../dev/styles/development.css' : './files/styles/development.scss',
-					'../dev/styles/test.css' : './files/styles/test.scss',
+					'../dev/styles/attn.css' : './files/styles/attn.scss',
 					
 				},
 				
