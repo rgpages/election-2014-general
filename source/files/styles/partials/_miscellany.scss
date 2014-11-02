@@ -1,27 +1,50 @@
 .js #disqus { display: none; }
 
-.story {
+.stories {
 	
-	position: relative;
-	border-width: 0 0 1px;
-	border-style: solid;
-	border-color: $grayc;
-	padding: 10px 0;
-	
-	h4 {
-		//@include miller-bold;
-		margin-top: 0;
-	}
-	h5 {
-		//@include miller-light;
-		margin-bottom: 0;
-	}
-	
-	time {
-		font-size: 12px;
-		line-height: 12px;
-		float: right;
-		margin: 0 0 10px 10px;
+	.story {
+		
+		position: relative;
+		border-width: 1px 0;
+		border-style: solid;
+		border-color: $grayc;
+		margin: 0 0 -1px;
+		padding: 10px 0;
+		
+		h4 {
+			font-size: 18px;
+			line-height: 20px;
+			margin: 0;
+		}
+		
+		h5 {
+			font-size: 16px;
+			line-height: 18px;
+			color: $raven;
+			margin: 0;
+		}
+		
+		h6 {
+			font-size: 12px;
+			line-height: 14px;
+			text-transform: uppercase;
+			letter-spacing: .1em;
+			color: $gray6;
+			margin: 0;
+		}
+		
+		h6 + h4,
+		h4 + h5 { margin-top: 5px; }
+		
+		time {
+			font-size: 12px;
+			line-height: 12px;
+			letter-spacing: .1em;
+			color: $gray9;
+			float: right;
+			margin: 0 0 0 10px;
+		}
+		
 	}
 	
 }

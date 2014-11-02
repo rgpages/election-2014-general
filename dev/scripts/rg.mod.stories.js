@@ -12,33 +12,37 @@ RG.register(function() {
 		
 		var $that = $(this);
 		
-		$.pollster({
-			target: $that.attr('id'),
-			params: 'subcats=' + encodeURIComponent($that.data('cats')),
-			callback: function($data, $options) {
-				
-				var $this = $(this);
-				var template = [];
-				
-				$.each($data.stories, function(i, v) {
+		if ($that.attr('data-cats')) {
+			
+			$.pollster({
+				target: $that.attr('id'),
+				params: 'subcats=' + encodeURIComponent($that.data('cats')),
+				callback: function($data, $options) {
 					
-					template.push([
-						'<div class="story">',
-							'<h6>' + v.category + '</h6>',
-							'<time>' + moment(v.published).twitterShort() + '</time>',
-							'<h4><a href="' + v.server + v.path + '" target="_blank">' + v.headline + '</a></h4>',
-							(v.deck) && ('<h5 class="sh5">' + v.deck + '</h5>'),
-						'</div>'
-					].join('\n'));
+					var $this = $(this);
+					var template = [];
 					
-				});
-				
-				$this
-					.removeClass('loading')
-					.html(template);
-				
-			}
-		});
+					$.each($data.stories, function(i, v) {
+						
+						template.push([
+							'<article class="story">',
+								'<time>' + moment(v.published).twitterShort() + '</time>',
+								'<h6>' + v.category + '</h6>',
+								'<h4><a href="' + v.server + v.path + '" target="_blank">' + v.headline + '</a></h4>',
+								(v.deck) && ('<h5 class="sh5">' + v.deck + '</h5>'),
+							'</article>'
+						].join('\n'));
+						
+					});
+					
+					$this
+						.removeClass('loading')
+						.html(template);
+					
+				}
+			});
+			
+		}
 		
 	});
 	

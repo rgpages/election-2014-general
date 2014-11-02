@@ -1825,16 +1825,15 @@ hgroup > :last-child {
   font-family: "BentonSansCond Regular", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
-  color: #999;
-  margin: 25px 0 10px;
-  padding: 5px 0;
-  border-bottom: 2px solid #999;
+  color: #666;
+  margin: 10px 0;
+  padding: 0;
 }
 .mast a, .mast a:visited {
   color: #666;
 }
 .no-touch .mast a:visited:hover, .mast a:focus, .no-touch .mast a:focus:hover, .no-touch .mast a:hover, .mast a:active {
-  color: #333;
+  color: #000;
 }
 
 .head {
@@ -2574,9 +2573,9 @@ iframe[id^='twitter-widget-'],
 }
 
 .loading {
-  background: url(../images/loader2.gif) no-repeat center top;
+  background: url(../images/loader2.gif) no-repeat center 10px;
   background-size: 32px 10px;
-  min-height: 32px;
+  min-height: 30px;
 }
 
 /**
@@ -3819,24 +3818,44 @@ p.meta:hover {
   display: none;
 }
 
-.story {
+.stories .story {
   position: relative;
-  border-width: 0 0 1px;
+  border-width: 1px 0;
   border-style: solid;
   border-color: #ccc;
+  margin: 0 0 -1px;
   padding: 10px 0;
 }
-.story h4 {
-  margin-top: 0;
+.stories .story h4 {
+  font-size: 18px;
+  line-height: 20px;
+  margin: 0;
 }
-.story h5 {
-  margin-bottom: 0;
+.stories .story h5 {
+  font-size: 16px;
+  line-height: 18px;
+  color: #000;
+  margin: 0;
 }
-.story time {
+.stories .story h6 {
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  color: #666;
+  margin: 0;
+}
+.stories .story h6 + h4,
+.stories .story h4 + h5 {
+  margin-top: 5px;
+}
+.stories .story time {
   font-size: 12px;
   line-height: 12px;
+  letter-spacing: .1em;
+  color: #999;
   float: right;
-  margin: 0 0 10px 10px;
+  margin: 0 0 0 10px;
 }
 
 .glow {
