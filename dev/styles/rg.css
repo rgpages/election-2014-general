@@ -1,6 +1,6 @@
 /**
- * 2014 General Election
- * General election coverage for Lane County, Oregon; developed and curated by The Register-Guard.
+ * Election 2014
+ * Live updates, breaking news and results
  *
  * @author Micky Hulse
  * @link http://mky.io
@@ -1825,23 +1825,23 @@ hgroup > :last-child {
   font-family: "BentonSansCond Regular", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
-  color: #666;
+  color: #333;
   margin: 10px 0;
   padding: 0;
 }
-.mast a, .mast a:visited {
-  color: #666;
-}
-.no-touch .mast a:visited:hover, .mast a:focus, .no-touch .mast a:focus:hover, .no-touch .mast a:hover, .mast a:active {
+.mast a, .mast a:visited, .no-touch .mast a:visited:hover, .mast a:focus, .no-touch .mast a:focus:hover, .no-touch .mast a:hover, .mast a:active {
   color: #000;
 }
 
 .head {
-  font-size: 14px;
-  line-height: 16px;
+  font-family: "BentonSansCond Regular", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 18px;
   letter-spacing: .05em;
   text-transform: uppercase;
-  color: #ccc;
+  color: #999;
   margin: 10px 0 5px;
   margin: 10px 0;
   padding: 5px 0;
@@ -2843,6 +2843,10 @@ a.social-tumblr, a.social-tumblr:visited, .no-touch a.social-tumblr:visited:hove
   position: relative;
   padding: 25px 0;
 }
+#header #masthead > div .sharing {
+  text-align: center;
+  margin-top: 15px;
+}
 @media all and (min-width: 960px) {
   #header #masthead > div {
     -webkit-transform-style: preserve-3d;
@@ -2852,12 +2856,19 @@ a.social-tumblr, a.social-tumblr:visited, .no-touch a.social-tumblr:visited:hove
     transform-style: preserve-3d;
   }
   #header #masthead > div h1 {
+    position: absolute;
     top: 50%;
     -webkit-transform: translateY(-50%);
     -moz-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     -o-transform: translateY(-50%);
     transform: translateY(-50%);
+  }
+  #header #masthead > div .sharing {
+    margin: 0;
+    position: absolute;
+    top: 25px;
+    right: 0;
   }
 }
 #header #masthead > div h2,
@@ -3159,7 +3170,7 @@ nav[role="navigation"] .harmonia-select {
   height: 100%;
   background-image: url(../images/flag.png);
   background-repeat: no-repeat;
-  background-size: 200px 200px;
+  background-size: cover;
   border: 0;
   display: block;
 }
@@ -3171,12 +3182,6 @@ nav[role="navigation"] .harmonia-select {
     width: 125px;
     height: 125px;
     margin: 0;
-    position: absolute;
-    top: 10px;
-    left: 10px;
-  }
-  #flag a {
-    background-size: 125px 125px;
   }
 }
 
@@ -3682,8 +3687,9 @@ nav[role="navigation"] .harmonia-select {
 
 .banner {
   text-align: center;
-  border: 1px solid #ddd;
-  background: #eee;
+  border-width: 1px 0;
+  border-style: solid;
+  border-color: #ddd;
   padding: 5px 0 10px;
   margin: 25px 0;
 }
@@ -3822,7 +3828,7 @@ p.meta:hover {
   position: relative;
   border-width: 1px 0;
   border-style: solid;
-  border-color: #ccc;
+  border-color: #ddd;
   margin: 0 0 -1px;
   padding: 10px 0;
 }

@@ -1,8 +1,10 @@
 .banner {
 	
 	text-align: center;
-	border: 1px solid $grayd;
-	background: $graye;
+	border-width: 1px 0;
+	border-style: solid;
+	border-color: $grayd;
+	//background: $graye;
 	padding: 5px 0 10px;
 	margin: 25px 0;
 	

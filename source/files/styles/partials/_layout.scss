@@ -87,6 +87,11 @@
 		position: relative;
 		padding: 25px 0;
 		
+		.sharing {
+			text-align: center;
+			margin-top: 15px;
+		}
+		
 		@media all and (min-width: 960px) {
 			
 			// http://zerosixthree.se/vertical-align-anything-with-just-3-lines-of-css/
@@ -96,14 +101,22 @@
 			     -o-transform-style: preserve-3d;
 			        transform-style: preserve-3d;
 			
-			// Flag (move to `_flag.scss`?):
+			// Flag (see also `_flag.scss`):
 			h1 {
+				position: absolute;
 				top: 50%;
 				-webkit-transform: translateY(-50%);
 				   -moz-transform: translateY(-50%);
 				    -ms-transform: translateY(-50%);
 				     -o-transform: translateY(-50%);
 				        transform: translateY(-50%);
+			}
+			
+			.sharing {
+				margin: 0;
+				position: absolute;
+				top: 25px;
+				right: 0;
 			}
 			
 		}

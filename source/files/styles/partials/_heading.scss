@@ -76,7 +76,7 @@ hgroup {
 .mast {
 	
 	@include benton;
-	color: $gray6;
+	color: $gray3;
 	margin: 10px 0;
 	padding: 0;
 	//border-bottom: 2px solid $raven;
@@ -84,7 +84,7 @@ hgroup {
 	a {
 		
 		&,
-		&:visited { color: $gray6; }
+		&:visited,
 		.no-touch &:visited:hover,
 		&:focus,
 		.no-touch &:focus:hover,
@@ -97,11 +97,12 @@ hgroup {
 
 .head {
 	
-	font-size: 14px;
-	line-height: 16px;
+	@include benton;
+	font-size: 16px;
+	line-height: 18px;
 	letter-spacing: .05em;
 	text-transform: uppercase;
-	color: $grayc;
+	color: $gray9;
 	margin: 10px 0 5px;
 	//border-bottom: 1px solid $grayc;
 	margin: 10px 0;

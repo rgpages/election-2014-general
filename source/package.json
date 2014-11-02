@@ -1,7 +1,7 @@
 {
-  "title": "2014 General Election",
+  "title": "Election 2014",
   "name": "rg",
-  "description": "General election coverage for Lane County, Oregon; developed and curated by The Register-Guard.",
+  "description": "Live updates, breaking news and results",
   "version": "0.1.1",
   "homepage": "https://github.com/registerguard/election-2014-general",
   "repository": {
