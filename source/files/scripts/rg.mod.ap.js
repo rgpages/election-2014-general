@@ -1,4 +1,4 @@
-//global moment
+/* global moment */
 /* jshint unused:vars */
 
 RG.register(function() {
@@ -18,7 +18,7 @@ RG.register(function() {
 				
 				template.push([
 					'<article class="story">',
-						//'<time>' + moment(val.updated).twitterShort() + '</time>',
+						'<time>' + moment(val.updated).twitterShort() + '</time>',
 						'<h6>' + val.dateline_city + '</h6>',
 						'<h4><a href="' + val.story_url + '" target="_blank">' + val.headline + '</a></h4>',
 					'</article>'
