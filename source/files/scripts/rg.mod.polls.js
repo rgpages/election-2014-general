@@ -24,10 +24,12 @@ RG.register(function() {
 					template = [
 						'<div id="' + id1 + '" class="poll">',
 							'<div class="poll-spinner"></div>',
-							'<h6 class="poll-head">',
+							'<h6 class="poll-head' + (v1.explainer_text && ' poll-click') + '">',
 								v1.contest_wrapper,
-								(v1.contest_name) ? v1.contest_name : '',
+								(v1.contest_name && v1.contest_name),
+								(v1.explainer_text && '<i class="key-info fa fa-question-circle"></i>'),
 							'</h6>',
+							(v1.explainer_text && '<div class="poll-info">' + v1.explainer_text + '</div>'),
 							'<div class="poll-content">',
 							'</div>',
 						'</div>'
@@ -50,7 +52,13 @@ RG.register(function() {
 						
 						template = [
 							'<div class="poll-bar">',
-								'<span class="poll-bar-title">' + v2.name + '</span>',
+								'<div class="poll-bar-title">',
+									'<span>',
+										(v2.incumbent ? '<i class="key-incumbent fa fa-info-circle" title="Incumbent"></i>' : ''),
+										v2.name,
+									'</span>',
+									(((v2.affiliation != 'N') && (v2.affiliation !== '')) ? '<span><span class="key-affilition key-affilition-' + v2.affiliation.toLowerCase() + '">' + v2.affiliation_pretty + '</span></span>' : ''),
+								'</div>',
 								'<div class="poll-grid">',
 									'<div class="poll-grid-secondary">',
 										'<span class="poll-bar-count">' + v2.lane_votes + '</span>',
@@ -126,10 +134,12 @@ RG.register(function() {
 					template = [
 						'<div id="' + id1 + '" class="poll">',
 							'<div class="poll-spinner"></div>',
-							'<h6 class="poll-head">',
+							'<h6 class="poll-head' + (v1.explainer_text && ' poll-click') + '">',
 								(v1.contest_wrapper && v1.contest_wrapper),
 								(v1.contest_name && v1.contest_name),
+								(v1.explainer_text && '<i class="key-info fa fa-question-circle"></i>'),
 							'</h6>',
+							(v1.explainer_text && '<div class="poll-info">' + v1.explainer_text + '</div>'),
 							'<div class="poll-content">',
 							'</div>',
 						'</div>'
@@ -152,7 +162,13 @@ RG.register(function() {
 						
 						template = [
 							'<div class="poll-bar">',
-								'<span class="poll-bar-title">' + v2.name + '</span>',
+								'<div class="poll-bar-title">',
+									'<span>',
+										(v2.incumbent ? '<i class="key-incumbent fa fa-info-circle" title="Incumbent"></i>' : ''),
+										v2.name,
+									'</span>',
+									(((v2.affiliation != 'N') && (v2.affiliation !== '')) ? '<span><span class="key-affilition key-affilition-' + v2.affiliation.toLowerCase() + '">' + v2.affiliation_pretty + '</span></span>' : ''),
+								'</div>',
 								'<div class="poll-grid">',
 									'<div class="poll-grid-secondary">',
 										'<span class="poll-bar-count">' + v2.lane_votes + '</span>',
@@ -228,10 +244,12 @@ RG.register(function() {
 					template = [
 						'<div id="' + id1 + '" class="poll">',
 							'<div class="poll-spinner"></div>',
-							'<h6 class="poll-head">',
+							'<h6 class="poll-head' + (v1.explainer_text && ' poll-click') + '">',
 								v1.contest_wrapper,
-								(v1.contest_name) ? v1.contest_name : '',
+								(v1.contest_name && v1.contest_name),
+								(v1.explainer_text && '<i class="key-info fa fa-question-circle"></i>'),
 							'</h6>',
+							(v1.explainer_text && '<div class="poll-info">' + v1.explainer_text + '</div>'),
 							'<div class="poll-content">',
 							'</div>',
 						'</div>'
@@ -252,7 +270,13 @@ RG.register(function() {
 						
 						template = [
 							'<div class="poll-bar">',
-								'<span class="poll-bar-title">' + v2.name + '</span>',
+								'<div class="poll-bar-title">',
+									'<span>',
+										(v2.incumbent ? '<i class="key-incumbent fa fa-info-circle" title="Incumbent"></i>' : ''),
+										v2.name,
+									'</span>',
+									(((v2.affiliation != 'N') && (v2.affiliation !== '')) ? '<span><span class="key-affilition key-affilition-' + v2.affiliation.toLowerCase() + '">' + v2.affiliation_pretty + '</span></span>' : ''),
+								'</div>',
 								'<div class="poll-grid">',
 									'<div class="poll-grid-secondary">',
 										'<span class="poll-bar-count">' + v2.lane_votes + '</span>',
@@ -305,10 +329,12 @@ RG.register(function() {
 					template = [
 						'<div id="' + id1 + '" class="poll">',
 							'<div class="poll-spinner"></div>',
-							'<h6 class="poll-head">',
+							'<h6 class="poll-head' + (v1.explainer_text && ' poll-click') + '">',
 								v1.contest_wrapper,
-								(v1.contest_name) ? v1.contest_name : '',
+								(v1.contest_name && v1.contest_name),
+								(v1.explainer_text && '<i class="key-info fa fa-question-circle"></i>'),
 							'</h6>',
+							(v1.explainer_text && '<div class="poll-info">' + v1.explainer_text + '</div>'),
 							'<div class="poll-content">',
 							'</div>',
 						'</div>'
@@ -329,7 +355,13 @@ RG.register(function() {
 						
 						template = [
 							'<div class="poll-bar">',
-								'<span class="poll-bar-title">' + v2.name + '</span>',
+								'<div class="poll-bar-title">',
+									'<span>',
+										(v2.incumbent ? '<i class="key-incumbent fa fa-info-circle" title="Incumbent"></i>' : ''),
+										v2.name,
+									'</span>',
+									(((v2.affiliation != 'N') && (v2.affiliation !== '')) ? '<span><span class="key-affilition key-affilition-' + v2.affiliation.toLowerCase() + '">' + v2.affiliation_pretty + '</span></span>' : ''),
+								'</div>',
 								'<div class="poll-grid">',
 									'<div class="poll-grid-secondary">',
 										'<span class="poll-bar-count">' + v2.lane_votes + '</span>',
@@ -382,10 +414,12 @@ RG.register(function() {
 					template = [
 						'<div id="' + id1 + '" class="poll">',
 							'<div class="poll-spinner"></div>',
-							'<h6 class="poll-head">',
+							'<h6 class="poll-head' + (v1.explainer_text && ' poll-click') + '">',
 								v1.contest_wrapper,
-								(v1.contest_name) ? v1.contest_name : '',
+								(v1.contest_name && v1.contest_name),
+								(v1.explainer_text && '<i class="key-info fa fa-question-circle"></i>'),
 							'</h6>',
+							(v1.explainer_text && '<div class="poll-info">' + v1.explainer_text + '</div>'),
 							'<div class="poll-content">',
 							'</div>',
 						'</div>'
@@ -405,7 +439,13 @@ RG.register(function() {
 						
 						template = [
 							'<div class="poll-bar">',
-								'<span class="poll-bar-title">' + v2.name + '</span>',
+								'<div class="poll-bar-title">',
+									'<span>',
+										(v2.incumbent ? '<i class="key-incumbent fa fa-info-circle" title="Incumbent"></i>' : ''),
+										v2.name,
+									'</span>',
+									(((v2.affiliation != 'N') && (v2.affiliation !== '')) ? '<span><span class="key-affilition key-affilition-' + v2.affiliation.toLowerCase() + '">' + v2.affiliation_pretty + '</span></span>' : ''),
+								'</div>',
 								'<div class="poll-grid">',
 									'<div class="poll-grid-secondary">',
 										'<span class="poll-bar-count">' + v2.lane_votes + '</span>',
@@ -458,10 +498,12 @@ RG.register(function() {
 					template = [
 						'<div id="' + id1 + '" class="poll">',
 							'<div class="poll-spinner"></div>',
-							'<h6 class="poll-head">',
+							'<h6 class="poll-head' + (v1.explainer_text && ' poll-click') + '">',
 								v1.contest_wrapper,
-								(v1.contest_name) ? v1.contest_name : '',
+								(v1.contest_name && v1.contest_name),
+								(v1.explainer_text && '<i class="key-info fa fa-question-circle"></i>'),
 							'</h6>',
+							(v1.explainer_text && '<div class="poll-info">' + v1.explainer_text + '</div>'),
 							'<div class="poll-content">',
 							'</div>',
 						'</div>'
@@ -482,7 +524,13 @@ RG.register(function() {
 						
 						template = [
 							'<div class="poll-bar">',
-								'<span class="poll-bar-title">' + v2.name + '</span>',
+								'<div class="poll-bar-title">',
+									'<span>',
+										(v2.incumbent ? '<i class="key-incumbent fa fa-info-circle" title="Incumbent"></i>' : ''),
+										v2.name,
+									'</span>',
+									(((v2.affiliation != 'N') && (v2.affiliation !== '')) ? '<span><span class="key-affilition key-affilition-' + v2.affiliation.toLowerCase() + '">' + v2.affiliation_pretty + '</span></span>' : ''),
+								'</div>',
 								'<div class="poll-grid">',
 									'<div class="poll-grid-secondary">',
 										'<span class="poll-bar-count">' + v2.lane_votes + '</span>',
@@ -516,6 +564,14 @@ RG.register(function() {
 			});
 			
 		}
+	});
+	
+	$('#results').on('click', '.poll-head', function() {
+		
+		$(this)
+			.next()
+			.slideToggle('fast');
+		
 	});
 	
 }); // RG

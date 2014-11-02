@@ -1,3 +1,24 @@
+#results { position: relative; }
+
+.legend {
+	font-size: 16px;
+	line-height: 18px;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+// https://github.com/rgpages/election-2014-general/issues/12
+.key-info { color: $color1; }
+.key-incumbent { color: $raven; }
+.key-affilition {
+	font-size: 12px;
+	line-height: inherit;
+	color: $gray8;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+}
+
 .poll {
 	
 	// Cascade to children:
@@ -37,6 +58,7 @@
 	}
 	
 	.poll-head {
+		
 		font-size: 14px;
 		line-height: 25px; // Height of `.poll-spinner` + `top` positioning.
 		letter-spacing: .05em;
@@ -45,6 +67,39 @@
 		padding: 5px 10px;
 		background: $grayd;
 		color: $gray3;
+		
+		// http://zerosixthree.se/vertical-align-anything-with-just-3-lines-of-css/
+		-webkit-transform-style: preserve-3d;
+		   -moz-transform-style: preserve-3d;
+		    -ms-transform-style: preserve-3d;
+		     -o-transform-style: preserve-3d;
+		        transform-style: preserve-3d;
+		
+		&.poll-click {
+			cursor: pointer;
+			cursor: hand;
+		}
+		
+		i {
+			font-size: 18px;
+			position: absolute;
+			right: 10px; // Same as the padding on `.poll-head`.
+			top: 50%;
+			-webkit-transform: translateY(-50%);
+			   -moz-transform: translateY(-50%);
+			    -ms-transform: translateY(-50%);
+			     -o-transform: translateY(-50%);
+			        transform: translateY(-50%);
+		}
+		
+	}
+	
+	.poll-info {
+		letter-spacing: .05em;
+		color: $grayb;
+		background: $gray3;
+		padding: 10px;
+		display: none; // Shown via JS.
 	}
 	
 	.poll-content {
@@ -56,30 +111,6 @@
 		:last-child { margin-bottom: 0; }
 		
 	}
-	
-	/*
-	<div class="tile">
-		<div class="tile-grid">
-			<div class="tile-grid-secondary">
-				...
-			</div>
-			<div class="tile-grid-primary">
-				...
-			</div>
-		</div>
-		<div class="tile-grid tile-grid-alt">
-			<div class="tile-grid-secondary">
-				...
-			</div>
-			<div class="tile-grid-tertiary">
-				...
-			</div>
-			<div class="tile-grid-primary">
-				...
-			</div>
-		</div>
-	</div>
-	*/
 	
 	.poll-grid {
 		
@@ -210,16 +241,51 @@
 		}
 		
 		.poll-bar-title {
+			
 			font-size: 16px;
 			line-height: 18px;
 			letter-spacing: .025em;
 			color: $gray3;
 			border-bottom: 1px solid $grayc;
+			padding-right: 100px; // Same as grid width, so text on left wraps around number.
 			padding-bottom: 5px;
-			padding-right: 100px; // Same as grid width.
 			margin-bottom: 10px;
-			// Because it's a span:
-			display: block;
+			
+			* { vertical-align: middle; }
+			
+			span + span span {
+				
+				&::before { content: "("; }
+				&::after { content: ")"; }
+				
+			}
+			
+			@media all and (min-width: 640px) {
+				
+				padding-right: 0;
+				
+				&::after {
+					content: "";
+					display: table;
+					clear: both;
+				}
+				
+				span { float: left; }
+				span + span {
+					
+					float: right;
+					
+					span {
+						
+						&::before,
+						&::after { content: ""; }
+						
+					}
+					
+				}
+				
+			}
+			
 		}
 		
 		.poll-bar-label,

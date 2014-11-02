@@ -1597,12 +1597,12 @@ a, a:visited {
 }
 
 ::-moz-selection {
-  background: rgba(114, 202, 0, 0.55);
+  background: rgba(202, 71, 0, 0.55);
   text-shadow: none;
 }
 
 ::selection {
-  background: rgba(114, 202, 0, 0.55);
+  background: rgba(202, 71, 0, 0.55);
   text-shadow: none;
 }
 
@@ -3244,6 +3244,34 @@ nav[role="navigation"] .harmonia-select {
   margin-bottom: 0 !important;
 }
 
+#results {
+  position: relative;
+}
+
+.legend {
+  font-size: 16px;
+  line-height: 18px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.key-info {
+  color: #ca4700;
+}
+
+.key-incumbent {
+  color: #000;
+}
+
+.key-affilition {
+  font-size: 12px;
+  line-height: inherit;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+}
+
 .poll {
   font-family: arial, sans-serif;
   color: #333;
@@ -3258,29 +3286,6 @@ nav[role="navigation"] .harmonia-select {
   -moz-transition: box-shadow .4s;
   -o-transition: box-shadow .4s;
   transition: box-shadow .4s;
-  /*
-  <div class="tile">
-  	<div class="tile-grid">
-  		<div class="tile-grid-secondary">
-  			...
-  		</div>
-  		<div class="tile-grid-primary">
-  			...
-  		</div>
-  	</div>
-  	<div class="tile-grid tile-grid-alt">
-  		<div class="tile-grid-secondary">
-  			...
-  		</div>
-  		<div class="tile-grid-tertiary">
-  			...
-  		</div>
-  		<div class="tile-grid-primary">
-  			...
-  		</div>
-  	</div>
-  </div>
-  */
 }
 .poll .poll-spinner {
   background: url(../images/loading.gif) no-repeat;
@@ -3301,6 +3306,33 @@ nav[role="navigation"] .harmonia-select {
   padding: 5px 10px;
   background: #ddd;
   color: #333;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+.poll .poll-head.poll-click {
+  cursor: pointer;
+  cursor: hand;
+}
+.poll .poll-head i {
+  font-size: 18px;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.poll .poll-info {
+  letter-spacing: .05em;
+  color: #bbb;
+  background: #333;
+  padding: 10px;
+  display: none;
 }
 .poll .poll-content {
   padding: 10px 15px 15px;
@@ -3402,10 +3434,37 @@ nav[role="navigation"] .harmonia-select {
   letter-spacing: .025em;
   color: #333;
   border-bottom: 1px solid #ccc;
-  padding-bottom: 5px;
   padding-right: 100px;
+  padding-bottom: 5px;
   margin-bottom: 10px;
-  display: block;
+}
+.poll .poll-bar .poll-bar-title * {
+  vertical-align: middle;
+}
+.poll .poll-bar .poll-bar-title span + span span::before {
+  content: "(";
+}
+.poll .poll-bar .poll-bar-title span + span span::after {
+  content: ")";
+}
+@media all and (min-width: 640px) {
+  .poll .poll-bar .poll-bar-title {
+    padding-right: 0;
+  }
+  .poll .poll-bar .poll-bar-title::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .poll .poll-bar .poll-bar-title span {
+    float: left;
+  }
+  .poll .poll-bar .poll-bar-title span + span {
+    float: right;
+  }
+  .poll .poll-bar .poll-bar-title span + span span::before, .poll .poll-bar .poll-bar-title span + span span::after {
+    content: "";
+  }
 }
 .poll .poll-bar .poll-bar-label,
 .poll .poll-bar .poll-bar-count {
