@@ -67,7 +67,7 @@ $(function() {
 								$.each(v3.race.slice(0, 2), function(k4, v4) {
 									
 									var id2 = 'con-' + v3.contest_id + '_cand-meas-' + v4.cand_meas_id;
-									var percent = v4.percent_of_state_votes + '%';
+									var percent = Math.round(v4.percent_of_state_votes) + '%';
 									var src = v4.image_url;
 									var name = v4.name;
 									
@@ -132,7 +132,7 @@ $(function() {
 								$.each(v3.measure, function(k4, v4) {
 									
 									var id2 = 'con-' + v3.contest_id + '_cand-meas-' + v4.cand_meas_id;
-									var percent = v4.percent_of_state_votes + '%';
+									var percent = Math.round(v4.percent_of_state_votes) + '%';
 									var name = v4.name.charAt(0).toLowerCase();
 									
 									if ($options.first) {
