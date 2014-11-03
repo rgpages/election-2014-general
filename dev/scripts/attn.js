@@ -24,7 +24,7 @@ $(function() {
 	
 	$.pollster({
 		api: 'http://projects.registerguard.com/ballot/json/topset/',
-		seconds: 300, // 5 mins.
+		seconds: 60, // 1 min.
 		target: 'attn',
 		callback: function($data, $options) {
 			

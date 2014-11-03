@@ -7,7 +7,7 @@ RG.register(function() {
 	
 	$.pollster({
 		target: 'ap-stories',
-		api: 'http://projects.registerguard.com/ballot/json/ap_elex_stories/5/',
+		api: 'http://projects.registerguard.com/ballot/json/ap_elex_stories/10/',
 		seconds: 1200, // 20 mins.
 		callback: function($data, $options) {
 			

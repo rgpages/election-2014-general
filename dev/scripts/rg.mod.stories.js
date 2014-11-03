@@ -6,17 +6,17 @@ RG.register(function() {
 	'use strict';
 	
 	$.pollster.defaults.api = 'http://registerguard.com/csp/cms/sites/rg/feeds/json.csp';
-	$.pollster.defaults.seconds = 300; // 5 mins.
+	$.pollster.defaults.seconds = 180; // 3 mins.
 	
 	$.each($('.stories'), function(n, y) {
 		
 		var $that = $(this);
 		
-		if ($that.attr('data-cats')) {
+		if ($that.attr('data-subcats')) {
 			
 			$.pollster({
 				target: $that.attr('id'),
-				params: 'subcats=' + encodeURIComponent($that.data('cats')),
+				params: 'items=25&subcats=' + encodeURIComponent($that.data('subcats')),
 				callback: function($data, $options) {
 					
 					var $this = $(this);
