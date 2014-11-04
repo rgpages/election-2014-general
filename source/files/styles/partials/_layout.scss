@@ -141,25 +141,25 @@
 			font-family: "MillerHeadline Bold";
 			font-weight: bold;
 			font-style: normal;
-			font-size: 80px;
-			line-height: 70px;
+			font-size: 70px;
+			line-height: 60px;
 			letter-spacing: normal;
 			color: $graye;
 			margin-bottom: 5px;
 			
 			.char1 { margin-left: 0; }
-			.char2 { margin-left: 3px; }
-			.char3 { margin-left: -2px; }
-			.char4 { margin-left: 1px; }
-			.char5 { margin-left: 1px; }
-			.char6 { margin-left: 3px; }
-			.char7 { margin-left: -2px; }
-			.char8 { margin-left: -3px; }
+			.char2 { margin-left: 6px; }
+			.char3 { margin-left: 2px; }
+			.char4 { margin-left: 4px; }
+			.char5 { margin-left: 4px; }
+			.char6 { margin-left: 4px; }
+			.char7 { margin-left: 2px; }
+			.char8 { margin-left: 1px; }
 			.char9 { margin-left: 0; }
 			.char10 { margin-left: 0; }
-			.char11 { margin-left: 1px; }
-			.char12 { margin-left: -4px; }
-			.char13 { margin-left: -3px; }
+			.char11 { margin-left: 4px; }
+			.char12 { margin-left: 0; }
+			.char13 { margin-left: 2px; }
 			
 			@media all and (min-width: 960px) {
 				
@@ -168,17 +168,17 @@
 				
 				.char1 { margin-left: 0; }
 				.char2 { margin-left: 5px; }
-				.char3 { margin-left: -1px; }
+				.char3 { margin-left: 0px; }
 				.char4 { margin-left: 3px; }
 				.char5 { margin-left: 3px; }
-				.char6 { margin-left: 5px; }
-				.char7 { margin-left: -1px; }
-				.char8 { margin-left: -2px; }
+				.char6 { margin-left: 6px; }
+				.char7 { margin-left: 0px; }
+				.char8 { margin-left: -1px; }
 				.char9 { margin-left: 0; }
 				.char10 { margin-left: 0; }
 				.char11 { margin-left: 3px; }
-				.char12 { margin-left: -5px; }
-				.char13 { margin-left: -2px; }
+				.char12 { margin-left: -2px; }
+				.char13 { margin-left: -0px; }
 				
 			}
 			
@@ -191,7 +191,7 @@
 			font-weight: normal;
 			font-size: 20px;
 			line-height: 25px;
-			letter-spacing: .08em;
+			letter-spacing: .15em;
 			color: $grayc;
 			text-rendering: optimizeLegibility;
 			-webkit-font-feature-settings: "kern";
@@ -203,6 +203,7 @@
 				
 				font-size: 30px;
 				line-height: 35px;
+				letter-spacing: .075em;
 				
 			}
 			
