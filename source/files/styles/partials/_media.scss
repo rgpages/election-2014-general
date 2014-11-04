@@ -102,8 +102,13 @@ audio {
 	
 }
 
+// Try to make 100% as Twitter widget doesn't like to scale by default:
 iframe[id^='twitter-widget-'],
-.twitter-timeline { width: 100%; }
+.twitter-timeline-rendered,
+.twitter-timeline {
+	width: 100% !important;
+	max-width: none !important;
+}
 
 .loading {
 	// Before anything loads, show:

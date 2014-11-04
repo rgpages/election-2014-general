@@ -1837,8 +1837,8 @@ hgroup > :last-child {
   font-family: "BentonSansCond Regular", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 16px;
-  line-height: 18px;
+  font-size: 20px;
+  line-height: 22px;
   letter-spacing: .05em;
   text-transform: uppercase;
   color: #999;
@@ -2568,8 +2568,10 @@ audio {
 }
 
 iframe[id^='twitter-widget-'],
+.twitter-timeline-rendered,
 .twitter-timeline {
-  width: 100%;
+  width: 100% !important;
+  max-width: none !important;
 }
 
 .loading {
@@ -3250,7 +3252,7 @@ nav[role="navigation"] .harmonia-select {
 
 .legend {
   font-size: 16px;
-  line-height: 18px;
+  line-height: 20px;
   position: absolute;
   top: 0;
   right: 0;
@@ -3265,10 +3267,9 @@ nav[role="navigation"] .harmonia-select {
 }
 
 .key-affilition {
-  font-size: 12px;
+  font-size: 14px;
   line-height: inherit;
   color: #888;
-  text-transform: uppercase;
   letter-spacing: .1em;
 }
 
@@ -3295,6 +3296,7 @@ nav[role="navigation"] .harmonia-select {
   position: absolute;
   top: 5px;
   right: 5px;
+  z-index: 10;
   display: none;
 }
 .poll .poll-head {
@@ -3315,6 +3317,14 @@ nav[role="navigation"] .harmonia-select {
 .poll .poll-head.poll-click {
   cursor: pointer;
   cursor: hand;
+  -webkit-transition: background .5s;
+  -moz-transition: background .5s;
+  -ms-transition: background .5s;
+  -o-transition: background .5s;
+  transition: background .5s;
+}
+.no-touch .poll .poll-head.poll-click:hover {
+  background: #ccc;
 }
 .poll .poll-head i {
   font-size: 18px;
@@ -3328,7 +3338,9 @@ nav[role="navigation"] .harmonia-select {
   transform: translateY(-50%);
 }
 .poll .poll-info {
-  letter-spacing: .05em;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: .08em;
   color: #bbb;
   background: #333;
   padding: 10px;
@@ -3437,9 +3449,6 @@ nav[role="navigation"] .harmonia-select {
   padding-right: 100px;
   padding-bottom: 5px;
   margin-bottom: 10px;
-}
-.poll .poll-bar .poll-bar-title * {
-  vertical-align: middle;
 }
 .poll .poll-bar .poll-bar-title span + span span::before {
   content: "(";

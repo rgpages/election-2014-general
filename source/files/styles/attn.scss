@@ -19,7 +19,7 @@ body {
 	text-align: center; // For the `inline-block` child.
 	border-bottom: 2px solid $grayc;
 	background: $graye;
-	background: linear-gradient(to bottom, $grayd 0, $graye 100%);
+	background: linear-gradient(to bottom, $graye 0, $grayd 100%);
 	overflow: hidden; // Clears float.
 	
 	* { vertical-align: middle; }

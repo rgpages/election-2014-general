@@ -423,7 +423,7 @@ body {
   text-align: center;
   border-bottom: 2px solid #ccc;
   background: #eee;
-  background: linear-gradient(to bottom, #ddd 0, #eee 100%);
+  background: linear-gradient(to bottom, #eee 0, #ddd 100%);
   overflow: hidden;
 }
 .attn * {

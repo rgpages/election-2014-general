@@ -1,21 +1,23 @@
 #results { position: relative; }
 
 .legend {
+	
 	font-size: 16px;
-	line-height: 18px;
+	line-height: 20px;
 	position: absolute;
 	top: 0;
 	right: 0;
+	
 }
 
 // https://github.com/rgpages/election-2014-general/issues/12
 .key-info { color: $color1; }
 .key-incumbent { color: $raven; }
 .key-affilition {
-	font-size: 12px;
+	font-size: 14px;
 	line-height: inherit;
 	color: $gray8;
-	text-transform: uppercase;
+	//text-transform: uppercase;
 	letter-spacing: .1em;
 }
 
@@ -53,6 +55,7 @@
 		position: absolute;
 		top: 5px;
 		right: 5px;
+		z-index: 10;
 		// JS controls visibility:
 		display: none;
 	}
@@ -76,8 +79,18 @@
 		        transform-style: preserve-3d;
 		
 		&.poll-click {
+			
 			cursor: pointer;
 			cursor: hand;
+			
+			-webkit-transition: background .5s;
+			   -moz-transition: background .5s;
+			    -ms-transition: background .5s;
+			     -o-transition: background .5s;
+			        transition: background .5s;
+			
+			.no-touch &:hover { background: $grayc; }
+			
 		}
 		
 		i {
@@ -95,7 +108,9 @@
 	}
 	
 	.poll-info {
-		letter-spacing: .05em;
+		font-size: 16px;
+		line-height: 18px;
+		letter-spacing: .08em;
 		color: $grayb;
 		background: $gray3;
 		padding: 10px;
@@ -251,8 +266,6 @@
 			padding-right: 100px; // Same as grid width, so text on left wraps around number.
 			padding-bottom: 5px;
 			margin-bottom: 10px;
-			
-			* { vertical-align: middle; }
 			
 			span + span span {
 				

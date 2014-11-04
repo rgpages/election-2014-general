@@ -29,30 +29,27 @@ $(function() {
 		callback: function($data, $options) {
 			
 			var $this = $(this);
-			var template;
+			var $div1;
+			var $div2;
 			
 			$.each($data, function(k1, v1) {
 				
 				$.each(v1, function(k2, v2) {
 					
-					var $div;
-					
-					if ($options.first) {
-						
-						$div = $('<div />')
-							.hide();
-						
-					}
-					
 					switch (k2) {
 						
 						case 'races':
 							
-							$.each(v2, function(k3, v3) {
+							// Encapsulate:
+							(function() {
 								
-								var id1 = 'con-' + v3.contest_id;
+								var template;
 								
-								if ($options.first) {
+								$div1 = $('<div />');
+								
+								$.each(v2, function(k3, v3) {
+									
+									var id1 = 'con-' + v3.contest_id;
 									
 									template = [
 										'<a id="' + id1 + '" href="http://vote.registerguard.com/#' + id1 + '">',
@@ -60,18 +57,14 @@ $(function() {
 										'</a>'
 									].join('\n');
 									
-									$div.append(template);
+									$div1.append(template);
 									
-								}
-								
-								$.each(v3.race.slice(0, 2), function(k4, v4) {
-									
-									var id2 = 'con-' + v3.contest_id + '_cand-meas-' + v4.cand_meas_id;
-									var percent = Math.round(v4.percent_of_state_votes) + '%';
-									var src = v4.image_url;
-									var name = v4.name;
-									
-									if ($options.first) {
+									$.each(v3.race.slice(0, 2), function(k4, v4) {
+										
+										var id2 = 'con-' + v3.contest_id + '_cand-meas-' + v4.cand_meas_id;
+										var percent = Math.round(v4.percent_of_state_votes) + '%';
+										var src = v4.image_url;
+										var name = v4.name;
 										
 										template = [
 											'<span id="' + id2 + '" class="attn-row">',
@@ -82,44 +75,30 @@ $(function() {
 											'</span>'
 										].join('\n');
 										
-										$div
+										$div1
 											.find('#' + id1)
 											.append(template);
 										
-									}
+									});
 									
 								});
 								
-							});
-							
-							if ($options.first) {
-								
-								$div
-									.appendTo($this)
-									.fadeIn();
-								
-							} else {
-								
-								$('#' + id2)
-									.children()
-									.find('img')
-									.attr('src', src)
-									.attr('title', name)
-									.end()
-									.last()
-									.text(percent);
-								
-							}
+							})();
 							
 							break;
 						
 						case 'measures':
 							
-							$.each(v2, function(k3, v3) {
+							// Encapsulate:
+							(function() {
 								
-								var id1 = 'con-' + v3.contest_id;
+								var template;
 								
-								if ($options.first) {
+								$div2 = $('<div />');
+								
+								$.each(v2, function(k3, v3) {
+									
+									var id1 = 'con-' + v3.contest_id;
 									
 									template = [
 										'<a id="' + id1 + '" href="http://vote.registerguard.com/#' + id1 + '">',
@@ -130,17 +109,13 @@ $(function() {
 										'</a>'
 									].join('\n');
 									
-									$div.append(template);
+									$div2.append(template);
 									
-								}
-								
-								$.each(v3.measure, function(k4, v4) {
-									
-									var id2 = 'con-' + v3.contest_id + '_cand-meas-' + v4.cand_meas_id;
-									var percent = Math.round(v4.percent_of_state_votes) + '%';
-									var name = v4.name.charAt(0).toLowerCase();
-									
-									if ($options.first) {
+									$.each(v3.measure, function(k4, v4) {
+										
+										var id2 = 'con-' + v3.contest_id + '_cand-meas-' + v4.cand_meas_id;
+										var percent = Math.round(v4.percent_of_state_votes) + '%';
+										var name = v4.name.charAt(0).toLowerCase();
 										
 										template = [
 											'<span id="' + id2 + '" class="attn-row">',
@@ -151,34 +126,15 @@ $(function() {
 											'</span>'
 										].join('\n');
 										
-										$div
+										$div2
 											.find('#' + id1)
 											.append(template);
 										
-									}
+									});
 									
 								});
 								
-							});
-							
-							if ($options.first) {
-								
-								$div
-									.appendTo($this)
-									.fadeIn();
-								
-							} else {
-								
-								$('#' + id2)
-									.children()
-									.first()
-									.attr('class', '')
-									.addClass('attn-' + name)
-									.end()
-									.last()
-									.text(percent);
-								
-							}
+							})();
 							
 							break;
 						
@@ -187,6 +143,8 @@ $(function() {
 				});
 				
 			});
+			
+			$this.html($div1.add($div2));
 			
 		}
 	});
