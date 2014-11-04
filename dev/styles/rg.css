@@ -3423,7 +3423,6 @@ nav[role="navigation"] .harmonia-select {
   content: "\f063";
 }
 .poll .poll-bar .poll-bar-votes {
-  text-align: right;
   line-height: 30px;
   border-radius: 3px;
   background: #999;

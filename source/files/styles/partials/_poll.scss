@@ -212,7 +212,7 @@
 		.poll-bar-votes {
 			
 			// Align % to right side of bar (I think it looks better):
-			text-align: right;
+			//text-align: right; // https://github.com/rgpages/election-2014-general/issues/35
 			// Pseudo vertical centering:
 			line-height: 30px;
 			// Match `.poll-bar-wrap` radius:
