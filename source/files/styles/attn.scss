@@ -64,9 +64,9 @@ body {
 		
 		> :first-child {
 			
-			text-transform: lowercase;
-			
-			&::after { content: ":"; }
+			color: $milk;
+			display: block;
+			background: $gray3;
 			
 		}
 		

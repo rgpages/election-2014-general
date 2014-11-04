@@ -1,6 +1,6 @@
 /**
  * Election 2014
- * Live updates, breaking news and results
+ * Latest coverage and results
  *
  * @author Micky Hulse
  * @link http://mky.io
@@ -459,10 +459,9 @@ body {
   background: #ddd;
 }
 .attn a > :first-child {
-  text-transform: lowercase;
-}
-.attn a > :first-child::after {
-  content: ":";
+  color: #fff;
+  display: block;
+  background: #333;
 }
 @media all and (min-width: 820px) {
   .attn a {

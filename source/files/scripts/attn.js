@@ -56,7 +56,7 @@ $(function() {
 									
 									template = [
 										'<a id="' + id1 + '" href="http://vote.registerguard.com/#' + id1 + '">',
-											'<span>' + ((v3.contest_wrapper == 'Governor') ? 'Gov' : 'Sen') + '</span>', // Can't think of a better way to handle race names.
+											'<span>' + ((v3.contest_wrapper == 'Governor') ? 'Oregon Governor' : 'U.S. Senate') + '</span>', // Can't think of a better way to handle race names.
 										'</a>'
 									].join('\n');
 									
