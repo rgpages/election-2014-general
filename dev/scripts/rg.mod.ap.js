@@ -20,6 +20,7 @@ RG.register(function() {
 					'<article class="story">',
 						'<time>' + moment(val.updated).twitterShort() + '</time>',
 						'<h6>' + val.dateline_city + '</h6>',
+						(val.first_image_thumb_url && '<a href="' + val.story_url + '"><img src="' + val.first_image_thumb_url + '" width="100"></a>'),
 						'<h4><a href="' + val.story_url + '" target="_blank">' + val.headline + '</a></h4>',
 					'</article>'
 				].join('\n'));

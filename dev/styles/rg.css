@@ -3891,6 +3891,11 @@ p.meta:hover {
   margin: 0 0 -1px;
   padding: 10px 0;
 }
+.stories .story::after {
+  content: "";
+  display: table;
+  clear: both;
+}
 .stories .story h4 {
   font-size: 18px;
   line-height: 20px;
@@ -3908,7 +3913,7 @@ p.meta:hover {
   text-transform: uppercase;
   letter-spacing: .1em;
   color: #666;
-  margin: 0;
+  margin: 0 0 5px;
 }
 .stories .story h6 + h4,
 .stories .story h4 + h5 {
@@ -3918,9 +3923,15 @@ p.meta:hover {
   font-size: 12px;
   line-height: 12px;
   letter-spacing: .1em;
-  color: #999;
+  color: #666;
   float: right;
-  margin: 0 0 0 10px;
+  margin: 0 0 0 5px;
+}
+.stories .story img {
+  border-radius: 3px;
+  max-width: none;
+  margin: 0 0 5px 5px;
+  float: right;
 }
 
 .glow {

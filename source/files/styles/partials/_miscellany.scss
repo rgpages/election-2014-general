@@ -11,6 +11,12 @@
 		margin: 0 0 -1px;
 		padding: 10px 0;
 		
+		&::after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+		
 		h4 {
 			font-size: 18px;
 			line-height: 20px;
@@ -30,7 +36,7 @@
 			text-transform: uppercase;
 			letter-spacing: .1em;
 			color: $gray6;
-			margin: 0;
+			margin: 0 0 5px;
 		}
 		
 		h6 + h4,
@@ -40,9 +46,16 @@
 			font-size: 12px;
 			line-height: 12px;
 			letter-spacing: .1em;
-			color: $gray9;
+			color: $gray6;
 			float: right;
-			margin: 0 0 0 10px;
+			margin: 0 0 0 5px;
+		}
+		
+		img {
+			border-radius: 3px;
+			max-width: none;
+			margin: 0 0 5px 5px;
+			float: right;
 		}
 		
 	}
