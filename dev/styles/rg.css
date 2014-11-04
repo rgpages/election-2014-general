@@ -2753,6 +2753,9 @@ a.social, a.social:visited {
   color: #666666;
   text-decoration: none;
 }
+a.social:active, a.social:focus {
+  outline: none;
+}
 
 a.social-twitter, a.social-twitter:visited, .no-touch a.social-twitter:visited:hover, a.social-twitter:focus, .no-touch a.social-twitter:focus:hover, .no-touch a.social-twitter:hover, a.social-twitter:active {
   color: #41b7d8;

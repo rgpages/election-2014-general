@@ -399,12 +399,14 @@ module.exports = function(grunt) {
 					name : '<%= pkg.name %>',
 					now : '<%= now %>',
 					production : '<%= pkg.production %>',
-					production_social : '<%= encodeURIComponent(pkg.production) %>',
 					title : '<%= pkg.title %>',
-					title_social : '<%= encodeURIComponent(pkg.title) %>',
-					twitter : '<%= encodeURIComponent("@registerguard") %>',
 					ver : '<%= ver %>',
 					version : '<%= pkg.version %>',
+					
+					// There's got to be a better way to handle URI encoding on template level?
+					social_title : '<%= encodeURIComponent(pkg.title) %>',
+					social_description : '<%= encodeURIComponent(pkg.description) %>',
+					social_url : '<%= encodeURIComponent(pkg.production) %>',
 					
 				},
 				

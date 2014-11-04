@@ -112,6 +112,9 @@ a.social {
 		text-decoration: none;
 	}
 	
+	&:active,
+	&:focus { outline: none; }
+	
 }
 
 a.social-twitter {
