@@ -8,7 +8,7 @@
  * @copyright Copyright (c) 2014 Micky Hulse.
  * @license Released under the Copyright © The Register-Guard 2014. All rights reserved..
  * @version 0.1.1
- * @date 2014/11/03
+ * @date 2014/11/04
  */
 
 
@@ -423,6 +423,7 @@ body {
   text-align: center;
   border-bottom: 2px solid #ccc;
   background: #eee;
+  background: linear-gradient(to bottom, #ddd 0, #eee 100%);
   overflow: hidden;
 }
 .attn * {
@@ -435,14 +436,13 @@ body {
 .attn a {
   font-size: 24px;
   line-height: 50px;
-  border-radius: 1px;
   border: 1px solid #bbb;
   background: #eee;
-  height: 50px;
   margin: 5px;
-  padding: 5px;
+  padding: 30px 5px 5px;
   display: block;
   white-space: nowrap;
+  position: relative;
   -webkit-transition: all .5s;
   -moz-transition: all .5s;
   -ms-transition: all .5s;
@@ -454,14 +454,8 @@ body {
   text-decoration: none;
 }
 .attn a:visited:hover, .attn a:focus, .attn a:focus:hover, .attn a:hover, .attn a:active {
-  color: #333;
-  border-color: #bbb;
-  background: #ddd;
-}
-.attn a > :first-child {
-  color: #fff;
-  display: block;
-  background: #333;
+  color: #666;
+  background: #fff;
 }
 @media all and (min-width: 820px) {
   .attn a {
@@ -469,28 +463,55 @@ body {
     float: left;
   }
 }
-.attn span:not(:first-child) {
+.attn .attn-head {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 25px;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+  color: #333;
+  background: #bbb;
+  padding: 0 5px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+@media all and (min-width: 820px) {
+  .attn .attn-row, .attn .attn-col {
+    padding: 0 5px;
+    display: block;
+    float: left;
+  }
+  .attn .attn-row > :first-child, .attn .attn-col > :first-child {
+    padding-left: 0;
+  }
+  .attn .attn-row > :last-child, .attn .attn-col > :last-child {
+    padding-right: 0;
+  }
+}
+.attn .attn-col {
   display: inline-block;
 }
-.attn span:not(:first-child) :first-child {
+@media all and (min-width: 820px) {
+  .attn .attn-col {
+    padding: 0 3px;
+  }
+}
+.attn .attn-circle {
+  font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Cambria, Georgia, serif;
   text-transform: uppercase;
   color: #fff;
   border-radius: 50%;
   width: 50px;
   height: 50px;
+  display: block;
+  overflow: hidden;
 }
-.attn span:not(:first-child) span {
-  font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Cambria, Georgia, serif;
-}
-@media all and (min-width: 820px) {
-  .attn span:not(:first-child) {
-    display: block;
-    float: left;
-    margin-right: 5px;
-  }
-  .attn span:not(:first-child):last-child {
-    margin-right: 0;
-  }
+.attn .attn-name {
+  font-size: 34px;
+  letter-spacing: -.025em;
+  color: #000;
 }
 .attn div {
   display: block;

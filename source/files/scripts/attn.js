@@ -56,7 +56,7 @@ $(function() {
 									
 									template = [
 										'<a id="' + id1 + '" href="http://vote.registerguard.com/#' + id1 + '">',
-											'<span>' + v3.contest_wrapper + '</span>',
+											'<span class="attn-head">' + v3.contest_wrapper + '</span>',
 										'</a>'
 									].join('\n');
 									
@@ -74,9 +74,11 @@ $(function() {
 									if ($options.first) {
 										
 										template = [
-											'<span id="' + id2 + '">',
-												'<span><img src="' + src + '" width="50" title="' + name + '"></span>',
-												'<span>' + percent + '</span>',
+											'<span id="' + id2 + '" class="attn-row">',
+												'<span class="attn-col">',
+													'<img class="attn-circle" src="' + src + '" width="50" title="' + name + '">',
+												'</span>',
+												'<span class="attn-col">' + percent + '</span>',
 											'</span>'
 										].join('\n');
 										
@@ -121,9 +123,9 @@ $(function() {
 									
 									template = [
 										'<a id="' + id1 + '" href="http://vote.registerguard.com/#' + id1 + '">',
-											'<span>',
-												v3.contest_name,
-												(v3.short_description && '(' + v3.short_description + ')'),
+											'<span class="attn-head">' + v3.short_description + '</span>',
+											'<span class="attn-row attn-label">',
+												'<span class="attn-col attn-name">' + v3.contest_name + '</span>',
 											'</span>',
 										'</a>'
 									].join('\n');
@@ -141,9 +143,11 @@ $(function() {
 									if ($options.first) {
 										
 										template = [
-											'<span id="' + id2 + '">',
-												'<span class="attn-' + name + '">' + name + '</span>',
-												'<span>' + percent + '</span>',
+											'<span id="' + id2 + '" class="attn-row">',
+												'<span class="attn-col">',
+													'<span class="attn-circle attn-' + name + '">' + name + '</span>',
+												'</span>',
+												'<span class="attn-col">' + percent + '</span>',
 											'</span>'
 										].join('\n');
 										

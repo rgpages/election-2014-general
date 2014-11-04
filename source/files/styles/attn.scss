@@ -19,7 +19,8 @@ body {
 	text-align: center; // For the `inline-block` child.
 	border-bottom: 2px solid $grayc;
 	background: $graye;
-	overflow: hidden;
+	background: linear-gradient(to bottom, $grayd 0, $graye 100%);
+	overflow: hidden; // Clears float.
 	
 	* { vertical-align: middle; }
 	
@@ -32,14 +33,15 @@ body {
 		
 		font-size: 24px;
 		line-height: 50px; // Height of image.
-		border-radius: 1px;
+		//border-radius: 1px;
 		border: 1px solid $grayb;
 		background: $graye;
-		height: 50px;
+		//height: 50px;
 		margin: 5px;
-		padding: 5px;
+		padding: 30px 5px 5px; // Same as heading ...
 		display: block;
 		white-space: nowrap;
+		position: relative;
 		
 		-webkit-transition: all .5s;
 		   -moz-transition: all .5s;
@@ -57,15 +59,8 @@ body {
 		&:focus:hover,
 		&:hover,
 		&:active {
-			color: $gray3;
-			border-color: $grayb;
-			background: $grayd;
-		}
-		
-		> :first-child {
-			color: $milk;
-			display: block;
-			background: $gray3;
+			color: $gray6;
+			background: $milk;
 		}
 		
 		@media all and (min-width: 820px) { // Just eyeballed this number.
@@ -77,30 +72,65 @@ body {
 		
 	}
 	
-	span:not(:first-child) {
+	.attn-head {
+		font-weight: bold;
+		font-size: 14px;
+		line-height: 25px; // ... Heading is here.
+		letter-spacing: .05em;
+		text-transform: uppercase;
+		color: $gray3;
+		background: $grayb;
+		padding: 0 5px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+	}
+	
+	.attn-row {
+		
+		@media all and (min-width: 820px) {
+			
+			padding: 0 5px;
+			display: block;
+			float: left;
+			
+			> :first-child { padding-left: 0; }
+			> :last-child { padding-right: 0; }
+			
+		}
+		
+	}
+	
+	.attn-col {
+		
+		@extend .attn-row;
 		
 		display: inline-block;
 		
-		:first-child {
-			text-transform: uppercase;
-			color: $milk;
-			border-radius: 50%;
-			width: 50px;
-			height: 50px;
-		}
-		
-		span { font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, $font2; }
-		
-		@media all and (min-width: 820px) { // Just eyeballed this number.
+		@media all and (min-width: 820px) {
 			
-			display: block;
-			float: left;
-			margin-right: 5px;
-			
-			&:last-child { margin-right: 0; }
+			padding: 0 3px;
 			
 		}
 		
+	}
+	
+	.attn-circle {
+		font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, $font2;
+		text-transform: uppercase;
+		color: $milk;
+		border-radius: 50%;
+		width: 50px;
+		height: 50px;
+		display: block;
+		overflow: hidden; // For `img` crop.
+	}
+	
+	.attn-name {
+		font-size: 34px;
+		letter-spacing: -.025em;
+		color: $raven;
 	}
 	
 	div {
