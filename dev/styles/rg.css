@@ -2885,7 +2885,7 @@ a.social-tumblr, a.social-tumblr:visited, .no-touch a.social-tumblr:visited:hove
   #header #masthead > div h2,
   #header #masthead > div h3 {
     text-align: left;
-    margin-left: 150px;
+    margin-left: 165px;
   }
 }
 #header #masthead > div h2 {
@@ -2940,7 +2940,7 @@ a.social-tumblr, a.social-tumblr:visited, .no-touch a.social-tumblr:visited:hove
 @media all and (min-width: 960px) {
   #header #masthead > div h2 {
     font-size: 90px;
-    line-height: 80px;
+    line-height: 75px;
   }
   #header #masthead > div h2 .char1 {
     margin-left: 0;
@@ -2999,7 +2999,7 @@ a.social-tumblr, a.social-tumblr:visited, .no-touch a.social-tumblr:visited:hove
 @media all and (min-width: 960px) {
   #header #masthead > div h3 {
     font-size: 30px;
-    line-height: 35px;
+    line-height: 30px;
     letter-spacing: .075em;
   }
 }
@@ -3167,7 +3167,7 @@ nav[role="navigation"] .harmonia-select {
   text-indent: -999em;
   white-space: nowrap;
   width: 200px;
-  height: 200px;
+  height: 148px;
   margin: 0 auto 20px;
   overflow: hidden;
 }
@@ -3185,8 +3185,8 @@ nav[role="navigation"] .harmonia-select {
 }
 @media all and (min-width: 960px) {
   #flag {
-    width: 125px;
-    height: 125px;
+    width: 150px;
+    height: 111px;
     margin: 0;
   }
 }
@@ -3342,7 +3342,7 @@ nav[role="navigation"] .harmonia-select {
   transform: translateY(-50%);
 }
 .poll .poll-info {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 18px;
   letter-spacing: .08em;
   color: #bbb;
