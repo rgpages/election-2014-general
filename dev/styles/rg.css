@@ -1,6 +1,6 @@
 /**
  * Election 2014
- * Latest coverage and results
+ * Latest news, recent coverage and results starting at 8 p.m.
  *
  * @author Micky Hulse
  * @link http://mky.io
@@ -2934,8 +2934,8 @@ a.social-tumblr, a.social-tumblr:visited, .no-touch a.social-tumblr:visited:hove
 }
 @media all and (min-width: 960px) {
   #header #masthead > div h2 {
-    font-size: 120px;
-    line-height: 100px;
+    font-size: 90px;
+    line-height: 80px;
   }
   #header #masthead > div h2 .char1 {
     margin-left: 0;

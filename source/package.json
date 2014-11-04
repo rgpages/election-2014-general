@@ -1,7 +1,7 @@
 {
   "title": "Election 2014",
   "name": "rg",
-  "description": "Latest coverage and results",
+  "description": "Latest news, recent coverage and results starting at 8 p.m.",
   "version": "0.1.1",
   "homepage": "https://github.com/registerguard/election-2014-general",
   "repository": {
