@@ -8,7 +8,7 @@ RG.register(function() {
 	$.pollster.defaults.seconds = 300; // 5 mins.
 	
 	$.pollster({
-		target: 'stateracesresults',
+		target: 'state-races-results',
 		api: 'http://projects.registerguard.com/ballot/json/stater/',
 		callback: function($data, $options) {
 			
@@ -118,7 +118,7 @@ RG.register(function() {
 	});
 	
 	$.pollster({
-		target: 'statemeasuresresults',
+		target: 'state-measures-results',
 		api: 'http://projects.registerguard.com/ballot/json/statem/',
 		callback: function($data, $options) {
 			
@@ -228,7 +228,7 @@ RG.register(function() {
 	});
 	
 	$.pollster({
-		target: 'lanecountyresults',
+		target: 'lane-county-results',
 		api: 'http://projects.registerguard.com/ballot/json/laneco/',
 		callback: function($data, $options) {
 			
@@ -313,7 +313,7 @@ RG.register(function() {
 	});
 	
 	$.pollster({
-		target: 'eugsprresults',
+		target: 'eugspr-results',
 		api: 'http://projects.registerguard.com/ballot/json/eugspr/',
 		callback: function($data, $options) {
 			
@@ -398,7 +398,7 @@ RG.register(function() {
 	});
 	
 	$.pollster({
-		target: 'regionalracesresults',
+		target: 'regional-races-results',
 		api: 'http://projects.registerguard.com/ballot/json/region/',
 		callback: function($data, $options) {
 			
@@ -482,7 +482,7 @@ RG.register(function() {
 	});
 	
 	$.pollster({
-		target: 'lanecountymeasuresresults',
+		target: 'lane-county-measures-results',
 		api: 'http://projects.registerguard.com/ballot/json/laneme/',
 		callback: function($data, $options) {
 			
