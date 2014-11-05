@@ -11,12 +11,15 @@ RG.register(function() {
 	$.each($('.stories'), function(n, y) {
 		
 		var $that = $(this);
+		var items;
 		
 		if ($that.attr('data-subcats')) {
 			
+			items = ($that.attr('data-items') ? + $that.data('items') : 10);
+			
 			$.pollster({
 				target: $that.attr('id'),
-				params: 'items=10&subcats=' + encodeURIComponent($that.data('subcats')),
+				params: 'items=' + items + '&subcats=' + encodeURIComponent($that.data('subcats')),
 				callback: function($data, $options) {
 					
 					var $this = $(this);
