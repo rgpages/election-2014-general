@@ -12,7 +12,7 @@
     "moment.twitter": "~0",
     "normalize-css": "~3",
     "nutshell": "https://github.com/mhulse/jquery-nutshell.git#v1",
-    "pollster": "https://github.com/mhulse/jquery-pollster.git#v1",
+    "pollster": "https://github.com/mhulse/jquery-pollster.git#v2",
     "pure": "~0"
   },
   "exportsOverride": {

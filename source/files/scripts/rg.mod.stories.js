@@ -20,6 +20,8 @@ RG.register(function() {
 			$.pollster({
 				target: $that.attr('id'),
 				params: 'items=' + items + '&subcats=' + encodeURIComponent($that.data('subcats')),
+				cache: true,
+				jsonpCallback: $that.attr('id'),
 				callback: function($data, $options) {
 					
 					var $this = $(this);
