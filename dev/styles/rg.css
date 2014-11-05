@@ -3133,7 +3133,6 @@ nav[role="navigation"] .harmonia-select {
   a {
   	
   	background: transparent;
-  	border: 0;
   	
   	&,
   	&:visited {
@@ -3177,7 +3176,6 @@ nav[role="navigation"] .harmonia-select {
   background-image: url(../images/flag.png);
   background-repeat: no-repeat;
   background-size: cover;
-  border: 0;
   display: block;
 }
 #flag a:active, #flag a:focus {

@@ -104,7 +104,7 @@ RG.register(function() {
 							}
 							
 							// Rinse, wash and repeat:
-							$timeout = window.setTimeout(timer, 30000);
+							$timeout = window.setTimeout(timer, 15000);
 							
 						});
 						

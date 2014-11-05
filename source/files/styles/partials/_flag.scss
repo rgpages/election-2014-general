@@ -22,7 +22,6 @@
 	a {
 		
 		background: transparent;
-		border: 0;
 		
 		&,
 		&:visited {
@@ -74,7 +73,6 @@
 			repeat: no-repeat;
 			size: cover;
 		}
-		border: 0; // Remove border added via global href styles above.
 		display: block;
 		
 		&:active,
