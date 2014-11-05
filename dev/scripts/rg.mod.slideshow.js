@@ -25,8 +25,6 @@ RG.register(function() {
 		target: 'parallax',
 		api: 'http://sandbox.registerguard.com/electionssp/',
 		seconds: 1200, // 20 mins.
-		cache: true,
-		jsonpCallback: 'parallax',
 		callback: function($data, $options) {
 			
 			// http://www.programming-free.com/2013/12/change-background-image-jquery.html

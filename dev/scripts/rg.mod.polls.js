@@ -10,8 +10,6 @@ RG.register(function() {
 	$.pollster({
 		target: 'state-races-results',
 		api: 'http://projects.registerguard.com/ballot/json/stater/',
-		cache: true,
-		jsonpCallback: 'stateracesresults',
 		callback: function($data, $options) {
 			
 			var $this = $(this);
@@ -122,8 +120,6 @@ RG.register(function() {
 	$.pollster({
 		target: 'state-measures-results',
 		api: 'http://projects.registerguard.com/ballot/json/statem/',
-		cache: true,
-		jsonpCallback: 'statemeasuresresults',
 		callback: function($data, $options) {
 			
 			var $this = $(this);
@@ -234,8 +230,6 @@ RG.register(function() {
 	$.pollster({
 		target: 'lane-county-results',
 		api: 'http://projects.registerguard.com/ballot/json/laneco/',
-		cache: true,
-		jsonpCallback: 'lanecountyresults',
 		callback: function($data, $options) {
 			
 			var $this = $(this);
@@ -321,8 +315,6 @@ RG.register(function() {
 	$.pollster({
 		target: 'eugspr-results',
 		api: 'http://projects.registerguard.com/ballot/json/eugspr/',
-		cache: true,
-		jsonpCallback: 'eugsprresults',
 		callback: function($data, $options) {
 			
 			var $this = $(this);
@@ -408,8 +400,6 @@ RG.register(function() {
 	$.pollster({
 		target: 'regional-races-results',
 		api: 'http://projects.registerguard.com/ballot/json/region/',
-		cache: true,
-		jsonpCallback: 'regionalracesresults',
 		callback: function($data, $options) {
 			
 			var $this = $(this);
@@ -494,8 +484,6 @@ RG.register(function() {
 	$.pollster({
 		target: 'lane-county-measures-results',
 		api: 'http://projects.registerguard.com/ballot/json/laneme/',
-		cache: true,
-		jsonpCallback: 'lanecountymeasuresresults',
 		callback: function($data, $options) {
 			
 			var $this = $(this);

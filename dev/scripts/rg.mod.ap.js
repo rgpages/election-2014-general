@@ -9,8 +9,6 @@ RG.register(function() {
 		target: 'ap-stories',
 		api: 'http://projects.registerguard.com/ballot/json/ap_elex_stories/10/',
 		seconds: 600, // 10 mins.
-		cache: true,
-		jsonpCallback: 'apstories',
 		callback: function($data, $options) {
 			
 			var $this = $(this);
