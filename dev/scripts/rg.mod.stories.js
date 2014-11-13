@@ -15,7 +15,7 @@ RG.register(function() {
 		
 		if ($that.attr('data-subcats')) {
 			
-			items = ($that.attr('data-items') ? ( + $that.data('items')) : 10);
+			items = ($that.attr('data-items') ? + $that.data('items') : 10);
 			
 			$.pollster({
 				target: $that.attr('id'),
