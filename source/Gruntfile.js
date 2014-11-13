@@ -501,7 +501,7 @@ module.exports = function(grunt) {
 						expand : true,
 						cwd : './files/',
 						src : [
-							'images/**/*',
+							'images/**/*.{gif,png}',
 							'media/**/*',
 							'!**/junk/**',
 						],
@@ -510,12 +510,14 @@ module.exports = function(grunt) {
 					}, {
 						
 						expand: true,
+						flatten: true,
 						cwd: './files/icons/',
 						src: [
 							'!**/fonts/**',
 							'!**/psd/**',
 						],
 						dest:'../',
+						filter: 'isFile',
 						
 					}, {
 						
