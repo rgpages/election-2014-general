@@ -10,6 +10,7 @@ RG.register(function() {
 	$.pollster({
 		target: 'state-races-results',
 		api: 'http://projects.registerguard.com/ballot/json/stater/',
+		
 		callback: function($data, $options) {
 			
 			var $this = $(this);
